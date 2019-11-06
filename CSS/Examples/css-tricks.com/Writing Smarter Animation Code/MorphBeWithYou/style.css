@@ -1,0 +1,28 @@
+body{
+	height:98vh;
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/314556/nightSky.jpg") center center repeat;
+}
+
+#demo{
+	overflow: visible;
+	opacity: 0;
+	visibility: hidden;
+	max-height: 80%;
+}
+
+.credits {
+	color:#aaa;
+	font-size: 12px;
+	margin-top: -60px;
+}
