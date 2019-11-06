@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading images into the texture cache</title>
+</head>
+<body>
+	<h1>Loading images into the texture cache</h1>
+	<ul><li>Because Pixi renders the image on the GPU with WebGL, the image needs to be in a format that the GPU can process</li>
+		<li>Before you can make a sprite display an image, you need to convert an ordinary image file into a WebGL texture</li>
+		<li>To keep everything working fast and efficiently, Pixi uses a texture cache to store and reference all the textures your sprites will need.</li>
+		<li>The name of the textures are strings that match the file locations of the images they refer to</li>
+		<li>The textures are stored in a WebGL compatible format thats efficient for Pixi renderer to work with.</li>
+		<li>You can use the Pixis Sprite class to make a new sprite using the texture</li>
+		<li>To load the image file and convert into a texture, Pixi's built in loader object is used and a function called setup is called
+		</ul><h2>Examples</h2>
+		<ul><li><a href="../../Tutorials/www.pixijs.com/01-LearningPixi/03-Pixi-Sprites/sprites-loading-into-the-texture-cache.html">Sprites Loading into the texture cache</a></li></ul>
+		<h2>Monitoring load progress</h2>
+		<ul><li>Pixi's loader has a special progress event that will call a customizable function that will run each time a file loads</li>
+			<li>Each time one of the files load, the progress event calls loadProgressHandler to display "loading" in the console. </li><li>You can also find out exactly which file has loaded and what percentage of overall files are have currently loaded by adding optional loader and resource parameters to the loadProgressHandler</li>
+			<li>You can use this as the basis for creating a loading progress bar</li>
+			<li>There are additional properties you access on the resource object. resource.error will tell you any possible error that happened while trying to load file.</li>
+			<li>resource.data lets you access the file's raw binary data</li>
+			<li>Pixi's loader is feature-rich and configurable<li>
+				<li>The loads chainable add method takes 4 basic arguments<ul><li>
+					name (string): The name of the resource to load.  If it's not passed, the url is used
+				</li>
+				<li>url (string): the url for this resource, relative to the baseUrl of the loader</li>
+				<li>optionObject:
+					<ul><li>options (object literal): The options for load</li>
+						<li>options.crossOrigin:(Boolean): is the request cross-origin? The default is to determine automatically</li>
+						<li>options.loadType: How should the resource be loaded? The default value is Resource.LOAD_TYPE.XHR</li>
+						<li>options.xhrType: How should the data being loaded be interpreted when using XHR? The default value is Resource.XHR_RESPONSE_TYPE.DEFAULT</li>
+					</ul>
+				</li>
+				<li>callbackFuntion:</li>
+
+			</ul>
+		</body>
+		</html>

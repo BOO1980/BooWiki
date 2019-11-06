@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creating pixi application and stage</title>
+		<link href="../../../Assets/Styles/style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body class="markdown-body">
+		<h1>Creating Pixi Application and stage</h1>
+		<ul><li>Create a rectangular display area so you can start displaying images on, Pixi has an <span class="code">Application</span>object that creates this for you
+		</li>
+	</ul>
+		<p class="js code">
+			<span class="pl-c">//Create a Pixi Application</span>
+			<br/>
+			<span class="pl-k">let</span> app = <span class="pl-k">new</span> <span class="pl-en">PIXI.Application</span>({width:<span class="pl-cl">256</span>, height: <span class="pl-cl">256</span>});
+			<br/><br/>
+			<span class="pl-c">//Add the canvas that Pixi automatically created for you to the HMTL document</span>
+			<br/>
+			<span class="pl-cl">document.body.appendChild</span>(app.view);
+		</p>
+		<ul>
+		<li>Pixi automatically generates an HTML 
+			<span class="code">&lt;canvas&gt;</span> element and figures out how to display your images on the canvas</li>
+		<li>You can create a Pixi containter object called the <span class="code">stage</span></li>
+		<li>The <span class="code">stage</span> object is going to be used as the root container that holds the things that you want Pixi to display</li>
+		<li><span class="code">PIXI.Application</span> figures out whether to use the Canvas Drawing API or WebGL to render graphics, depending on which is the available on the web browser you're using.</li>
+		<li><span class="code">Width</span> and <span class="code">height</span> properties are set to determine the width and height of the canvas, in pixels</li>
+		</li>
+		<li>You can set more optional properties inside the <span class="code">options</span> object</li>
+	</ul>
+	<p class="js code">
+		<span class="pl-k">let</span> app = <span class="pl-k">new</span> <span class="pl-en">PIXI.Application </span>({<br/>
+		<span class="indent1">width:<span class="pl-cl">256</span>,<span class="pl-c"> //default: 800</span> <br/>
+		<span class="indent1"></span>height:<span class="pl-cl">256</span>,<span class="pl-c"> //default: 600</span></span><br/>
+		<span class="indent1">antialias: <span class="pl-cl">true</span>,<span class="pl-c"> //default: false</span></span><br/>
+		<span class="indent1">tranparent: <span class="pl-cl">false,<span class="pl-c"> //default: false</span></span></br>
+		<span class="indent1">resolution: <span class="pl-cl">1</span><span class="pl-c"> //default: 1</span></br>
+	});</span>
+	</p>
+
+		<h2>Examples</h2>
+		<ul>
+			<li><a href="../../Work/Tutorials/PixiJSCom/01LearningPixi/02Creating-Pixi-Application-And-Stage/renderer-height-width.html">Example of height and weight properties</a></li>
+			<li><a href="../../Work/Tutorials/PixiJSCom/01LearningPixi/02Creating-Pixi-Application-And-Stage/application-options.html">Example of properties</a></li>
+		</ul>
+</body>
+</html>
