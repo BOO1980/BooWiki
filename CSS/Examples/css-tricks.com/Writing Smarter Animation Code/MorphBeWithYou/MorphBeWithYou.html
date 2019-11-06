@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>May the Morph Be With You</title>
+		<link rel="stylesheet "type="text/css" href="style.css">
+		<script src="TweenMax.min.js"></script>
+		<script src="MorphSVGPlugin.min.js"></script>
+		<script src="DrawSVGPlugin.min.js"></script>
+		<script src="MorphBeWithYou.js"></script>
+		<script src="GSDevTools.min.js"></script>
+	</head>
+	<body>
+		<div class="credits"><a href="https://codepen.io/PointC/">Animation and Design by Craig Roblesky</a></div>
+		<svg id="demo" xlmns="http://www3.org/2000" viewBox="0 0 1500 1000">
+			<title>May the morph be with you</title>
+			<defs>
+				<mask id="titleMask">
+					<rect x="0" y="0" width="1500" height="1000" fill="#fff" stroke-miterlimit="10"/>
+					<rect class="topCut" x="0" y="-278" width="1500" height="360" fill="#000" stroke-miterlimit="10"/>
+					<rect class="bottomCut" x="0" y="840" width="1500" height="320" fill="#000" stroke-miterlimit="10"/>
+				</mask>
+				<mask id="bladeMask">
+					<rect id="bladeMaskRect" x="735" y="114" width="43" height="512" fill="#fff"/>
+				</mask>
+				<symbol id="fighter">
+					<path d="M53.5,152.44v-1.17l54.38-1.32h.22c.07,0,.15,0,.15-.07s.15-.07.22-.15a.26.26,0,0,1,.15-.07c.07-.07.07-.15.15-.15l.07-.15c0-.07.07-.15.07-.22v-.44a.27.27,0,0,0-.07-.22.26.26,0,0,0-.07-.15l-.15-.15c-.07-.07-.15-.07-.15-.15a.26.26,0,0,0-.15-.07.26.26,0,0,1-.15-.07h-.22l-54.38-1.32v-1.25a1,1,0,0,0-1-1H49.76a1,1,0,0,0-1,1v.15h-.51V109.88h4.84a1,1,0,0,0,1-1V95.71a.72.72,0,0,0-.29-.66l83.44-6.82c17.69-.44,22.16-3.67,22.6-4a1.18,1.18,0,0,0,.37-.81V80.16a1.18,1.18,0,0,0-.37-.81c-.44-.37-4.92-3.6-22.6-4l-83.51-7a1.09,1.09,0,0,0,.29-.66V54.54a1,1,0,0,0-1-1H48.14V17.93h.51v.15a1,1,0,0,0,1,1h2.79a1,1,0,0,0,1-1V16.82l54.16-1.32a.27.27,0,0,0,.22-.07H108a1.06,1.06,0,0,0,.66-.81v-.15h0V14.4h0a1,1,0,0,0-1-.88L53.57,12.2V11a1,1,0,0,0-1-1H49.76a1,1,0,0,0-1,1v.51H20.62a.5.5,0,0,0-.51.51v5.5a.5.5,0,0,0,.51.51h5.14l-.66,3.16a.79.79,0,0,0-.07.44L17.76,56.89H10.42V56.6a1.18,1.18,0,0,0-.37-.81.83.83,0,0,0-.81-.22L.88,56.67a1,1,0,0,0-.88,1v7a1,1,0,0,0,.88,1L9.25,67a1.05,1.05,0,0,0,.81-.22,1.18,1.18,0,0,0,.37-.81v-.22h5.43l-.51,2.5L11,72.38a.9.9,0,0,0-.51.81V89.92a.93.93,0,0,0,.07.44,1,1,0,0,0,.22.29h0L15.34,95l.51,2.42H10.42v-.22a1.18,1.18,0,0,0-.37-.81.83.83,0,0,0-.81-.22L.88,97.4a1,1,0,0,0-.88,1v7a1,1,0,0,0,.88,1l8.37,1.1a1.05,1.05,0,0,0,.81-.22,1.18,1.18,0,0,0,.37-.81v-.07h7.34L25,141.73a.79.79,0,0,0,.07.44l.66,3.16H20.62a.5.5,0,0,0-.51.51v5.5a.5.5,0,0,0,.51.51h28v.51a1,1,0,0,0,1,1H52.4A1,1,0,0,0,53.5,152.44Z" transform="translate(0.5)"fill="#e5e5e5" stroke="#3a3a3a" stroke-miterlimit="10"/>
+				</symbol>
+			</defs>
+		</svg>
+	</body>
+</html>
