@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preventDefault Event Method</title>
+</head>
+<body>
+	<h1>Prevent Default</h1>
+	<ul><li>
+		The preventDefault() method cancels the event if it is cancelable</li>
+		<li>The default action that belongs to the event will not occur.
+	</li>
+	<li>Not all evemts are cancelable.  Use the cancelable property to find out if an event is cancelable</li>
+	<li>The prventDefault() methods does not prevent further propagation of an event through the DOM.  Use the stopPropagation() method to handle this</li>
+</ul>
+	<h2>Examples</h2>
+	<ul>
+		<li>Clicking on a submit button, prevent it from submitting a form</li>
+		<li>Clicking on a link, prevent the link from following the URL</li>
+
+	</ul>
+</body>
+</html>
