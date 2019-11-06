@@ -1,0 +1,23 @@
+<html>
+	<head></head>
+	<body>
+		<script language="javascript">
+			var flavours = ["Vanilla", "Butterscotch","Lavender","Cookie Dough"];
+			var flavourOfTheDay= flavours[2];
+			alert("The flavour of the day is " + flavourOfTheDay);
+			flavours[3] = "vanilla chocolatechip";
+			newFlavour = flavours[3];
+
+
+		</script>
+
+			<p>The flavour of the day is: <span id="flavourOfTheDay"></span></p>
+			<p>The new flavour is now <span id="newFlavour"></span></p>
+
+
+		<script language="javascript">
+				document.getElementById("flavourOfTheDay").innerHTML = flavourOfTheDay;
+				document.getElementById("newFlavour").innerHTML = newFlavour;
+		</script>	
+	</body>
+</html>

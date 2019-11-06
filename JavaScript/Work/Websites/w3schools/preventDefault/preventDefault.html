@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prevent Default</title>
+</head>
+<body>
+	<h1>Prevent Default</h1>
+	<a id="myAnchor" href="https://w3schools.com/"> Go to W3 Schools.com</a>
+	<p>The preventDefault() method will prevent the link from above from following the URL</p>
+
+	<script type="text/javascript">
+		document.getElementById("myAnchor").addEventListener("click", function(event){
+			event.preventDefault()
+		});
+	</script>
+</body>
+</html>

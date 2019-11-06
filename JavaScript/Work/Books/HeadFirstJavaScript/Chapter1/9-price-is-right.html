@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+	<h1>Price is right</h1>
+	<div>The Price is: £<span id="price"></div>
+	<div>The discount is: <span id='discount'></span>%</div>
+	<div>The total is: £<span id='total'></span></div>
+	<script>
+		var price = 500.00;
+		var discount = 50;
+
+		var total = price - (price *(discount/100));
+		document.getElementById("price").innerHTML = price;
+		document.getElementById("discount").innerHTML = discount;
+		document.getElementById("total").innerHTML	= total;
+	</script>
+</body>
+</html>

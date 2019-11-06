@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Level up</title>
+</head>
+<body>
+	<h1>Level up</h1>
+	<p>When your level is 2, what does this evalute to <span id='ans1'> </span></p>
+	<p>When your level is 5, what does this evalute to <span id='ans2'> </span></p>
+	<p>When your level is 7, what does this evalute to <span id='ans3'> </span></p>
+
+	<script type="text/javascript">
+		var yourLevel1 = 2;
+		var yourLevel2 = 5;
+		var yourLevel3 = 7;
+		
+		var ans1 = yourLevel1 > 5;
+		var ans2 = yourLevel2 > 5;
+		var ans3 = yourLevel3 > 5;
+
+		document.getElementById('ans1').innerHTML = ans1;
+		document.getElementById('ans2').innerHTML = ans2;
+		document.getElementById('ans3').innerHTML = ans3;
+	</script>
+</body>
+</html>

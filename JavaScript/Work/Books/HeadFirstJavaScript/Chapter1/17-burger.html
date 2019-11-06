@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Burger or water</title>
+</head>
+<body>
+	<h1>Burger or water</h1>
+	<p id="order"></p>
+	<script type="text/javascript">
+		
+		var cashInWallet = 9;
+		var order;
+		if(cashInWallet > 5){
+			order = "Ill take the works: cheeseburger, fries and coke";
+		}else{
+			order = "ill just have a glass of water";
+		}
+
+		document.getElementById('order').innerHTML = order;
+	</script>
+
+</body>
+</html>
