@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Viz Layout</title>
+</head>
+<script src='/Assets/Pixi/TweenLite.min.js'></script>
+<script src='/Assets/Pixi/pixi.min.js'></script>
+<script src='/Assets/Pixi/PixiPlugin.min.js'></script>
+
+
+<body>
+	<script type='text/javascript'>
+		//creates pixi application
+		let app = new PIXI.Application({
+			width: 800, 
+			height: 600,
+			antialias: true, 
+			transparent: false,
+			resolution: 1
+		});
+
+		document.body.appendChild(app.view);
+		var assetPath = '/Assets/Images/Viz/'
+
+		PIXI.loader
+		.add([{name:'vizBg', url: assetPath +'Background.jpg'},
+			{name:'charV2', url: assetPath + 'Characters_v2.png'},
+			{name:'logo',url: assetPath +'logo.png'},
+			{name:'spinBtn',url: assetPath +'spinBtn.png'},
+			{name:'reelsBg', url: assetPath +'reelsBg.png'},
+			{name:'btnTileset', url: assetPath +'cpBtns.png'},
+			{name:'sym1', url: assetPath +'sym1.jpg'},
+			{name:'sym2', url: assetPath +'sym2.jpg'},
+			{name:'sym3', url: assetPath +'sym3.jpg'},
+			{name:'sym4', url: assetPath +'sym4.jpg'},
+			{name:'sym5', url: assetPath +'sym5.jpg'},
+			{name:'sym6', url: assetPath +'sym6.jpg'},
+			{name:'sym7', url: assetPath +'sym7.jpg'},
+			])
+		.on('progress', loadProgressHandler)
+		.load(setup);
+
+		function loadProgressHandler(loader, resource){
+			console.log('loading:' + resource.url);
+			console.log('progress:' + loader.progress + '%')
+		}
+
+		function setup(){
+
+			let vizBckGrd = new PIXI.Sprite(
+				PIXI.loader.resources['vizBg'].texture
+				);
+			app.stage.addChild(vizBckGrd);	
+
+			let charactersv2 = new PIXI.Sprite(
+				PIXI.loader.resources['charV2'].texture
+				);
+			charactersv2.x = 5;
+			charactersv2.y = 465;
+			app.stage.addChild(charactersv2);
+
+			let vizLogo = new PIXI.Sprite(
+				PIXI.loader.resources['logo'].texture
+				);
+			app.stage.addChild(vizLogo);
+			vizLogo.x = 250;
+			vizLogo.y = 460;
+
+			let btnSpin = new PIXI.Sprite(
+				PIXI.loader.resources['spinBtn'].texture
+				);
+			btnSpin.x = 675;
+			btnSpin.y = 175;
+			app.stage.addChild(btnSpin);
+
+
+			/* SMALL BUTTONS*/
+			var btnSmallW = 104;
+			var btnSmallH = 67;
+			
+			//Information Button
+			var tsInfoBtn = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,86,btnSmallW,btnSmallH));
+			var btnInfo = new PIXI.Sprite(tsInfoBtn);
+
+			btnInfo.x = 680;
+			btnInfo.y = 25;
+
+			btnInfo.interactive = true;
+			btnInfo.buttonMode = true;
+
+			var tsInfoBtnDown = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(251,86,btnSmallW,btnSmallH));
+
+			var tsInfoBtnDis = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(122,86,btnSmallW,btnSmallH));
+
+
+			
+			//	.on('pointerup' , onButtonUp(tsInfoBtnDis));
+			
+
+
+
+
+
+			app.stage.addChild(btnInfo);
+
+			//Automatic Button
+			var tsAutoBtn = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,0,btnSmallW,btnSmallH));
+			var btnAuto = new PIXI.Sprite(tsAutoBtn);
+			
+			btnAuto.x = 680;
+			btnAuto.y = 100;
+
+			btnAuto.interactive = true;
+			btnAuto.buttonMode = true;
+
+			var tsAutoBtnDown = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(122,0,btnSmallW,btnSmallH));
+
+			var  tsAutoBtnDis = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(250,0,btnSmallW,btnSmallH));
+/*
+			btnAuto
+				.on('pointerdown', onButtonDown(tsAutoBtnDown))
+				.on('pointerup', onButtonUp(tsAutoBtnDis));
+*/
+
+
+
+			app.stage.addChild(btnAuto);
+
+			var tsPlusBtn = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,172,64,48));
+			var btnPlus = new PIXI.Sprite(tsPlusBtn);
+			btnPlus.x = 700;
+			btnPlus.y = 275;
+			app.stage.addChild(btnPlus);
+
+			var tsMinusBtn = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,258,64,48));
+			var btnMinus = new PIXI.Sprite(tsMinusBtn);
+			btnMinus.x = 700;
+			btnMinus.y = 325;
+			app.stage.addChild(btnMinus);
+
+			var tsBetInfo = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(250,1070,118,108));
+			var btnBetInfo = new PIXI.Sprite(tsBetInfo);
+			btnBetInfo.x = 675;
+			btnBetInfo.y = 375;
+			app.stage.addChild(btnBetInfo);
+
+			var tsWinInfo = new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,688,187,85));
+			var winInfo = new PIXI.Sprite(tsWinInfo);
+			winInfo.x = 484;
+			winInfo.y = 10;
+			app.stage.addChild(winInfo);
+
+			let tsBalance= new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,774,187,85));
+			let balanceInfo = new PIXI.Sprite(tsBalance);
+			balanceInfo.x = 5;
+			balanceInfo.y = 10;
+			app.stage.addChild(balanceInfo);
+
+			let tsSidSP= new PIXI.Texture(PIXI.loader.resources['btnTileset']
+				.texture, new PIXI.Rectangle(0,952,286,95));
+			let sidSP = new PIXI.Sprite(tsSidSP);
+			sidSP.x = 195;
+			sidSP.y = 5;
+			app.stage.addChild(sidSP);
+
+			let reelsBg = new PIXI.Sprite(PIXI.loader.resources['reelsBg'].texture);
+			reelsBg.x = 5;
+			reelsBg.y = 100;
+			app.stage.addChild(reelsBg);
+
+			let ctnReelMain = new PIXI.Container();
+			ctnReelMain.x = 5;
+			ctnReelMain.y = 100;
+			app.stage.addChild(ctnReelMain);
+			
+			let maskRec = new PIXI.Graphics();
+			maskRec.lineStyle(1, 0xFF3300,1);
+			maskRec.beginFill(0x66CCFF);
+			maskRec.drawRect(24, 20, 615, 325);
+			maskRec.endFill();
+			ctnReelMain.addChild(maskRec);
+			ctnReelMain.mask = maskRec;	
+
+			var reelContainers = 5;
+			var reelSymbols = 5;
+			var ctnReel = [];
+			var reelSym = [];
+			var textureArray = ['sym1','sym2','sym3','sym4','sym5','sym6','sym7'];
+			var posX = 24;
+			var symbolW = 100;
+			var symbolH = 110;
+			
+			//split  split on commas
+			var data  = '4|1|4|3|6,4|1|4|3|6,2|2|3|5|1,5|4|0|1|5,4|1|4|3|6';
+			var reelResults = data.split(',');
+
+			//4|1|4|3|6,
+			//2|2|3|5|1,
+			//5|4|0|1|5
+
+			var symResults = [];
+			for (var i =0; i < reelResults.length; i++){
+
+			//2D Array
+				var row = reelResults[i].split('|');
+				symResults.push(row);
+
+			}
+
+			var reelArray = new Array(reelContainers);
+			for (i=0; i < reelContainers; i++){
+
+				//create container
+				var reel = new PIXI.Container();
+
+				reel.y = 20
+				reel.x = posX
+				ctnReelMain.addChild(reel);
+
+				ctnReel.push(reel);
+				posX += 124;
+				
+				var posY = -symbolH
+
+				for (j=0; j < reelSymbols; j++){
+					var sym = new PIXI.Sprite(
+						PIXI.loader.resources[textureArray[symResults[j][i]]].texture
+						);					
+
+					sym.x = 2
+					sym.y = posY
+					reel.addChild(sym);
+					posY += symbolH;
+				}
+			}
+
+			/**TODO!
+			- MASK THE REELS
+			...
+			- CREATE REEL CLASS
+			- INHERIT PIXIJS CONTAINER
+			- SET UP THE VARIABLES - ARRAY OF SYMBOLS
+			- STATE 
+			- UPDATE FUNCTION FOR THE SPIN
+			....
+			- CLICK EVENT ON THE BUTTON - START SPIN
+			- CREATE TIMER
+			- CREATE A STATE VAR (IDLE SPINNING STOPPED)
+			- MOVE SPRITE IN EACH REEL
+			- CHANGE TEXTURE WHEN THE TOP SYMBOLE HITS POS 0
+			- AFTER 3 SEC STOP REEL
+
+			**/
+			
+			//let symTen = new PIXI.Sprite(
+			//	PIXI.loader.resources['symTen'].texture
+			//	);
+
+		//function onButtonDown(btn, textureName){
+			btnInfo.on('pointerdown', onButtonDown);
+			function onButtonDown(){
+				this.isdown = true;
+				this.texture = tsInfoBtnDown;
+				this.alpha = 1;
+				//TweenLite.to(btnInfo, 4, {pixi:{positionX:20,positionY:300}});
+			}
+
+			function onButtonUp(){
+				 this.isdown = false;
+				 this.texture = textureName;
+			}
+
+			function onButtonOver(){
+				this.isOver = true;
+				if(this.isdown){
+					return
+				}
+				this.texture = textureButtonOver;
+			}
+
+			function onButtonOut()
+			{
+
+			}
+
+
+			function loadButtonImages() {
+				// body...
+			}
+			console.log('All files are loaded')
+		}
+	</script>
+</body>
+</html>
+
+

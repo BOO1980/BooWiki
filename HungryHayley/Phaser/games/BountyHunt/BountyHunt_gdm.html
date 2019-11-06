@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8"/>
+	<title>Bounty Hunt</title>
+	<script type="text/javascript">
+		function addListeners(_arr){
+			for(var i = 0;  i < _arr.length; i++){
+				document.getElementById(_arr[i]).addEventListener(
+					"touchstart",
+					function(e) {
+					//TODO
+					//TODO
+				}, false);
+		}
+	}
+	</script>
+	<style type="text/css">
+		#base_background{
+			/*TODO*/
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<!-- TODO -->
+<body onLoad="addListeners(['base_background'])">
+	
+	<div id="base_background"></div>
+
+</body>
+</html>

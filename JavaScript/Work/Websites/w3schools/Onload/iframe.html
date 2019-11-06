@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>This example demonstrates how to assign an "onload" event to an iframe element</p>
+	<iframe onload="myFunction()" src="https://www.w3schools.com/default.asp"></iframe>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById("demo").innerHTML = "Iframe is loaded";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy 1</title>
+	<script>
+		var price = 28.99;
+		var discount = 10;
+		var total = price - (price * (discount/100));
+
+		if(total>25){
+			freeShipping();
+		}
+
+		function freeShipping(){
+			alert("You get free shipping!");
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<h1> Do you get free shipping </h1>
+	<p>Price: £<span id="price"></span></p>
+	<p>Discount: <span id="discount"></span>%</p>
+	<p>Total: £<span id="total"></span></p>
+
+<script>
+	
+		document.getElementById('price').innerHTML = price;
+		document.getElementById('discount').innerHTML	= discount;
+		document.getElementById('total').innerHTML	= total;
+</script>
+
+</body>
+</html>
