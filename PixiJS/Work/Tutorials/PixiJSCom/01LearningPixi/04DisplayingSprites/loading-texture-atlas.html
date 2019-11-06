@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loading Texture Files</title>
+	<script src="../../../../Assets/Pixi/pixi.min.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		
+		//build app
+		let app = new PIXI.Application({
+			width: 250px,
+			height: 250px,
+			antialias: true,
+			transparent: false,
+			resolution:1
+		});
+
+		document.body.appendChild(app.view);
+		
+		//resources
+		var assetPath = "../../Assets/Images/"
+
+		//loader
+		PIXI.loader
+		.add("images/treasureHunter.json")
+		.load(setup);
+
+		//texture
+		let dungeon, explorer, treasure, id;
+
+		function setup(){
+
+			let dungeonTexture = 
+
+
+		}
+
+
+
+	</script>
+
+</body>
+</html>
