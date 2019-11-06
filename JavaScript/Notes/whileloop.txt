@@ -1,0 +1,5 @@
+a while statement starts with the keyword while
+While uses a boolean expression that we call a conditional test, or contidional
+If the conditional is trure, everything is the code bloxk is executed
+The code block is everything between the curly braces
+if the contional is true then after we execute the code block we loop back around and do it all again if the conditional is false we stop looping
