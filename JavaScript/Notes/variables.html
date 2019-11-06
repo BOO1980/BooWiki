@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Variables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Assets/Styles/default.css" type="text/css">
+</head>
+<body>
+<h1>Variables</h1>
+<ul>
+    <li>A Variable is nothing more than a named reference to a piece of data</li>
+    <li>Variables are case sensitive</li>
+    <li>A Variable can hold a string, a number, a boolean, an array, another object, or a function reference</li>
+    <li>When you define a variable using the var keyword means you can access these variables on a local scope</li>
+    <li>If a variable is defined without the var keyword then the variable will be a global variable (which should be avoided)
+        <ul>
+            <li>The reason why you should avoid global variables is because the application is part of a larger JavaScript application</li>
+            <li>A variable of the same name may be in use in another part of the code in another file - and can be overridden whatever data is originally contained</li>
+            <li>Another libraries script could override the variable if it was global</li>
+        </ul>
+    </li>
+    <li>Variables in JavaScript are basically named buckets of data, a way of creating a reference to that data so you are able to access that data again and again</li>
+    <li>Variables can use variables to persist data from one process to another.</li>
+    <li>Setting the scope of the variable is important if you have global variables with the same name</li>
+    <li>A variable can hold different data types at different times depending on context</li>
+    <li>You do not need to declare the data type of the variable</li>
+    <li>Variables in JavaScript are most likely to change datatype without notice</li>
+    <li>JavaScript variables have a identifier, scope, and a specific data type.</li>
+    <li>Each variable has an identifier which is unique that is unique to the scope of use- the identifier consists of a combination of letters, digits, underscores and dollar signs</li>
+    <li>Start variables with a letter, an underscore or a dollar sign</li>
+    <li>JavaScript has built in keywords, these keywords are off limits as variable names</li>
+</ul>
+<h2>The rules regarding scope</h2>
+<ul>
+    <li>If you declare a variable with the var keyword in a function or block of code, its use is local to that function</li>
+    <li>if you use a variable without declaring its var keyword, and a global variable of the same name exists, the local variable is assumed to be the already existing global variable</li>
+    <li>If you declare a variable locally with a var keyword, but you do not initialise it (i.e. assigned a value) it is local and accessible but not defined</li>
+    <li>If you declare a variable locally without the var keyword, or explicitly declare it globally but do not initialise it, it is accessible globally but again not defined.</li>
+</ul>
+
+<h4 class="example-text">Declaring a variable</h4>
+<div class="example">
+    <pre>
+        <code>var x;</code>
+    </pre>
+    <p>declaring a variable.</p>
+</div>
+<div class="example">
+    <pre>
+        <code>var winners = 2;</code>
+    </pre>
+    <p>This statement declares a variable named winners and assigns a numeric value of 2 to it.</p>
+</div>
+<div class="example">
+    <pre>
+        <code>var name = "Duke";</code>
+    </pre>
+    <p>This statement assigns a string of characters to the variable name.</p>
+</div>
+<div class="example">
+    <pre>
+        <code>var isEligible = false;</code>
+    </pre>
+    <p>This statement assigns the value false to the variable isEligible.  We call true/false values "booleans"</p>
+</div>
+<div class="example">
+    <pre>
+        <code>var losers;</code>
+    </pre>
+    <p>If you want to create a variable without an initial value you can then assign it a value later.</p>
+</div>
+
+
+
+</body>
+</html>

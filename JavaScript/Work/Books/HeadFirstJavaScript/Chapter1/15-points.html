@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Points</title>
+</head>
+<body>
+	<p>some points <span id='points'></span></p>
+	<script type="text/javascript">
+		var level = 5;
+		var points = 30000;
+		var bonus = 3300;
+
+		var ans = (level * points) + bonus;
+
+		document.getElementById('points').innerHTML = ans;
+	</script>
+</body>
+</html>

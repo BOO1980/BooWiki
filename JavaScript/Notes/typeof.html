@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type Of</title>
+</head>
+<body>
+
+
+	<p id="valueNum"></p>
+	<p id="valueBool"></p>
+	<p id="valueString"></p>
+	<p id="valueNull"></p>
+	<p id="valueArray"></p>
+
+
+
+	<script type="text/javascript">
+		let valueNum = 99;
+		let valueBool = false;
+		let valueString = "boooooom";
+		let valueNull;
+		let valueArray = [];
+
+
+		document.getElementById("valueNum").innerHTML  = typeof(valueNum);
+		document.getElementById("valueBool").innerHTML  = typeof(valueBool);
+		document.getElementById("valueString").innerHTML  = typeof(valueString);
+		document.getElementById("valueNull").innerHTML  = typeof(valueNull);
+		document.getElementById("valueArray").innerHTML  = typeof(valueArray);
+
+	</script>
+</body>
+</html>
