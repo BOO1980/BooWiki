@@ -12,223 +12,223 @@
 					function(e) {
 						e.preventDefault();
 						e.stopProgation();
-				}, false);
+					}, false);
+			}
 		}
-	}
 	</script>
-    <style type="text/css" >
-        html {
-            background: url(media/static/background_base.jpg) no-repeat center center fixed;
+	<style type="text/css" >
+		html {
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
 			/*TODO*/
-            background-size: cover;
-      		 /*TODO*/
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
- 			/*TODO*/
-            cursor: inherit;
-        }
-        body {
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #base_background{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background: url(media/static/background_base.jpg) no-repeat center center fixed;
- 			/*TODO*/
-            background-size: cover;
- 			/*TODO*/
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #free_background{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background: url(media/static/background_freespins.jpg) no-repeat center center fixed;
-			 /*TODO*/
-            background-size: cover;
- 			/*TODO*/
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display:none;
-        }
-        #content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 5;
+			background-size: cover;
+			/*TODO*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			/*TODO*/
+			cursor: inherit;
+		}
+		body {
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#base_background{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			/*TODO*/
+			background-size: cover;
+			/*TODO*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#free_background{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: url(media/static/background_freespins.jpg) no-repeat center center fixed;
+			/*TODO*/
+			background-size: cover;
+			/*TODO*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display:none;
+		}
+		#content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 5;
 
-            max-width: 100%;
-            max-height: 100%;
-        }
-        #cover{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-            background: url(media/static/background_base.jpg) no-repeat center center fixed;
-			 /*TODO*/
-            background-size: cover;
- 			/*TODO*/
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        #flipimage {
-            position: fixed;
-            top: 0;
-            left: 0;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		#cover{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			/*TODO*/
+			background-size: cover;
+			/*TODO*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#flipimage {
+			position: fixed;
+			top: 0;
+			left: 0;
 
-            /* Preserve aspet ratio */
-            min-width: 100%;
-            min-height: 100%;
-        }
-        #flipimage img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            max-width: 50%;
-            max-height: 50%;
-        }
-        #turn{
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-            background: url(media/static/background_base.jpg) no-repeat center center fixed;
- 			/*TODO*/
-            background-size: cover;
- 			/*TODO*/
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display:none;
-        }
+			/* Preserve aspet ratio */
+			min-width: 100%;
+			min-height: 100%;
+		}
+		#flipimage img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			max-width: 50%;
+			max-height: 50%;
+		}
+		#turn{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			/*TODO*/
+			background-size: cover;
+			/*TODO*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display:none;
+		}
 
-        #free_rounds {
-            z-index: 8;
-            position: absolute;
-            top: 45%;
-            left: 50%;
-             /*TODO*/
-            padding: 0.75vw;
-            display:none;
+		#free_rounds {
+			z-index: 8;
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			/*TODO*/
+			padding: 0.75vw;
+			display:none;
 
-            border-style: solid;
-            border-color: #006699;
-            background-color: rgba(0,0,0,0.8);
-            border-radius: 1vw;
-            border-width: 0.2vw;
+			border-style: solid;
+			border-color: #006699;
+			background-color: rgba(0,0,0,0.8);
+			border-radius: 1vw;
+			border-width: 0.2vw;
 
- 			/*TODO*/
+			/*TODO*/
 
-            max-width: 40%;
-        }
-        #free_rounds_container {
+			max-width: 40%;
+		}
+		#free_rounds_container {
 
-            padding: 0.5vw;
-            border-radius: 1vw;
-            /*TODO*/
-        }
-        #free_rounds_title {
-            font-family: "Arial";
-            font-size: 2vw;
-            font-weight: bold;
-            color: #fbd000;
-            text-align: center;
-            margin-top: 0px;
-            margin-bottom: 1vw;
-            text-shadow: 3px 3px 2px rgba(0,0,0,1);
-        }
-        #free_rounds_blocker {
-            z-index: 7;
-            position: absolute;
-            top:0;
-            left:0;
-            border: 0;
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: rgba(0,0,0,0.4);
-            display:none;
-        }
-        #free_rounds_message {
-            font-family: "Arial";
-            font-size:1.5vw;
-            color: #ccffff;
-            text-align: center;
-            text-shadow: 2px 2px 1px rgba(0,0,0,1);
-        }
-        #free_rounds_ok {
-            margin-left: 37.5%;
-            padding-bottom: 0.5vw;
-            padding-top: 0.5vw;
+			padding: 0.5vw;
+			border-radius: 1vw;
+			/*TODO*/
+		}
+		#free_rounds_title {
+			font-family: "Arial";
+			font-size: 2vw;
+			font-weight: bold;
+			color: #fbd000;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 1vw;
+			text-shadow: 3px 3px 2px rgba(0,0,0,1);
+		}
+		#free_rounds_blocker {
+			z-index: 7;
+			position: absolute;
+			top:0;
+			left:0;
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: rgba(0,0,0,0.4);
+			display:none;
+		}
+		#free_rounds_message {
+			font-family: "Arial";
+			font-size:1.5vw;
+			color: #ccffff;
+			text-align: center;
+			text-shadow: 2px 2px 1px rgba(0,0,0,1);
+		}
+		#free_rounds_ok {
+			margin-left: 37.5%;
+			padding-bottom: 0.5vw;
+			padding-top: 0.5vw;
 
-            font-family: "Arial";
-            font-size:1.5vw;
-            color: #4d4d4d;
-            text-align: center;
-            font-weight: bold;
+			font-family: "Arial";
+			font-size:1.5vw;
+			color: #4d4d4d;
+			text-align: center;
+			font-weight: bold;
 
-            background-color: #d8d8d8;
+			background-color: #d8d8d8;
 
-            border-style: solid;
-            border-width: 0.25vw;
-            border-color: #339999;
-            border-radius: 0.5vw;
+			border-style: solid;
+			border-width: 0.25vw;
+			border-color: #339999;
+			border-radius: 0.5vw;
 
-            width: 25%;
-        }
-        #free_rounds_ok:hover {
-            background-color: #e8e8e8;
-            color: #6d6d6d;
-        }
-    </style>
+			width: 25%;
+		}
+		#free_rounds_ok:hover {
+			background-color: #e8e8e8;
+			color: #6d6d6d;
+		}
+	</style>
 </head>
 <!-- TODO -->
 <!-- <body> -->
-<!--  -->	
-<body onLoad="addListeners(['turn','cover','base_background','free_background']);>
-<div id="base_background"></div>
-<div id="free_background"></div>
-<div id="content"></div>
-<div id="free_rounds_blocker"></div>
-<div id="free_rounds">
-    <div id="free_rounds_container">
-        <h1 id="free_rounds_title">Free Spins</h1>
-        <div id="free_rounds_message"></div>
-        <br/>
+	<!--  -->	
+	<body onLoad="addListeners(['turn','cover','base_background','free_background']);">
+		<div id="base_background"></div>
+		<div id="free_background"></div>
+		<div id="content"></div>
+		<div id="free_rounds_blocker"></div>
+		<div id="free_rounds">
+			<div id="free_rounds_container">
+				<h1 id="free_rounds_title">Free Spins</h1>
+				<div id="free_rounds_message"></div>
+				<br/>
 <!--         <button id="free_rounds_ok" onClick="apiExt('LGP_FRM_OK_CLICKED');">OK</button>
- -->    </div>
+-->    </div>
 </div>
 <div id="turn">
-    <div id="flipimage">
-        <img src="media/static/flipimage.png" alt="">
-    </div>
+	<div id="flipimage">
+		<img src="media/static/flipimage.png" alt="">
+	</div>
 </div>
 <div id="cover"></div>
 </body>
