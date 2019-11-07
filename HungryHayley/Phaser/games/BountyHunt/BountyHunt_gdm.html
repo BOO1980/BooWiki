@@ -17,6 +17,27 @@
 	}
 	</script>
 	<style type="text/css">
+		html{
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			/*todo*/
+			background-size: cover;
+			/*todo*/
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			/*todo*/
+			cursor: inherit;
+
+		}
+		body{
+			border:0;
+			height: 100%
+			width:100%;
+			margin:0;
+			padding: 0;
+		}
 		#base_background{
 			/*TODO*/
 			position: absolute;
@@ -52,7 +73,51 @@
 			max-width: 100%;
 			max-height: 100%;
 		}
+		#cover{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			border:0;
+			height:100%;
+			width:100%;
+			margin: 0;
+			padding:0;
+		}
+		#flipimage{
+			position: fixed;
+			top:0;
+			left: 0;
 
+			/*Preserve aspect ratio*/
+			min-width: 100%;
+			min-height:100%;
+		}
+		#flipimage img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			max-width: 50%;
+			max-height: 50%;
+		}
+		#turn{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			background: url(media/static/background_base.jpg) no-repeat center center fixed;
+			background-size: cover;
+			border:0;
+			height: 100%;
+			width:100%;
+			margin: 0;
+			padding: 0;
+			display: none;
+		}
 		#free_rounds{
 			z-index: 8;
 			position: absolute;
@@ -84,7 +149,6 @@
 			margin-top: 0px;
 			margin-bottom: 1vw;
 			text-shadow: 3px 3px 2px rgba(0,0,0,1);
-
 		}
 		#free_rounds_blocker{
 			z-index: 7;
@@ -106,7 +170,30 @@
 			text-align: center;
 			/*todo*/
 		}
+        #free_rounds_ok {
+            margin-left: 37.5%;
+            padding-bottom: 0.5vw;
+            padding-top: 0.5vw;
 
+            font-family: "Arial";
+            font-size:1.5vw;
+            color: #4d4d4d;
+            text-align: center;
+            font-weight: bold;
+
+            background-color: #d8d8d8;
+
+            border-style: solid;
+            border-width: 0.25vw;
+            border-color: #339999;
+            border-radius: 0.5vw;
+
+            width: 25%;
+        }
+        #free_rounds_ok:hover {
+            background-color: #e8e8e8;
+            color: #6d6d6d;
+        }
 	</style>
 </head>
 <!-- TODO -->
