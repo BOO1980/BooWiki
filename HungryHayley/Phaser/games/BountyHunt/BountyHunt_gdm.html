@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Bounty Hunt</title>
+	<script src="../../src/phaser/phaser.min.js?v1_0_17"></script>
 	<script type="text/javascript">
 		function addListeners(_arr){
 			for(var i = 0;  i < _arr.length; i++){
 				document.getElementById(_arr[i]).addEventListener(
 					"touchstart",
 					function(e) {
-					//TODO
-					//TODO
+						e.preventDefault();
+						e.stopProgation();
 				}, false);
 		}
 	}
@@ -28,13 +29,30 @@
 			width: 100%;
 			margin: 0;
 			padding: 0;
+			/*display: none;*/
 		}
+		#free_background{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background: url(media/static/background_freespins.jpg) no-repeat center center fixed;
+			border: 0;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: none;
+		}
+
 	</style>
 </head>
 <!-- TODO -->
-<body onLoad="addListeners(['base_background'])">
+<body>
+<!-- <body onLoad="addListeners(['base_background','free_background'])"> -->
 	
 	<div id="base_background"></div>
+	<div id="free_background"></div>
 
 </body>
 </html>
