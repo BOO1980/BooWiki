@@ -99,20 +99,38 @@
 			background-color: rgba(0,0,0,0.4);
 			display: none;
 		}
+		#free_rounds_message{
+			font-synthesis: "Arial";
+			font-size: 1.5vw;
+			color:#ccffff;
+			text-align: center;
+			/*todo*/
+		}
 
 	</style>
 </head>
 <!-- TODO -->
 <!-- <body> -->
 <!--  -->	
-<body onLoad="addListeners(['base_background','free_background'])">
+<body onLoad="addListeners(['turn','cover','base_background','free_background'])">
 	
 	<div id="base_background"></div>
 	<div id="free_background"></div>
 	<div id="content"></div>
 	<div id="free_rounds_blocker"></div>
-	<div id="free_rounds"></div>
-		<div id="free_rounds_container"></div>
-		<h1 id=free_rounds_title>Free Spins</h1>
+	<div id="free_rounds">
+		<div id="free_rounds_container">
+			<h1 id=free_rounds_title>Free Spins</h1>
+			<div id="free_rounds_message"></div>
+			<br/>
+			<!-- TODO -->
+		</div>
+	</div>
+	<div id="turn">
+		<div id="flipimage">
+			<img src="media/static/flipimage.png" alt="">
+		</div>
+	</div>
+	<div id="cover"></div>
 </body>
 </html>
