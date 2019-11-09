@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Equality</title>
+</head>
+<body>
+		<h1>Object Equality</h1>
+		<ul>
+			<li> == should be avoided, it is only useful in rare cases</li>
+			<li> == is not type safe <ul><li>
+				"42"== 42</li>
+				<li>0 == false</li>
+				<li>null == undefined</li>
+				<li>"" == 0</li>
+				<li>[1,2] == "1,2"</li>
+			</li>
+			<li> === Is the most commonly used and should be used in all cases</li>
+			<li>Object.is() is less commonly used.  it is like === except for a few mathematical differences</li>
+			<li>=== and object.is() are both type-safe</li>
+			<li>=== is convientent and concise</li>
+			<li>object.is() is more verbose</li>
+			<li> === NaN is not equal to Nan</li>
+			<li> Object.is() NaN equals NaN</li>
+		</ul>
+</body>
+</html>
