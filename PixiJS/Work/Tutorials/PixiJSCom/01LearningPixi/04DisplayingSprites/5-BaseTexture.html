@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Alisas</title>
+	<script src="../../../../../pixi.min.js"></script>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		let Application = PIXI.Application,
+			loader = PIXI.loader,
+			resources = PIXI.loader.resources,
+			Sprite = PIXI.Sprite;
+
+		//Create PIXI Application
+		let app = new PIXI.Application({
+			width:256,
+			height:256,
+			antialias: true,
+			transparent: false,
+			resolution: 1
+		});
+
+		/**Add the canvas that Pixi automatically created for you to the HTML document*/
+		document.body.appendChild(app.view);
+
+		loader
+			.add("catImage","../../../../Assets/Images/cat.png")
+			.on("progress", loadProgressHandler)
+			.load(setup);
+
+		function loadProgressHandler(loader, resource){
+			console.log("loading:" + resource.url);
+			console.log("progress:" + loader.progress + "%");
+
+		}
+		function setup()
+		{		
+			let cat = new Sprite(resources.catImage.texture);
+
+			app.stage.addChild(cat);
+			console.log("All files are loaded")
+		}
+		</script>
+	</body>
+	</html>

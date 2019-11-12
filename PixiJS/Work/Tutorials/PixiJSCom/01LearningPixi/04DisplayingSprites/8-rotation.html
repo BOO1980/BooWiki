@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Sprites</title>
+	<script src="../../../../../pixi.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let app = PIXI.Application,
+			loader = PIXI.loader,
+			resources = PIXI.loader.resources,
+			Sprite = PIXI.Sprite;
+		
+
+		app = new PIXI.Application({
+			width:250,
+			height:250,
+			antialias: true,
+			transparent: false,
+			resolution: 1
+		});
+
+		document.body.appendChild(app.view);
+
+		loader
+			.add("catImage","../../../../Assets/Images/cat.png")
+			//.on("progress", loadProgressHandler)
+			.load(setup);
+
+
+		function loadProgressHandler(loader, resource){
+			console.log("loading:" + resource.url);
+			console.log("progress:" + loader.progress + "%");
+		}
+
+		function setup(){
+
+			let cat = new Sprite(resources.catImage.texture);
+
+			//Positioning
+			x =96;
+			y =96;
+
+			//Size
+			//cat.width =80;
+			//cat.height =120;
+
+			//Rotation
+
+
+			cat.anchor.x = 0.5;
+			cat.anchor.y = 0.5;
+
+			cat.rotation = 0.5;
+
+
+			//cat.anchor.set(0.5,0.5);
+
+			//cat.rotation = 0.5;
+
+			//changeSize(cat, 80, 120);
+			// halfSize(cat);
+			cat.position.set(x,y)
+			app.stage.addChild(cat)
+
+		}
+
+		function halfSize(sprite){
+			sprite.scale.x = 0.5;
+			sprite.scale.y = 0.5;
+		}
+
+		function changeSize(sprite, w, h){
+			sprite.width = w;
+			sprite.height = h;
+		}
+
+	</script>
+
+</body>
+</html>

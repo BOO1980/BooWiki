@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tileset sub-image</title>
+	<script src="../../../../../pixi.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let app = PIXI.Application,
+			loader = PIXI.loader,
+			Sprite = PIXI.Sprite,
+			Rectangle = PIXI.Rectangle;
+
+		app = new PIXI.Application(
+		{
+			width: 800,
+			height: 600,
+			antialias: true,
+			transparent: false,
+			resolution: 1
+		})
+
+		document.body.appendChild(app.view);
+		var imageSet = "../../../../Assets/Images/tileset.png"
+
+		loader
+			.add([imageSet])
+			.load(setup);
+
+		function setup(){
+			//Creates the tileset sprite from the texture
+			 let texture = PIXI.TextureCache[imageSet];
+
+	/*		 var img = new PIXI.Texture(PIXI.loader.resources[imageSet].texture, new PIXI.Rectangle(0,0,64,64));
+*/			
+			//Tell the texture to use that rectangular section
+			let rectangle = new Rectangle(192,128,64,64)
+			
+			//tell the texture to use that rectangular section
+			texture.frame = rectangle;
+
+			//Create the sprite from the texture
+			let rocket = new Sprite(texture);
+
+			//Position rocket on the canvas
+			rocket.x = 32;
+			rocket.y = 32;
+
+			//Add rocket to the stage
+			app.stage.addChild(rocket);
+			//Render the stage
+			app.renderer.render(app.stage);
+		}
+	</script>
+</body>
+</html>

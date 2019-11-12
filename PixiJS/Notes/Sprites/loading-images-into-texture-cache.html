@@ -6,6 +6,7 @@
 <body>
 	<h1>Loading images into the texture cache</h1>
 	<ul><li>Because Pixi renders the image on the GPU with WebGL, the image needs to be in a format that the GPU can process</li>
+		<li>A WebGL image is called a texture</li>
 		<li>Before you can make a sprite display an image, you need to convert an ordinary image file into a WebGL texture</li>
 		<li>To keep everything working fast and efficiently, Pixi uses a texture cache to store and reference all the textures your sprites will need.</li>
 		<li>The name of the textures are strings that match the file locations of the images they refer to</li>
