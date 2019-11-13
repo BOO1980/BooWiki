@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://localhost:8888/pixi.min.js"></script>
+	<title>Moving Sprites</title>
+</head>
+<body>
+		<h1>Moving Sprites</h1>
+		<button onclick="moveAcross()">Move Across</button>
+		<script type="text/javascript">
+			
+			let Application = PIXI.Application,
+    			Container = PIXI.Container,
+    			loader = PIXI.loader,
+    			resources = PIXI.loader.resources,
+    			TextureCache = PIXI.utils.TextureCache,
+    			Sprite = PIXI.Sprite;
+    		//	Rectangle = PIXI.Rectangle;
+			
+			app = new Application({
+				width: 256,
+				height: 256,
+				antialiasing: true,
+				transparent: false,
+				resolution: 1
+
+			});
+
+			document.body.appendChild(app.view);
+
+			loader
+				.add("../../../../Assets/Images/cat.png")
+				//.on("progress", loadProgressHandler)
+				//.load(directTextureCache);
+				//.load(loaderResource);
+				.load(setup);
+
+			//Define any variables that are used in more than one function
+			let cat;
+
+			function setup(){
+				/*Start the game loop by adding the game loop functio to the Pixi's ticker and providing it with a delta argument*/
+				cat = new Sprite(resources["../../../../Assets/Images/cat.png"].texture);
+				cat.y = 96;
+				app.stage.addChild(cat);	
+			}
+
+			function gameLoop(){
+				//Move the cat one pixel
+				cat.x += 1;
+			}
+
+			function moveAcross(){
+				app.ticker.add(delta => gameLoop(delta));
+			}
+
+		</script>
+</body>
+</html>
