@@ -2,9 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<!--<script src="./Pixi/pixi.min.js"></script>-->
-	<!--<script src="D:/Study/Programming/BooWiki/PixiJS/Work/Assets/Pixi/pixi.min.js"></script>-->
-	<script src="../../../../../pixi.min.js"></script>
+	<script src="http://localhost:8888/pixi.min.js"></script>
+	<script ds="text/javascript"></script>
 	<title>Loading image into the texture cache</title>
 </head>
 <body>
@@ -25,12 +24,12 @@
 	 	//let catSprite = new PIXI.Sprite(catTexture);
 		
 		PIXI.loader
-			.add("../../../../Assets/Images/cat.png")
+			.add("http://localhost:8888/Assets/Images/cat.png")
 			.load(setup);
 
 		function setup(){
 		let sprite = new PIXI.Sprite(
-				PIXI.loader.resources["../../../../Assets/Images/cat.png"].texture
+				PIXI.loader.resources["http://localhost:8888/Assets/Images/cat.png"].texture
 				);
 			app.stage.addChild(sprite);	
 		}

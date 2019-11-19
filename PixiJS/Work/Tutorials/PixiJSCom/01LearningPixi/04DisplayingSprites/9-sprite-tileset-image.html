@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Tileset sub-image</title>
-	<script src="../../../../../pixi.min.js"></script>
+	<script src="http://localhost:8888/pixi.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript">
@@ -10,7 +10,9 @@
 		let app = PIXI.Application,
 			loader = PIXI.loader,
 			Sprite = PIXI.Sprite,
+			TextureCache = PIXI.utils.TextureCache,
 			Rectangle = PIXI.Rectangle;
+
 
 		app = new PIXI.Application(
 		{
@@ -22,7 +24,7 @@
 		})
 
 		document.body.appendChild(app.view);
-		var imageSet = "../../../../Assets/Images/tileset.png"
+		var imageSet = "http://localhost:8888/Assets/Images/tileset.png"
 
 		loader
 			.add([imageSet])
@@ -30,7 +32,7 @@
 
 		function setup(){
 			//Creates the tileset sprite from the texture
-			 let texture = PIXI.TextureCache[imageSet];
+			 let texture = TextureCache["http://localhost:8888/Assets/Images/tileset.png"];
 
 	/*		 var img = new PIXI.Texture(PIXI.loader.resources[imageSet].texture, new PIXI.Rectangle(0,0,64,64));
 	

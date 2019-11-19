@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Displaying Sprites</title>
-	<script src="../../../../../pixi.min.js"></script>
+	<script src="http://localhost:8888/pixi.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript">
@@ -17,13 +17,13 @@
 		document.body.appendChild(app.view);
 
 		PIXI.loader
-		.add("../../../../Assets/Images/cat.png")
+		.add("http://localhost:8888/Assets/Images/cat.png")
 		.load(setup);
 
 		function setup()
 		{
 
-			let cat = new PIXI.Sprite(PIXI.loader.resources["../../../../Assets/Images/cat.png"].texture);
+			let cat = new PIXI.Sprite(PIXI.loader.resources["http://localhost:8888/Assets/Images/cat.png"].texture);
 
 			app.stage.addChild(cat);
 			// app.stage.removeChild(cat);

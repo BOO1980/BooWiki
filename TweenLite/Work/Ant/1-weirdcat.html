@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://localhost:8888/pixi.min.js"></script>
+	<script src="http://localhost:8888/TweenLite.min.js"></script>
+	<script src="http://localhost:8888/TweenMax.min.js"></script>
+	<script src="http://localhost:8888/PixiPlugin.min.js"></script>
+
+	<title>Moving Sprites</title>
+</head>
+<body>
+		<h1>Moving Sprites</h1>
+		<button onclick="moveH()">Move Horizontal</button>
+		<button onclick="moveV()">Move Vertical</button>
+		<button onclick="fatCat()">Fat Cat</button>
+		<button onclick="skewCat()">Skew Cat</button>
+		<button onclick="rotateCat1()">rotatoe</button>
+		<button onclick="rotateCat2()">rotatoe2</button>
+		<button onclick="catFuck()">Fuck cat up</button>
+		<button onclick="newCat()">Add cat</button>
+		<button onclick="resetCat()">reset cat</button>
+		<button onclick="getCatStatus()">cat stats</button>
+		<button onclick="boxCat()">boxCat</button>
+		<br>
+		<script type="text/javascript">
+
+			let catArray=[];
+			
+			let Application = PIXI.Application,
+    			Container = PIXI.Container,
+    			loader = PIXI.loader,
+    			resources = PIXI.loader.resources,
+    			TextureCache = PIXI.utils.TextureCache,
+    			Sprite = PIXI.Sprite;
+    		//	Rectangle = PIXI.Rectangle;
+			
+			app = new Application({
+				width: 256,
+				height: 256,
+				antialiasing: true,
+				transparent: false,
+				resolution: 1
+
+			});
+
+			document.body.appendChild(app.view);
+
+			loader
+				.add("http://localhost:8888/Assets/Images/cat.png")
+				.load(newCat);
+
+			//Define any variables that are used in more than one function
+			let cat;
+
+			function newCat(){
+				/*Start the game loop by adding the game loop functio to the Pixi's ticker and providing it with a delta argument*/
+				cat = new Sprite(resources["http://localhost:8888/Assets/Images/cat.png"].texture);
+				catArray.push(cat);			
+				//cat.y = 0;
+				//getCatStatus();
+				showCat()
+			}
+
+			function showCat(){
+				app.stage.addChild(cat);	
+			}
+
+			function gameLoop(){
+				//Move the cat one pixel
+				cat.x += 1;
+			}
+
+			function moveH(x){
+				var x = x;
+				if(x == null){
+					TweenMax.to(cat, 1 , {x:100});
+				}else{
+					TweenMax.to(cat, 1 , {x:x});
+				}
+			}
+
+			function getCatStatus(){
+				console.log("cat x is: " + cat.x);
+			}
+
+			function moveV(){
+				TweenMax.to(cat, 1, {y:100});
+			}
+
+			function fatCat(){
+
+				TweenMax.to(cat.scale, 1, {x:2, y:1.5});
+			}
+
+			function skewCat(){
+
+				TweenMax.to(cat.skew, 1, {x:30 * Math.PI/180});
+			}
+
+			function rotateCat1(){
+
+				//TweenMax.to(cat, 1, {rotation:60 * Math.PI / 180});
+				//TweenMax.to(cat, 1,{pixi:{rotation:27, duration:1}});
+
+				TweenMax.to(cat, 1,{rotation:27, duration:1});
+			}
+
+			function rotateCat2(){
+
+				TweenMax.to(cat, 1,{pixi:{rotation:27, duration:1}});
+			}
+
+			function catFuck(){
+
+				TweenMax.to(cat, 1, {pixi:{scaleX:2, scaleY:1.5, skewX:30, rotation:60}});
+			}
+
+			function resetCat(){
+
+				TweenMax.to(cat, 1 , {x:0});
+				TweenMax.to(cat, 1 , {y:0});
+				TweenMax.to(cat.scale, 1, {x:1, y:1});
+				TweenMax.to(cat.skew, 1, {x:0});
+				TweenMax.to(cat, 1,{pixi:{rotation:0}});
+
+			}
+
+			function boxCat(){
+				//TweenMax.to(cat, {pixi:{rotation:27, x:100, duration:1}});
+				TweenMax.to(cat, 0, {pixi:{rotation:27}});
+
+
+			}
+
+
+		</script>
+</body>
+</html>

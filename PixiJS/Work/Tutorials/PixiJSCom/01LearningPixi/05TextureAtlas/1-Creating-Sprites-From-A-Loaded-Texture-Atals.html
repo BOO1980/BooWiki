@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="../../../../../pixi.min.js"></script>
+	<script src="http://localhost:8888/pixi.min.js"></script>
 	<title>Creating Sprites from a loaded texture atlas</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
 
 			//Load a JSON file and run the setup function when its done
 			loader
-				.add("../../../../Assets/Images/treasureHunter.json")
+				.add("http://localhost:8888/Assets/Images/treasureHunter.json")
 				//.on("progress", loadProgressHandler)
 				//.load(directTextureCache);
 				//.load(loaderResource);
@@ -59,24 +59,22 @@
 				treasure.x = app.renderer.width - treasure.width - 48;
 				treasure.y = app.renderer.height/2 - treasure.height/2;
 				app.stage.addChild(treasure);
-
 			}
-
 			
 			//2 Access the texture using through the loaders resources
 			function loaderResource(){
 
-				let dungeonTexture = new Sprite(resources["../../../../Assets/Images/treasureHunter.json"].textures["dungeon.png"]);
+				let dungeonTexture = new Sprite(resources["http://localhost:8888/Assets/Images/treasureHunter.json"].textures["dungeon.png"]);
 				app.stage.addChild(dungeonTexture);
 
-				explorer = new Sprite(resources["../../../../Assets/Images/treasureHunter.json"].textures["explorer.png"]);
+				explorer = new Sprite(resources["http://localhost:8888/Images/treasureHunter.json"].textures["explorer.png"]);
 				
 				explorer.x = 68;
 				//Center the explorter vertically
 				explorer.y = app.renderer.height / 2 - explorer.height / 2;
 				app.stage.addChild(explorer);
 
-				treasure = new Sprite(resources["../../../../Assets/Images/treasureHunter.json"].textures["treasure.png"]);
+				treasure = new Sprite(resources["http://localhost:8888/Assets/Images/treasureHunter.json"].textures["treasure.png"]);
 				treasure.x = app.renderer.width - treasure.width - 48;
 				treasure.y = app.renderer.height/2 - treasure.height/2;
 				app.stage.addChild(treasure);
@@ -84,7 +82,7 @@
 
 			//*3 Create an optional alias called id for all the texture atlas frame id textures*/
 			function aliasID(){
-				id = PIXI.loader.resources["../../../../Assets/Images/treasureHunter.json"].textures;
+				id = PIXI.loader.resources["http://localhost:8888/Assets/Images/treasureHunter.json"].textures;
 				
 				let dungeonTexture = new Sprite(id["dungeon.png"]);
 				app.stage.addChild(dungeonTexture);

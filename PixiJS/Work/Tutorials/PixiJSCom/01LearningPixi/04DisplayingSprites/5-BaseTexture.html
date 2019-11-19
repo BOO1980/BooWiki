@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Using Alisas</title>
-	<script src="../../../../../pixi.min.js"></script>
+	<script src="http://localhost:8888/pixi.min.js"></script>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
 		document.body.appendChild(app.view);
 
 		loader
-			.add("catImage","../../../../Assets/Images/cat.png")
+			.add("catImage","http://localhost:8888/Assets/Images/cat.png")
 			.on("progress", loadProgressHandler)
 			.load(setup);
 
