@@ -5,136 +5,191 @@
 	<script src="http://localhost:8888/TweenLite.min.js"></script>
 	<script src="http://localhost:8888/TweenMax.min.js"></script>
 	<script src="http://localhost:8888/PixiPlugin.min.js"></script>
+	<style>
+
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.navbar a  {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn, button{
+			cursor: pointer;
+			font-size: 16px;  
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: grey;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.dropdown:hover .dropbtn, .dropbtn:focus, button {
+			background-color: red;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.show {
+			display: block;
+		}
+	</style>
 	<title>Mouse</title>
 </head>
-<body>
-	<button onclick="startAnim()">Start</button>
-	<button onclick="stopAnim()">Stop</button>
-	<button onclick="dropdown()">DropDown</button>
-	<div id="dropDown"" class="dropdown-content">
-		
-
+<body>.
+	<div class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn" onclick="dropDown()">Animation List
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div id="myDropdown" class="dropdown-content"></div>
+		</div>
+		<button class="dropbtn" onclick="stopAnim()">Stop Animation</button>
 	</div>
-
+	
 	<script type="text/javascript">	
-
 		var app = PIXI.Application,
-			loader = PIXI.loader,
-			Sprite = PIXI.Sprite,
-			Texture = PIXI.Texture,
-			TextureCache = PIXI.utils.TextureCache,
-			Rectangle = PIXI.Rectangle,
-			animArr = [],
-			imagesArr = [
-				{
-					animName: "mouseBlindJump",
-					animFileName: "mouseBlindJumpUp.png",
-					charCountH: 4,
-					charCountV: 3,
-					charCount: 12
-				},
-				{
-					animName: "mouseFly",
-					animFileName: "mouseFly.png",
-					charCountH: 4,
-					charCountV:4,
-					charCount: 12
-				},
-				{
-					animName: "mouseJump",
-					animFileName: "mouseJump.png",
-					charCountH: 5,
-					charCountV:4,
-					charCount: 17
-				},
-				{
-					animName: "mouseLand",
-					animFileName: "mouseLand.png",
-					charCountH: 5,
-					charCountV:4,
-					charCount: 12
-				},
-				{
-					animName: "mouseLick",
-					animFileName: "mouseLick.png",
-					charCountH: 4,
-					charCountV:4,
-					charCount: 12
-				},
-			] 
+		loader = PIXI.loader,
+		Sprite = PIXI.Sprite,
+		Texture = PIXI.Texture,
+		TextureCache = PIXI.utils.TextureCache,
+		Rectangle = PIXI.Rectangle,
+		animArr = [],
+		imagesArr = [
+		{
+			animName: "mouseBlindJump",
+			animFileName: "mouseBlindJumpUp.png",
+			charCountH: 4,
+			charCountV: 3,
+			charCount: 12
+		},
+		{
+			animName: "mouseFly",
+			animFileName: "mouseFly.png",
+			charCountH: 4,
+			charCountV:4,
+			charCount: 12
+		},
+		{
+			animName: "mouseJump",
+			animFileName: "mouseJump.png",
+			charCountH: 5,
+			charCountV:4,
+			charCount: 17
+		},
+		{
+			animName: "mouseLand",
+			animFileName: "mouseLand.png",
+			charCountH: 5,
+			charCountV:4,
+			charCount: 12
+		},
+		{
+			animName: "mouseLick",
+			animFileName: "mouseLick.png",
+			charCountH: 4,
+			charCountV:4,
+			charCount: 12
+		},
+		] 
+		popDropDown();
+		app = new PIXI.Application(
+		{
+			width:850,
+			height:500,
+			antialisaing: true,
+			transparent: false,
+			resolution:1
+		})
 
-			;
-
-			popDropDown();
-
-			app = new PIXI.Application(
-			{
-				width:800,
-				height:500,
-				antialisaing: true,
-				transparent: false,
-				resolution:1
-			})
-
-			document.body.appendChild(app.view);
+		document.body.appendChild(app.view);
 			//var mouseBlindJumpUp = "mouseBlindJumpUp.png";
 			var mouseAnim = ["mouse1.png","mouse2.png","mouse3.png","mouse4.png"];
 			var animatedMouse;
-	
 
 			loader
-				.add(mouseAnim)
-				//.add(mouseBlindJumpUp.imageFileName)
-				//.add(imm.imageFileName)
+			.add(mouseAnim)
 				.add(imagesArr[0].animFileName)
 				.add(imagesArr[1].animFileName)
 				.add(imagesArr[2].animFileName)
 				.add(imagesArr[3].animFileName)
 				.add(imagesArr[4].animFileName)
-				//.add("mouseBlindJumpUp.png")
 				.load(setUp);
 
+				function setUp0(){
+					var frames=[];
 
-			function setUp0(){
-		  		var frames=[];
+					for(var i=0; i<4; i++){
 
-				for(var i=0; i<4; i++){
-					
-					var texture = PIXI.Texture.from(mouseAnim[i]);
-					frames.push(texture);
-				};
+						var texture = PIXI.Texture.from(mouseAnim[i]);
+						frames.push(texture);
+					};
 
-				animatedMouse = new PIXI.AnimatedSprite(frames);
-				animatedMouse.anchor.set=.05;
-				animatedMouse.animationSpeed = 0.5;
-				app.stage.addChild(animatedMouse);
-			}
+					animatedMouse = new PIXI.AnimatedSprite(frames);
+					animatedMouse.anchor.set=.05;
+					animatedMouse.animationSpeed = 0.5;
+					app.stage.addChild(animatedMouse);
+				}
 
-			function setUp(){
+				function setUp(){
 
-				var setX = 0;
+					var setX = 0;
 
-			
-				
-				for(var i=0; i<imagesArr.length; i++){
 
-					var baseImg = PIXI.Texture.from(imagesArr[i].animFileName)
+
+					for(var i=0; i<imagesArr.length; i++){
+
+						var baseImg = PIXI.Texture.from(imagesArr[i].animFileName)
 					//var baseImg = PIXI.Texture.from(mouseBlindJumpUp.imageFileName)
-				    var baseW = baseImg.width;
+					var baseW = baseImg.width;
 					var baseH = baseImg.height;
 
 					var charWidth = baseW/imagesArr[i].charCountH;
-				    var charHeight = baseH/imagesArr[i].charCountV; 
+					var charHeight = baseH/imagesArr[i].charCountV; 
 					var imgX = 0;
 					var imgY = 0;
 
-			
+
 					var frames = [];
 
 					for(var j=0; j<imagesArr[i].charCount; j++){
 						console.log("imgX:"+ imgX + " imgY:" + imgY )
 						img = new PIXI.Texture(baseImg,new PIXI.Rectangle(imgX ,imgY,charWidth,charHeight));
-					
+
 						imgX += charWidth;
 
 						if((imgX + charWidth > baseW)){
@@ -155,46 +210,57 @@
 					//animatedMouse.x = 100;
 					console.log(imagesArr[i].animName + ": " + animatedMouse.x)	
 					setX = animatedMouse.x + charWidth;
+				}	
+			}
+
+			function startAnim(animType){
+
+				if(animType === "All"){
+
+					for(i=0; i< animArr.length; i++){
+
+						animArr[i].play();
+					}
+				}else{
+						animArr[animType].play();
+					}
 				}
-			
-			}
-
-			function mouseFly() {
-				var baseImg = PIXI.Texture.from(mouseBlindJumpUp)
-			}
-
-			function startAnim(){
-	
-		
-				for(i=0; i< animArr.length; i++){
-
-					animArr[i].play();
-				}
-
-			/*	animArr[0].play();
-				animArr[1].play();
-				animArr[2].play();
-				animArr[3].play();
-				animArr[4].play();*/
-
-
-			}
 
 			function stopAnim(){
+
 				animArr[0].stop();
 				animArr[1].stop();
 				animArr[2].stop();
 				animArr[3].stop();
 				animArr[4].stop();
-
 			}
 
 			function popDropDown(){
-				document.getElementById("dropDown").innerHTML = "&lt;a href="&35;"&gt;Link 1 &lt;/a add elements&gt;"
+
+				for(i=0; i<imagesArr.length; i++){
+	/*				var aElement = document.createElement("a");
+					var textNode = document.createTextNode(imagesArr[i].animName)
+					aElement.appendChild(textNode);
+					document.getElementById('myDropdown').appendChild(aElement);*/
+					document.getElementById('myDropdown').innerHTML +='<a href="#" onclick="startAnim('+ i +')">Link'+i+'</a><br/>';
+				}
+				document.getElementById('myDropdown').innerHTML +='<a href="#" onclick="startAnim(\'All\')">All</a>';
+
 
 			}
 
-	</script>
+			function dropDown(){
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
 
-</body>
-</html>
+			window.onclick = function(event){
+				if(!event.target.matches('.dropbtn')){
+					var dropdowns = document.getElementById("myDropdown");
+					if(dropdowns.classList.contains('show')){
+						dropdowns.classList.remove('show');
+					}
+				}
+		}
+		</script>
+	</body>
+	</html>
