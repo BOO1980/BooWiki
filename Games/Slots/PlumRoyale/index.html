@@ -204,8 +204,8 @@
 
 		function winLinesSetUp(){
 
-			var leftWinLineSprites = spriteFactory(images.leftWinlines)
-			var rightWinLineSprites = spriteFactory(images.rightWinlines)
+		//	var leftWinLineSprites = spriteFactory(images.leftWinlines)
+		//	var rightWinLineSprites = spriteFactory(images.rightWinlines)
 			//console.log(reelFrame.height - leftWinLineSprites[1].height)
 			//var setY = reelFrame.y 
 
@@ -246,7 +246,7 @@
 				}
 		}
 
-		function spriteFactory(imageObj){
+		/*function spriteFactory(imageObj){
 
 			var setX = 0;
 
@@ -277,11 +277,9 @@
 
 					//var sprite = new PIXI.Sprite(PIXI.loader.resources[imageObj.imgFileName].texture);
 					spriteArr.push(img)		
-
-					
 				}
 
-					app.stage.addChild(spriteArr[1])
+				app.stage.addChild(spriteArr[1])
 				//else if a single sprite == type sprite
 				//esle if animation - push to frame array
 				//frames.push(img);
@@ -289,7 +287,7 @@
 			}	
 			
 			//return frames;
-		}
+		}*/
 
 			function mouseFly1(){
 			console.log("flyStart")
@@ -381,11 +379,12 @@
 			animatedMouse.loop = false;
 			app.stage.addChild(animatedMouse)
 
-			TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), onComplete: mouseLand, pixi:{x:gameBackground.width/2 - animatedMouse.width/2, y:340}});
+			TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), onComplete: mouseLand, pixi:{x:gameBackground.width/2 - animatedMouse.width/2, y:340 - animatedMouse.height}});
 			console.log("flyFin")
 		}
 
 		function mouseLand(){
+		
 			animatedMouse.visible  = false
 			console.log("landStart")
 			var baseImg = PIXI.Texture.from(mouseLandObj.imgFileName
@@ -397,8 +396,9 @@
 			var charWidth = baseW/mouseLandObj.charCountH;
 			var charHeight = baseH/mouseLandObj.charCountV; 
 			
-			setX = gameBackground.width/2 - charWidth/2;
-			setY = 400;
+			setX = 423
+			//setX = gameBackground.width/2 - charWidth/2;
+			setY = 330 ;
 
 			var imgX = 0;
 			var imgY = 0;
@@ -433,8 +433,16 @@
 			console.log("landFin")
 		}
 
+		function screenTime(){
+			baseImg = PIXI.Texture.from()
+		}
+
 		function mouseJump(){
-			animatedMouse.visible  = false
+ 		//animatedMouse.visible  = false
+
+ 			screenTime()
+ 			console.log(animatedMouse.x)
+			console.log(animatedMouse.y - animatedMouse.height)
 
 			console.log("Jumpstart")
 			var baseImg = PIXI.Texture.from(mouseJumpObj.imgFileName
@@ -446,8 +454,8 @@
 			var charWidth = baseW/mouseJumpObj.charCountH;
 			var charHeight = baseH/mouseJumpObj.charCountV; 
 			
-			setX = gameBackground.width/2 - charWidth/2;
-			setY = 400;
+			setX = 423;
+			setY = 320;
 
 			var imgX = 0;
 			var imgY = 0;
@@ -480,7 +488,7 @@
 
 			TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), pixi:{x:gameBackground.width/2 - animatedMouse.width/2, y:340}});
 			console.log("jumpfin")
-		}
+			}
 		</script>
 	</body>
 	</html>
