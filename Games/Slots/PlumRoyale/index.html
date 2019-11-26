@@ -60,111 +60,79 @@
 			gameBackground,
 			animatedMouse,
 			setX,
-			animArr = [],
+			//spriteArr = [],
 			mouseFlyObj = {
 					animName: "mouseFly",
-					animFileName: "mouseFly.png",
+					imgFileName: "mouseFly.png",
 					charCountH: 4,
 					charCountV:4,
 					charCount: 14
 			},
 			mouseLandObj = {
 					animName: "mouseLand",
-					animFileName: "mouseLand.png",
+					imgFileName: "mouseLand.png",
 					charCountH: 5,
 					charCountV:4,
 					charCount: 17
 			},
 			mouseJumpObj = {
 					animName: "mouseJump",
-					animFileName: "mouseJump.png",
+					imgFileName: "mouseJump.png",
 					charCountH: 5,
 					charCountV:4,
 					charCount: 17
-			},
-/*		imagesArr = [
-				{
-					animName: "mouseFly",
-					animFileName: "mouseFly.png",
-					charCountH: 4,
-					charCountV:4,
-					charCount: 14
-				},
-				{
-					animName: "mouseLand",
-					animFileName: "mouseLand.png",
-					charCountH: 5,
-					charCountV:4,
-					charCount: 17
-				},
-				{
-					animName: "mouseJump",
-					animFileName: "mouseJump.png",
-					charCountH: 5,
-					charCountV:4,
-					charCount: 17
-				},
+			}
 
-				{
-					animName: "mouseBlindJump",
-					animFileName: "mouseBlindJumpUp.png",
-					charCountH: 4,
-					charCountV: 3,
-					charCount: 12
-				},
-
-				{
-					animName: "mouseLick",
-					animFileName: "mouseLick.png",
-					charCountH: 4,
-					charCountV:4,
-					charCount: 12
-				},
-			],
-*/
 		images = {
 				"mouseFly": {
-							animFileName: "mouseFly.png",
+							imgFileName: "mouseFly.png",
 							charCountH: 4,
 							charCountV:4,
-							charCount: 14
+							charCount: 14,
+							type: "animation"
 				},
 				"mouseLand": {
-							animFileName: "mouseLand.png",
+							imgFileName: "mouseLand.png",
 							charCountH: 5,
 							charCountV:4,
-							charCount: 17
+							charCount: 17,
+							type: "animation"
 				},
 				"mouseJump": {
-							animFileName: "mouseJump.png",
+							imgFileName: "mouseJump.png",
 							charCountH: 5,
 							charCountV:4,
-							charCount: 17
+							charCount: 17,
+							type: "animation"
 				},
 				"mouseBlindJump": {
-							animFileName: "mouseBlindJumpUp.png",
+							imgFileName: "mouseBlindJumpUp.png",
 							charCountH: 4,
 							charCountV: 3,
-							charCount: 12
+							charCount: 12,
+							type: "animation"
 				},
 				"mouseLink": {
-							animFileName: "mouseLick.png",
+							imgFileName: "mouseLick.png",
 							charCountH: 4,
 							charCountV:4,
-							charCount: 12
+							charCount: 12,
+							type: "animation"
 				},
 				"leftWinlines": {
-							animFileName: "leftWinlines.png",
+							imgFileName: "leftWinlines.png",
 							charCountH: 1,
 							charCountV: 10,
-							charCount: 10
+							charCount: 10,
+							type: "spriteSheet"
 
 				},
 				"rightWinlines": {
-							animFileName: "rightWinlines.png",
+							imgFileName: "rightWinlines.png",
 							charCountH: 1,
 							charCountV: 10,
-							charCount: 10
+							charCount: 10,
+							type: "spriteSheet"
 				}
 			};
 		
@@ -189,9 +157,9 @@
 			.add("gameBackground.png")
 			.add("blankSymbol.png")
 			/*TODO: Array of mouse to load*/
-			.add(mouseFlyObj.animFileName)
-			.add(mouseLandObj.animFileName)
-			.add(mouseJumpObj.animFileName)
+			.add(mouseFlyObj.imgFileName)
+			.add(mouseLandObj.imgFileName)
+			.add(mouseJumpObj.imgFileName)
 			.add("leftWinlines.png")
 			.add("rightWinlines.png")
 			.load(setUp);
@@ -202,36 +170,61 @@
 			gameBackground = new Sprite(resources["gameBackground.png"].texture);
 		
 			app.stage.addChild(gameBackground)
-			
-			winLinesSetUp()
-
 			app.stage.addChild(reelFrame)
 			
 			setX = 0;
-			
-			for(var i=0; i< reelCol; i++){
+
+			setReelSymbols()
+			winLinesSetUp()
+		}
+
+		function setReelSymbols(){
 				
-				var symbolBG  = new Sprite(resources["blankSymbol.png"].texture);
+			setX = 0;
+			setY = 0;
+			for(var i=0; i< reelCol*reelRow; i++){
+		
+				var symbolBG = new PIXI.Sprite(PIXI.loader.resources["blankSymbol.png"].texture);
+
 				symbolBG.x = setX;
-				reelFrame.addChild(symbolBG)
+				symbolBG.y = setY;
+				//Add to reelframe
+				//console.log("imgX:"+ symbolBG.x + " imgY:" + symbolBG.y )
+
 				setX = symbolBG.width + symbolBG.x
+
+				if((setX + symbolBG.width > reelFrame._width)){
+					//console.log("hitme")
+					setX = 0;
+					setY += symbolBG.height;
+				}
+				reelFrame.addChild(symbolBG)
 			}
-			//mouseLand()			
 		}
 
 		function winLinesSetUp(){
 
-			var leftWinlines = PIXI.Texture.from("leftWinlines.png")
-			spriteFactory(images.leftWinlines)
-			var rightWinlines = PIXI.Texture.from("leftWinlines.png")
+			var leftWinLineSprites = spriteFactory(images.leftWinlines)
+			var rightWinLineSprites = spriteFactory(images.rightWinlines)
+			//console.log(reelFrame.height - leftWinLineSprites[1].height)
+			//var setY = reelFrame.y 
 
-/*			leftWinlines.x = reelFrame.x - (leftWinlines.width + 10) 
-			leftWinlines.y = reelFrame.y
-			rightWinlines.y = reelFrame.y
-			rightWinlines.x = reelFrame._width + reelFrame.x + 10*/
-			app.stage.addChild(leftWinlines)
-			app.stage.addChild(rightWinlines)
-		}
+			//for(i=0; i< leftWinLineSprites.length; i++){
+				
+				//console.log("i: " + i + "setY: " + setY)
+				//leftWinLineSprites[1].x = reelFrame.x - (leftWinLineSprites[1].width + 10);
+				//rightWinLineSprites[i].x = reelFrame.x + (reelFrame._width + 10)	
+				//leftWinLineSprites[1].y = setY;
+				//rightWinLineSprites[]
+				//rightWinLineSprites[i].y = reelFrame.y + setY;
+		
+				//app.stage.addChild(rightWinLineSprites[1])	
+				//app.stage.addChild(leftWinLineSprites[1])	
+				
+			}
+			//setY += 18	
+
+		//}
 
 		function startAnim(){
 			mouseFly1()
@@ -243,13 +236,13 @@
 
 			if(animType === "All"){
 
-				for(i=0; i<animArr.length;i++){
+				for(i=0; i<spriteArr.length;i++){
 
-					animArr[i].stop();
+					spriteArr[i].stop();
 				}
 
 			}else{
-					//animArr[animType].stop();
+					//spriteArr[animType].stop();
 				}
 		}
 
@@ -257,21 +250,22 @@
 
 			var setX = 0;
 
-			//for(var i=0; i<Object.keys(images).length; i++){
+			var baseImg = PIXI.Texture.from(imageObj.imgFileName)
+			var baseW = baseImg.width;
+			var baseH = baseImg.height;
+			var charWidth = baseW/imageObj.charCountH;
+			var charHeight = baseH/imageObj.charCountV; 
+			var imgX = 0;
+			var imgY = 0;
+			var spriteArr = []
+			//var frames = [];
 
-				var baseImg = PIXI.Texture.from(imageObj.animFileName)
-				var baseW = baseImg.width;
-				var baseH = baseImg.height;
-				var charWidth = baseW/imageObj.charCountH;
-				var charHeight = baseH/imageObj.charCountV; 
-				var imgX = 0;
-				var imgY = 0;
+			if(imageObj.type == "spriteSheet"){
 
-				var frames = [];
+				for(var i=0; i<imageObj.charCount; i++)	{
 
-				for(var j=0; j<imageObj.charCount; j++){
+					console.log("i:" + i)
 					
-					console.log("imgX:"+ imgX + " imgY:" + imgY )
 					img = new PIXI.Texture(baseImg,new PIXI.Rectangle(imgX ,imgY,charWidth,charHeight));
 
 					imgX += charWidth;
@@ -280,29 +274,27 @@
 						imgX = 0;
 						imgY += charHeight;
 					}
-				
-				frames.push(img);
+
+					//var sprite = new PIXI.Sprite(PIXI.loader.resources[imageObj.imgFileName].texture);
+					spriteArr.push(img)		
+
+					
+				}
+
+					app.stage.addChild(spriteArr[1])
+				//else if a single sprite == type sprite
+				//esle if animation - push to frame array
+				//frames.push(img);
+				//return spriteArr;
 			}	
-
-			animatedMouse = new PIXI.AnimatedSprite(frames);
-			animatedMouse.y = 100;
-			animatedMouse.x = setX
-			animatedMouse.anchor.set=.05;
-			animatedMouse.animationSpeed = 0.5;
-			animatedMouse.loop = false;
-			animArr.push(animatedMouse);
-			app.stage.addChild(animatedMouse);
-			//animatedMouse.x = animatedMouse.x + 155;
-			//animatedMouse.x = 100;
-			console.log(imagesArr[i].animName + ": " + animatedMouse.x)	
-			setX = animatedMouse.x + charWidth;
-
-		//}
-	}
+			
+			//return frames;
+		}
 
 			function mouseFly1(){
 			console.log("flyStart")
-			var baseImg = PIXI.Texture.from(images.mouseFly.animFileName)
+			var baseImg = PIXI.Texture.from(images.mouseFly.imgFileName
+				)
 
 			var baseW = baseImg.width;
 			var baseH = baseImg.height;
@@ -348,7 +340,8 @@
 
 		function mouseFly(){
 			console.log("flyStart")
-			var baseImg = PIXI.Texture.from(mouseFlyObj.animFileName)
+			var baseImg = PIXI.Texture.from(mouseFlyObj.imgFileName
+				)
 
 			var baseW = baseImg.width;
 			var baseH = baseImg.height;
@@ -395,7 +388,8 @@
 		function mouseLand(){
 			animatedMouse.visible  = false
 			console.log("landStart")
-			var baseImg = PIXI.Texture.from(mouseLandObj.animFileName)
+			var baseImg = PIXI.Texture.from(mouseLandObj.imgFileName
+				)
 
 			var baseW = baseImg.width;
 			var baseH = baseImg.height;
@@ -443,7 +437,8 @@
 			animatedMouse.visible  = false
 
 			console.log("Jumpstart")
-			var baseImg = PIXI.Texture.from(mouseJumpObj.animFileName)
+			var baseImg = PIXI.Texture.from(mouseJumpObj.imgFileName
+				)
 
 			var baseW = baseImg.width;
 			var baseH = baseImg.height;
