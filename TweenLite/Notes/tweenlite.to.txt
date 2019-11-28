@@ -1,0 +1,3 @@
+https://greensock.com/docs/v2/TimelineLite/to()
+https://greensock.com/docs/v2/TweenLite/TweenLite()
+https://greensock.com/forums/topic/15358-use-of-tweenlite-to-and-from/

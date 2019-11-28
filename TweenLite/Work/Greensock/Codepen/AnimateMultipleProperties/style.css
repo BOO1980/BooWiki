@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color:#1d1d1d;
+  font-family: "Asap", sans-serif;
+  color:#989898;
+  margin:10px;
+  font-size:16px;
+}
+
+
+p{
+  line-height:22px;
+  margin-bottom:16px;
+  width:650px;
+}
+
+#demo {
+  
+}
+
+#scoreDisplay {
+  font-size:40px;
+  text-align:center;
+}
