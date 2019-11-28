@@ -1,420 +1,77 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<script src="http://localhost:8888/3rdParty/pixi.min.js"></script>
-		<script src="http://localhost:8888/3rdParty/TweenLite.min.js"></script>
-		<script src="http://localhost:8888/3rdParty/TweenMax.min.js"></script>
-		<script src="http://localhost:8888/3rdParty/PixiPlugin.min.js"></script>
-		<style>
-			.navbar {
-				overflow: hidden;
-				background-color: #333;
-				font-family: Arial, Helvetica, sans-serif;
-			}
-			.navbar a  {
-				float: left;
-				font-size: 16px;
-				color: white;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-			}
-			.dropbtn, button{
-				cursor: pointer;
-				font-size: 16px;  
-				border: none;
-				outline: none;
-				color: white;
-				padding: 14px 16px;
-				background-color: grey;
-				font-family: inherit;
-				margin: 0;
-			}
-			.dropbtn, .dropbtn:focus, button {
-				background-color: red;
-			}
-			.show {
-				display: block;
-			}
-		</style>
-		<title>Mouse</title>
-	</head>
-	<body>
-		<div class="navbar">
-			<button class="dropbtn" onclick="startAnim()">Start Animation</button>
-			<button class="dropbtn" onclick="stopAnim()">Stop Animation</button>
-		</div>
-		<script type="text/javascript">	
-			
-			var app = PIXI.Application,
-			Container = PIXI.Container,
-			loader = PIXI.loader,
-			Sprite = PIXI.Sprite,
-			resources = PIXI.loader.resources,
-			Texture = PIXI.Texture,
-			TextureCache = PIXI.utils.TextureCache,
-			Rectangle = PIXI.Rectangle,
-			reelCol = 5,
-			reelRow = 3,
-			reelFrame,
-			screenGrab,
-			gameBackground,
-			animatedMouse,
-			setX,
-			images = {
-				"mouseFly": {
-					imgFileName: "mouseFly.png",
-					charCountHz: 4,
-					charCountVert:4,
-					charCount: 14,
-					type: "animation",
-					frames: []
-				},
-				"blindPoses":{
-					imgFileName: "blindPoses.png",
-					charCountHz: 4,
-					charCountVert:1,
-					charCount: 4,
-					type: "spriteSheet",
-					frames: []
-				},
-				"mouseLand": {
-					imgFileName: "mouseLand.png",
-					charCountHz: 5,
-					charCountVert:4,
-					charCount: 17,
-					type: "animation",
-					frames: []
-				},
-				"mouseJump": {
-					imgFileName: "mouseJump.png",
-					charCountHz: 5,
-					charCountVert:4,
-					charCount: 17,
-					type: "animation",
-					frames: []
-				},
-				"mouseBlindJump": {
-					imgFileName: "mouseBlindJumpUp.png",
-					charCountHz: 4,
-					charCountVert: 3,
-					charCount: 12,
-					type: "animation",
-					frames: [],
-					split: 8
-				},
-				"mouseLink": {
-					imgFileName: "mouseLick.png",
-					charCountHz: 4,
-					charCountVert:4,
-					charCount: 12,
-					type: "animation",
-					frames: []
-				},
-				"leftWinlines": {
-					imgFileName: "leftWinlines.png",
-					charCountHz: 1,
-					charCountVert: 10,
-					charCount: 10,
-					type: "spriteSheet",
-					frames: []
-				},
-				"rightWinlines": {
-					imgFileName: "rightWinlines.png",
-					charCountHz: 1,
-					charCountVert: 10,
-					charCount: 10,
-					type: "spriteSheet",
-					frames: []
-				},
-				"roller1": {
-					imgFileName: "roller1.png",
-					charCount: 1,
-					type: "imageAnim"
-				},
-				"roller2":{
-					imgFileName: "roller2.png",
-					charCount: 1,
-					type: "imageAnim"
-				},
-				"roller3":{
-					imgFileName: "roller3.png",
-					charCount: 1,
-					type: "imageAnim"
-				},
-				"roller4":{
-					imgFileName: "roller4.png",
-					charCount: 1,
-					type: "imageAnim"
-				},
-				"mouseBlindStart": {
-					imgFileName: "startblindPoses.png",
-					charCountHz: 2,
-					charCountVert: 1,
-					charCount: 2,
-					type: "animation",
-					frames: []
-				}
-			};
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" id ="CGEViewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-			app = new PIXI.Application({
-				width:1024,
-				height:576,
-				antialisaing: true,
-				transparent: false,
-				resolution:1
-			})
+	<meta charset="utf-8">
+	<title>DemoGame</title>
+	<script src="../honeyPot/3rdParty/jquery-3.3.1.min.js"></script>
+	<script src="../honeyPot/3rdParty/pixi.min.js"></script>
+	<script src="../honeyPot/3rdParty/TweenLite.min.js"></script>
+	<script src="../honeyPot/3rdParty/PixiPlugin.min.js"></script>
+	
+	<script src="../honeyPot/3rdParty/pixi-sound.js"></script>
+	<script src="app/config.js"></script>
+	<script src="../honeyPot/namespace/namespace.js"></script>
+	<script src="../honeyPot/utils/logger.js"></script>
+	<script src="../honeyPot/utils/currency.js"></script>
+	<script src="../honeyPot/connection/account.js"></script>
+	<script src="../honeyPot/connection/slotSymbolRow.js"></script>
+	<script src="../honeyPot/connection/slotScatterWin.js"></script>
+	<script src="../honeyPot/connection/slotBonusWin.js"></script>
+	<script src="../honeyPot/connection/slotLineWin.js"></script>
+	<script src="../honeyPot/connection/slotState.js"></script>
+	<script src="../honeyPot/connection/gameState.js"></script>
+	<script src="../honeyPot/connection/reelSet.js"></script>
+	<script src="../honeyPot/connection/slotBonus.js"></script>
+	<script src="../honeyPot/connection/slotPayout.js"></script>
+	<script src="../honeyPot/connection/symbolDef.js"></script>
+	<script src="../honeyPot/connection/winline.js"></script>
+	<script src="../honeyPot/connection/slotDef.js"></script>
+	<script src="../honeyPot/connection/connection.js"></script>
+	<script src="../honeyPot/connection/progressiveJackpot.js"></script>
+	<script src="../honeyPot/connection/openBetConnection.js"></script>
+	<script src="../honeyPot/connection/openBetReelConnection.js"></script>
+	<script src="../honeyPot/drivers/graphicsPIXI.js"></script>
+	<script src="../honeyPot/drivers/graphicsDriver.js"></script>
+	<script src="../honeyPot/display/container.js"></script>
+	<script src="../honeyPot/display/winlineContainer.js"></script>
+	<script src="../honeyPot/display/winPanel.js"></script>
+	<script src="../honeyPot/display/reelSymbol.js"></script>
+	<script src="../honeyPot/display/graphic.js"></script>
+	<script src="../honeyPot/display/betPanelContainer.js"></script>
+	<script src="../honeyPot/display/animatedSprite.js"></script>
+	<script src="../honeyPot/display/sprite.js"></script>
+	<script src="../honeyPot/display/highlightSprite.js"></script>
+	<script src="../honeyPot/display/text.js"></script>
+	<script src="../honeyPot/display/button.js"></script>
+	<script src="../honeyPot/display/pickmePanel.js"></script>
+	<script src="../honeyPot/display/reel.js"></script>
+	<script src="../honeyPot/display/reelContainer.js"></script>
+	<script src="../honeyPot/display/screen.js"></script>
+	<script src="../honeyPot/display/helpScreen.js"></script>
+	<script src="../honeyPot/display/reelScreen.js"></script>
+	<script src="../honeyPot/display/valueButton.js"></script>
+	<script src="../honeyPot/display/stakePanel.js"></script>
+	<script src="../honeyPot/display/bottomBarUI.js"></script>
+	<script src="../honeyPot/display/gameUI.js"></script>
 
-			document.body.appendChild(app.view);
+	
+	<script src="../HoneyPot/game.js"></script>
+	<link rel="stylesheet" href="assets/game.css">
+</head>
+<body>
+	<div id="gameLoader">loading<span class="font1">.</span></div>
+	<script type="text/javascript">
 
-			reelFrame = new Container();
-			reelFrame.width = 730;
-			reelFrame.height = 438;
-			reelFrame.x = 144;
-			reelFrame.y = 50;
+		var game = new HoneyPot.Game();
+		game.init();
 
-			loader
-			.add("gameBackground.png")
-			.add("blankSymbol.png")
-			.add(images.mouseFly.imgFileName)
-			.add(images.mouseLand.imgFileName)
-			.add(images.mouseJump.imgFileName)
-			.add(images.mouseBlindStart.imgFileName)
-			.add(images.mouseBlindJump.imgFileName)
-			.add(images.blindPoses.imgFileName)
-			.add("leftWinlines.png")
-			.add("rightWinlines.png")
-			.load(setUp);
+		$(window).resize(function(){
+			game.resize();
+		});
 
-			function setUp(){
-			
-				gameBackground = new Sprite(resources["gameBackground.png"].texture);
-				app.stage.addChild(gameBackground)
-				app.stage.addChild(reelFrame)
-				factory();
-				setX = 0;
-				setReelSymbols()
-			}
-
-			function setReelSymbols(){
-
-				setX = 0;
-				setY = 0;
-				for(var i=0; i< reelCol*reelRow; i++){
-
-					var symbolBG = new PIXI.Sprite(PIXI.loader.resources["blankSymbol.png"].texture);
-
-					symbolBG.x = setX;
-					symbolBG.y = setY;
-
-					setX = symbolBG.width + symbolBG.x
-
-					if((setX + symbolBG.width > reelFrame._width)){
-						//console.log("hitme")
-						setX = 0;
-						setY += symbolBG.height;
-					}
-					reelFrame.addChild(symbolBG)
-				}
-			}
-
-			function startAnim(){
-		
-				mouseFly();
-				//mouseLand(458,337);
-				//mouseStartJump(448,337)
-				//mouseJump("up",448,180)
-				//blindGrab(418,120)
-
-			}
-
-			function stopAnim(){
-
-				animatedMouse.stop()
-
-			}			
-
-			function mouseFly(){
-
-				//console.log(reelFrame.height)
-				var startX = gameBackground.width - 90;
-				var startY = 162
-
-				animatedMouse = new PIXI.AnimatedSprite(images.mouseFly.frames);
-				animatedMouse.x = startX
-				animatedMouse.y = startY;
-
-				endX = 458
-				endY = 337
-				
-				animatedMouse.anchor.set=.05;	
-				animatedMouse.animationSpeed = 0.5/4
-				animatedMouse.loop = false;
-				app.stage.addChild(animatedMouse)
-
-				TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), onComplete: mouseLand, onCompleteParams:[endX, endY], pixi:{x:endX, y:endY}});
-			}
-
-			function mouseLand(startX, startY){
-				
-				animatedMouse.visible  = false
-				console.log("landStart")
-			
-				animatedMouse = new PIXI.AnimatedSprite(images.mouseLand.frames);
-				animatedMouse.x = startX 
-				animatedMouse.y = startY;
-
-				var endX = 448
-				var endY = 337
-
-				animatedMouse.anchor.set=.05;	
-				animatedMouse.animationSpeed = 0.5/2
-				animatedMouse.loop = false;
-				app.stage.addChild(animatedMouse)
-
-				TweenLite.to(animatedMouse,1,{onStart: animatedMouse.play(), onComplete: mouseStartJump, onCompleteParams:[endX, endY],pixi:{x: endX, y:endY}});
-								
-				console.log("landFin")
-			}
-
-			function mouseStartJump(startX, startY){
-
-				animatedMouse.visible = false
-
-				animatedMouse = new PIXI.AnimatedSprite(images.mouseBlindStart.frames);
-				animatedMouse.x = startX
-				animatedMouse.y = startY
-		
-				animatedMouse.anchor.set=.05;	
-				animatedMouse.animationSpeed = 0.5/4
-				animatedMouse.loop = false;
-				app.stage.addChild(animatedMouse)
-
-				TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), onComplete: mouseJump, onCompleteParams:["up",startX,180], pixi:{x: startX, y:startY}});	
-			}
-
-			function mouseJump(direction,startX,startY){
-				animatedMouse.visible	= false
-				//console.log("START: MouseJump")
-					
-				animatedMouse = new PIXI.AnimatedSprite(images.mouseBlindJump.frames);
-				animatedMouse.y = startY
-				animatedMouse.x = startX
-				upEndY = 120
-				upEndX = 418
-
-				animatedMouse.anchor.set=.05;	
-				animatedMouse.animationSpeed = 0.5/4
-				animatedMouse.loop = false;
-				maxAnimTime = 0.2
-
-				app.stage.addChild(animatedMouse)
-
-				if(direction == "up"){
-				TweenLite.to(animatedMouse,2,{onStart: animatedMouse.play(), onComplete: blindGrab, onCompleteParams:[upEndX,upEndY], pixi:{x:upEndX, y:upEndY}});
-				}else{
-				screenGrab.visible = false;
-				
-
-				TweenLite.to(animatedMouse,2,{pixi:{x:448, y:180}});
-				}
-				console.log("END: MouseJump")
-			}
-
-			function blindGrab(startX,startY){
-				animatedMouse.visible = false
-		
-				screenGrab = new Sprite(images.blindPoses.frames[2]);
-				screenGrab.x = startX +20
-				screenGrab.y = startY + 30
-
-				endY = screenGrab.y
-				endX = 438
-
-				app.stage.addChild(screenGrab)
-				
-				TweenLite.to(screenGrab,2,{onComplete: mouseJump, onCompleteParams:["down",438, 50], pixi:{x:endX, y:endY}});	
-			}
-
-			function stopAnim(){
-				animatedMouse.pause()
-			}
-
-			function screenTime(){
-			/*var screenAnimArr = [roller1.imgFileName, roller2.imgFileName, roller3.imgFileName, roller4.imgFileName];
-			var frames=[];
-
-				for(var i=0; i<4; i++){
-
-					var texture = PIXI.Texture.from(screenAnimArr[i]);
-					frames.push(texture);
-				};
-
-				screen = new PIXI.AnimatedSprite(frames);
-				screen.anchor.set=.05;
-				screen.animationSpeed = 0.5;
-				app.stage.addChild(screen);*/
-			}
-
-			function factory(){
-
-				for(let key in images){
-					let imageObj = images[key];
-
-					if(imageObj.type == "animation" || imageObj.type == "spriteSheet"){
-						console.log("Animations: " + key,imageObj)	
-						frameFactory(imageObj)
-					}
-					else if(imageObj.type == "spriteSheet"){
-						console.log("SpriteSheets: " + key,imageObj)	
-					}
-					else if(imageObj.type == "imageAnim"){
-						console.log("Images: " + key,imageObj)
-					}
-				}
-			}
-
-			function frameFactory(imageObj){
-
-				var baseImg = PIXI.Texture.from(imageObj.imgFileName)
-
-				var baseW = baseImg.width;
-				var baseH = baseImg.height;
-
-				var charWidth = baseW/imageObj.charCountHz;
-				var charHeight = baseH/imageObj.charCountVert; 
-
-				setX = gameBackground.width - 90;
-				setY = (gameBackground.height/12);
-
-				var imgX = 0;
-				var imgY = 0;
-
-				var count
-
-				if(typeof imageObj.split == "undefined"){
-					
-					count = imageObj.charCount
-				}else{
-					count = imageObj.split
-				}
-				
-				for(var j=0; j<count; j++){
-
-					img = new PIXI.Texture(baseImg,new PIXI.Rectangle(imgX ,imgY,charWidth,charHeight));
-
-					imgX += charWidth;
-
-					if((imgX + charWidth > baseW)){
-
-						imgX = 0;
-						imgY += charHeight;
-					}
-
-				imageObj.frames.push(img); 
-				}
-				
-			}
-		</script>
+	</script>
 </body>
 </html>
