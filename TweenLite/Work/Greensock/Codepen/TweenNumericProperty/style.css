@@ -1,25 +1,29 @@
+
+
+html, body {
+  height: 100%;
+}
+
 body {
-  background-color:#000;
+  background-color:#1d1d1d;
+  font-family: "Asap", sans-serif;
+  color:#989898;
+  margin:10px;
+  font-size:16px;
 }
+
+
+p{
+  line-height:22px;
+  margin-bottom:16px;
+  width:650px;
+}
+
 #demo {
-  width: 692px;
-  height: 70px;
-  background-color: #333;
-  padding: 8px;
+  
 }
-#logo {
-  position: relative;
-  width: 150px;
-  height: 60px;
-  background: #90E500 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo_transparent_1.png) no-repeat;
-  background-position: 0px 4px;
-  color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom: solid #000 10px;
-}
-#logo p {
-  font-size:17px;
-  margin-top: 0px;
-  margin-left: 60px;
-  line-height: 58px;
+
+#scoreDisplay {
+  font-size:40px;
+  text-align:center;
 }
