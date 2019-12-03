@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GCM - Example CommonUI</title>
+	<link rel="stylesheet" type="text/css" href="css/commonui.css" />
+	<link rel="stylesheet" type="text/css" href="css/webfont.css" />
+	<link href="css/progressBarView.css" rel="stylesheet" type="text/css"> 
+	<link href="css/dialog_box.css" rel="stylesheet" type="text/css">
+	<link href="css/topUp_dialog_box.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/dialog/dialog_box.js"></script>
+	<script type="text/javascript" src="js/dialog/topUp_dialog_box.js"></script>
+    <script type="text/javascript" src="../gcm/js/gcm.js"></script>
+</head>
+<body onload='commonUI.init()'>
+	<div id="topbarDiv" style="display:none">
+		<div id="mainTopbarContent">
+			<div id="upperTopbar">
+				<h1 style="text-align: left; font-size: 1.4em;">EXAMPLE <br>COMMONUI</h1>
+				<div id="buttonGroup">
+					<input type="submit" class="circular-button" id="playForReal" title="Play For Real" value="Play For Real"/>
+					<div id="iconDiv">
+						<ul>
+							<li>
+								<div id="prefIcon" class="optionIcon"></div>
+							</li>
+							<li>
+								<div id="aboutIcon" class="optionIcon"></div>
+							</li>
+							 <li>
+									<div id="paytableIcon" class="optionIcon"></div>
+							</li>
+							<li>
+								<div id="muteButton" onclick="commonUI.toggleMute()">
+									<div id="muteIconOn" class="optionIcon"></div>
+									<div id="muteIconOff" class="optionIcon"></div>
+								</div>
+							</li>
+							<li>
+								<div id="turboButton" onclick="commonUI.toggleTurbo()">
+									<div id="turboIconOn" class="optionIcon"></div>
+									<div id="turboIconOff" class="optionIcon"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="lowerTopbar">
+				<div style="position: absolute; left: 0.1em; top: 3em; font-size: 1.2em; color: white;">
+					Duration:
+					<br>
+					<span id="durationTimer">00:00:00</span>
+				</div>
+				<div style="position: absolute; left: 0.1em; top: 5.5em; font-size: 1.2em; color: white;">
+					Local Time:
+					<br>
+					<span id="localTimer">00:00:00</span>
+				</div>
+				<div id="topbarTextfields">
+					<ul>
+						<li>
+							<a class="text-wrapper"><span class="topbar-static-text">STAKE:</span><span id="stake"></span></a>
+						</li>
+						<li>
+							<a class="text-wrapper"><span class="topbar-static-text">PAID:</span><span id="paid"></span></a>
+						</li>
+						<li>
+							<a class="text-wrapper"><span class="topbar-static-text">BALANCE:</span><span id="balance"></span></a>
+						</li>
+						<li>
+							<a class="text-wrapper"><span class="topbar-static-text">FREE BETS:</span><span id="freebets"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div align="center">
+			<input type="button" id="toggleTopbarButton" class="circular-button" onclick="commonUI.toggleTopbar()" value="TOGGLE TOPBAR"/>
+		</div>
+	</div>
+	<div id="loadingDisplayDiv" style="font-size: 1.3em;" align="center">
+		<p>LOADED: <span id="percentLoaded">0</span>%</p> 
+	</div>
+	<script type="text/javascript" src="js/progressBar/progressBarView.js"></script>
+	<script type="text/javascript" src="js/commonui.js"></script>
+</body>
+</html>
