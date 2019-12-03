@@ -6,13 +6,14 @@ var gameConfig = {
 		gameWidth:1024,
 		gameHeight:600,
 		antialias:true,
+		logLevel:5,
 		transparent:false,
 		forceCanvas:true,
 		resolution:1
 	},
 	connection:{
-		//§"connectionURL": "http://localhost:8888/xml/",
-		connectionURL: "http://192.168.1.22:8888/xml/bal/",
+		connectionURL: "http://localhost:8888/xml/bal/",
+		//connectionURL: "http://192.168.1.22:8888/xml/bal/",
 		testresponse: ["init.xml","spin1.xml"],
 		freeBets: "Yes",
         freePlay: true,
@@ -28,25 +29,14 @@ var gameConfig = {
 	assets:{
 		images:{
 			files:[
-				{name:"gamebg", url:"assets/images/x2/gamebg.jpg"},
-				{name:"reelframe", url:"assets/images/x2/reelframe.png"},
-				{name:"reellogo", url:"assets/images/x2/reellogo.png"},
-				{name:"reelSymbols", url:"assets/images/x2/Reel-Symbols.png"},
-				{name:"reelSymbols2", url:"assets/images/x2/Reel-Symbols2.png"},
-				{name:"reelSymbols4", url:"assets/images/x2/Reel-Symbols4.png"},
-				{name:"wildanim1", url:"assets/images/x2/wildanim1.png"},
-				{name:"wildanim2", url:"assets/images/x2/wildanim2.png"},
-
-				{name:"spinBtn", url:"assets/ui/spin.png"},
-				{name:"autoPlayBtn", url:"assets/ui/Auto.png"},
-				{name:"helpBtn", url:"assets/ui/info.png"},
-				{name:"settingsBtn", url:"assets/ui/settings.png"},
-				{name:"stakeBtn", url:"assets/ui/stake.png"},
-				{name:"stakeValue", url:"assets/ui/stakeValue.png"},
-				{name:"applyBtn", url:"assets/ui/apply.png"},
-				{name:"closeBtn", url:"assets/ui/close.png"},
-				{name:"autoTextBox", url:"assets/ui/autoTextBox.png"},
-				{name:"autoValue", url:"assets/ui/AutoValue.png"}
+				{name:"gamebg", url:"assets/images/gamebg.jpg"},
+				{name:"reelframe", url:"assets/images/reelframe.png"},
+				{name:"reellogo", url:"assets/images/reellogo.png"},
+				{name:"reelSymbols", url:"assets/images/Reel-Symbols.png"},
+				{name:"reelSymbols2", url:"assets/images/Reel-Symbols2.png"},
+				{name:"reelSymbols4", url:"assets/images/Reel-Symbols4.png"},
+				{name:"wildanim1", url:"assets/images/wildanim1.png"},
+				{name:"wildanim2", url:"assets/images/wildanim2.png"}
 
 			],
 			textureMaps:[
@@ -156,226 +146,7 @@ var gameConfig = {
 						}
 					]
 				},
-				{
-					imageName:"applyBtn",
-					imagePositions:[
-						{
-							id:"applyBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"applyBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"closeBtn",
-					imagePositions:[
-						{
-							id:"closeBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"closeBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"stakeValue",
-					imagePositions:[
-						{
-							id:"stakeValueDisabled",
-							x:0,
-							y:0,
-							width:182,
-							height:60
-						},
-						{
-							id:"stakeValueUp",
-							x:182,
-							y:0,
-							width:182,
-							height:60
-						},
-						{
-							id:"stakeValueDown",
-							x:364,
-							y:0,
-							width:182,
-							height:60
-						}
-					]
-				},
-				{
-					imageName:"autoValue",
-					imagePositions:[
-						{
-							id:"autoValueUp",
-							x:0,
-							y:0,
-							width:119,
-							height:40
-						},
-						{
-							id:"autoValueDown",
-							x:119,
-							y:0,
-							width:119,
-							height:40
-						},
-						{
-							id:"autoValueDisabled",
-							x:238,
-							y:0,
-							width:119,
-							height:40
-						}
-					]
-				},
-				{
-					imageName:"settingsBtn",
-					imagePositions:[
-						{
-							id:"settingsBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"settingsBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"settingsBtnDown",
-							x:116,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"stakeBtn",
-					imagePositions:[
-						{
-							id:"stakeBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"stakeBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"stakeBtnDown",
-							x:116,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"helpBtn",
-					imagePositions:[
-						{
-							id:"helpBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"helpBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"helpBtnDown",
-							x:116,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"autoPlayBtn",
-					imagePositions:[
-						{
-							id:"autoPlayBtnUp",
-							x:0,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"autoPlayBtnDisabled",
-							x:58,
-							y:0,
-							width:58,
-							height:58
-						},
-						{
-							id:"autoPlayBtnDown",
-							x:116,
-							y:0,
-							width:58,
-							height:58
-						}
-					]
-				},
-				{
-					imageName:"spinBtn",
-					imagePositions:[
-						{
-							id:"spinBtnUp",
-							x:0,
-							y:0,
-							width:131,
-							height:131
-						},
-						{
-							id:"spinBtnDisabled",
-							x:131,
-							y:0,
-							width:131,
-							height:131
-						},
-						{
-							id:"spinBtnDown",
-							x:262,
-							y:0,
-							width:131,
-							height:131
-						}
-					]
-				}
+				
 			],
 			textureMapsx2:[
 				{
@@ -484,231 +255,12 @@ var gameConfig = {
 						}
 					]
 				},
-				{
-					imageName:"applyBtn",
-					imagePositions:[
-						{
-							id:"applyBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:116
-						},
-						{
-							id:"applyBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:116
-						}
-					]
-				},
-				{
-					imageName:"closeBtn",
-					imagePositions:[
-						{
-							id:"closeBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:116
-						},
-						{
-							id:"closeBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:116
-						}
-					]
-				},
-				{
-					imageName:"stakeValue",
-					imagePositions:[
-						{
-							id:"stakeValueDisabled",
-							x:0,
-							y:0,
-							width:361,
-							height:120
-						},
-						{
-							id:"stakeValueUp",
-							x:361,
-							y:0,
-							width:361,
-							height:120
-						},
-						{
-							id:"stakeValueDown",
-							x:722,
-							y:0,
-							width:361,
-							height:120
-						}
-					]
-				},
-				{
-					imageName:"autoValue",
-					imagePositions:[
-						{
-							id:"autoValueUp",
-							x:0,
-							y:0,
-							width:239,
-							height:80
-						},
-						{
-							id:"autoValueDown",
-							x:239,
-							y:0,
-							width:239,
-							height:80
-						},
-						{
-							id:"autoValueDisabled",
-							x:478,
-							y:0,
-							width:239,
-							height:80
-						}
-					]
-				},
-				{
-					imageName:"settingsBtn",
-					imagePositions:[
-						{
-							id:"settingsBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"settingsBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"settingsBtnDown",
-							x:234,
-							y:0,
-							width:117,
-							height:117
-						}
-					]
-				},
-				{
-					imageName:"stakeBtn",
-					imagePositions:[
-						{
-							id:"stakeBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"stakeBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"stakeBtnDown",
-							x:234,
-							y:0,
-							width:117,
-							height:117
-						}
-					]
-				},
-				{
-					imageName:"helpBtn",
-					imagePositions:[
-						{
-							id:"helpBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"helpBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"helpBtnDown",
-							x:234,
-							y:0,
-							width:117,
-							height:117
-						}
-					]
-				},
-				{
-					imageName:"autoPlayBtn",
-					imagePositions:[
-						{
-							id:"autoPlayBtnUp",
-							x:0,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"autoPlayBtnDisabled",
-							x:117,
-							y:0,
-							width:117,
-							height:117
-						},
-						{
-							id:"autoPlayBtnDown",
-							x:234,
-							y:0,
-							width:117,
-							height:117
-						}
-					]
-				},
-				{
-					imageName:"spinBtn",
-					imagePositions:[
-						{
-							id:"spinBtnUp",
-							x:0,
-							y:0,
-							width:262,
-							height:262
-						},
-						{
-							id:"spinBtnDisabled",
-							x:262,
-							y:0,
-							width:262,
-							height:262
-						},
-						{
-							id:"spinBtnDown",
-							x:524,
-							y:0,
-							width:262,
-							height:262
-						}
-					]
-				}
+				
 			]
 		},
 		sounds:{
 			files:[
-				{name:"btnClickSound", url:"assets/sounds/bottomBarButton.m4a"}
+				{name:"btnClickSound1", url:"assets/sounds/bottomBarButton.m4a"}
 			],
 		},
 		fonts:{
@@ -729,257 +281,9 @@ var gameConfig = {
 		fullScreen:true
 	},
 	ui:{
-		children:[
-			{
-				type:"GameUI",
-				id:"gameUI",
-				x:0,
-				y:0,
-				buttonPanelPos:"right",
-				children:[
-					{
-						type:"Container",
-						id:"buttonPanelUI",
-						x:0,
-						y:0,
-						children:[
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"spinBtn",
-							
-								x:0,
-								y:64,
-								state:{
-									up:{
-										imageName:"spinBtnUp"
-									},
-									disabled:{
-										imageName:"spinBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"helpBtn",
-							
-								x:73.5,
-								y:0,
-								state:{
-									up:{
-										imageName:"helpBtnUp"
-									},
-									disabled:{
-										imageName:"helpBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"autoPlayBtn",
-							
-								x:0,
-								y:0,
-								state:{
-									up:{
-										imageName:"autoPlayBtnUp"
-									},
-									disabled:{
-										imageName:"autoPlayBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"stakeBtn",
-							
-								x:0,
-								y:200,
-								state:{
-									up:{
-										imageName:"stakeBtnUp"
-									},
-									disabled:{
-										imageName:"stakeBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"settingsBtn",
-							
-								x:73.5,
-								y:200,
-								state:{
-									up:{
-										imageName:"settingsBtnUp"
-									},
-									disabled:{
-										imageName:"settingsBtnDisabled"
-									}
-								}
-							}
-						]
-					},
-					{
-						type:"BottomBarUI",
-						id:"buttomBarUI",
-						position:"bottom"
-					},
-					{
-						type:"Container",
-						id:"autoplayPanel",
-						x:0,
-						y:0,
-						visible:false,
-						children:[
-							{
-								type:"Sprite",
-								x:20,
-								y:120,
-							
-								imageName:"autoTextBox"
-							},
-							{
-								type:"Text",
-								text:"Numper of plays:",
-								align:"left",
-								x:40,
-								y:128,
-								style:{
-									colour:"#f7ba0c",
-									fontSize:15,
-									fontFamily:"MyriadProRegular"
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"closeBtn",
-							
-								x:600,
-								y:100,
-								state:{
-									up:{
-										imageName:"closeBtnUp"
-									},
-									disabled:{
-										imageName:"closeBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"applyBtn",
-							
-								x:600,
-								y:450,
-								state:{
-									up:{
-										imageName:"applyBtnUp"
-									},
-									disabled:{
-										imageName:"applyBtnDisabled"
-									}
-								}
-							}
-						]
-					},
-					{
-						type:"StakePanel",
-						id:"stakePanel",
-						x:0,
-						y:0,
-						visible:false,
-						btnWidth:190,
-						btnHeight:70,
-						startX:600,
-						startY:130,
-						optionValue:{
-							x:0,
-							y:0,
-							value:"1",
-							textColour:"#f7ba0c",
-							text:{
-								x:90,
-								y:18,
-								text:"£1.00",
-								style:{
-									colour:"#f7ba0c",
-									fontSize:25,
-									fontFamily:"MyriadProRegular"
-								}
-								
-							},
-							button:{
-								action:"Button",
-								sound:"btnClickSound",
-								id:"closeBtn",
-							
-								x:0,
-								y:0,
-								state:{
-									up:{
-										imageName:"stakeValueUp"
-									},
-									disabled:{
-										imageName:"stakeValueDisabled"
-									}
-								}
-							}					
-						},
-						children:[
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"closeBtn",
-							
-								x:600,
-								y:100,
-								state:{
-									up:{
-										imageName:"closeBtnUp"
-									},
-									disabled:{
-										imageName:"closeBtnDisabled"
-									}
-								}
-							},
-							{
-								type:"Button",
-								action:"Button",
-								sound:"btnClickSound",
-								id:"applyBtn",
-							
-								x:600,
-								y:450,
-								state:{
-									up:{
-										imageName:"applyBtnUp"
-									},
-									disabled:{
-										imageName:"applyBtnDisabled"
-									}
-								}
-							}
-						]
-					}
-				]
-			}
-		]		
+		buttonPanelPos:"right",
+		uiType:"default",
+		helpPages:[]
 	},
 	screens:{
 		children:[
@@ -1003,7 +307,7 @@ var gameConfig = {
 						type:"ReelContainer",
 						id:"reelContainer",
 						x:190,
-						y:170,
+						y:174,
 						children:[
 							{
 								type:"Container",
@@ -1011,9 +315,9 @@ var gameConfig = {
 								x:0,
 								y:0,
 								reels:{
-									reelWidth: 124.5,
+									reelWidth: 120,
 									numberOfReels:5,
-									symbolWidth: 122,
+									symbolWidth: 120,
 									symbolHeight: 116,
 									symbolsInView:3,
 									spinSpeed:29,
@@ -1082,7 +386,7 @@ var gameConfig = {
 						y:170,
 						width:640,
 						height:348,
-						symbolSize:{width:126.5, height:116},
+						symbolSize:{width:120, height:116},
 						winlinePatterns:"",
 						winlineSize:6,
 						winlines:[
@@ -1108,12 +412,7 @@ var gameConfig = {
 							"0x00d100",
 							"0xd9df20"
 						]
-					},
-					
-					
-					
-					
-					
+					},			
 				]
 			}
 			
