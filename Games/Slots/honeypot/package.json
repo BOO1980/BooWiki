@@ -1,0 +1,31 @@
+{
+  "name": "honeypot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ant_freeman@bitbucket.org/ant_freeman/honeypot.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-order": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "author": "Ant Freeman",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ant_freeman/honeypot#readme",
+  "dependencies": {
+    "gulp-debug": "^4.0.0",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "pixi-particles": "^4.1.3",
+    "pixi.js-legacy": "^5.1.3"
+  }
+}
