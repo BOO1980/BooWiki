@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameConfigResponse>
+	<GameName>Bejeweled</GameName>
+	<GameServerUrl>http://pat.dev.openbet.com:11019/pat/cc_pkg28_0/fog/Servlet</GameServerUrl>
+	<!--GameServerUrl>http://pat.dev.openbet.com:11019/pat/cc_pkg27_1/fog/Servlet</GameServerUrl-->
+	<!--<GameServerUrl>dummyBLInitResponse.php</GameServerUrl>	-->
+	<GameClass>Bejeweled</GameClass>
+</GameConfigResponse>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameConfigResponse>
+	<GameName>RockysGoldHB</GameName>
+	<GameServerUrl>https://fog-integration-casino-games-8.casino.openbet.com//cc_head/fog/Servlet</GameServerUrl>
+	<GameClass>Slot</GameClass>
+	<LoggedIn>false</LoggedIn>
+</GameConfigResponse>
