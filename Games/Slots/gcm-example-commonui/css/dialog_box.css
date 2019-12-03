@@ -1,0 +1,147 @@
+#content {
+    padding: 20px
+}
+
+#errorDialog {
+    position: absolute;
+    width: 275px;
+    padding: 10px;
+    z-index: 200;
+    background: #fff
+}
+
+#errorDialog-header {
+    display: block;
+    position: relative;
+    width: 261px;
+    padding: 3px 6px 7px;
+    height: 14px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+#errorDialog-title {
+    float: left
+}
+
+div.dialog-confirm-button {
+	position: absolute;
+	margin-top: -50px;
+	cursor: pointer;
+	height: 1.3em;
+	width: 4em;
+	border: 2px solid;
+	font-size: 1.3em;
+	border-radius: 0.8em;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1, #AAA));
+	background-image: -moz-linear-gradient(to bottom, #FFF, #AAA);
+}
+
+#errorDialog-close {
+    margin-left: 65px;
+}
+
+#errorDialog-quit {
+    margin-left: 152px;
+}
+
+#errorDialog-content {
+    display: block;
+    height: 160px;
+    padding: 6px;
+    color: #666666;
+    font-size: 13px
+}
+
+#errorDialog-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: #FFF;
+    opacity: .75;
+    filter: alpha(opacity = 75);
+    z-index: 100
+}
+
+.ERROR {
+    background: #fff url(../img/dialog/error_bg.jpg) bottom right no-repeat;
+    border: 1px solid #924949;
+    border-top: none
+}
+
+.ERRORheader {
+    background: url(../img/dialog/error_header.gif) repeat-x;
+    color: #6f2c2c;
+    border: 1px solid #924949;
+    border-bottom: none
+}
+
+.WARNING {
+    background: #fff url(../img/dialog/warning_bg.jpg) bottom right no-repeat;
+    border: 1px solid #c5a524;
+    border-top: none
+}
+
+.WARNINGheader {
+    background: url(../img/dialog/warning_header.gif) repeat-x;
+    color: #957c17;
+    border: 1px solid #c5a524;
+    border-bottom: none
+}
+
+.success {
+    background: #fff url(../img/dialog/success_bg.jpg) bottom right no-repeat;
+    border: 1px solid #60a174;
+    border-top: none
+}
+
+.successheader {
+    background: url(../img/dialog/success_header.gif) repeat-x;
+    color: #3c7f51;
+    border: 1px solid #60a174;
+    border-bottom: none
+}
+
+.INFO {
+    background: #fff url(../img/dialog/prompt_bg.jpg) bottom right no-repeat;
+    border: 1px solid #4f6d81;
+    border-top: none
+}
+
+.INFOheader {
+    background: url(../img/dialog/prompt_header.gif) repeat-x;
+    color: #355468;
+    border: 1px solid #4f6d81;
+    border-bottom: none
+}
+
+.dialog-button {
+    font-size: 1.2em;
+    margin: 0;
+    position: relative;
+    color: #000;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.59);
+    padding: 3px 10px 3px 10px;
+    outline: none;
+    background: white;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+    overflow: visible;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+}
+
+.dialog-button:active {
+    color: #696969;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.53);
+    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+}

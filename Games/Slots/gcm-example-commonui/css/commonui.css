@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: transparent;
+    height: 100%;
+    font-family: OpenSans;
+}
+
+a {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+input[disabled], textarea[disabled], button[disabled] {
+    color: white;
+}
+
+/* Start Circle Buttons */
+.circular-button {
+    font-size: 1.2em;
+    margin: 0;
+    position: relative;
+    color: #000;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.59);
+    padding: 3px 10px 3px 10px;
+    outline: none;
+    background: white;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+    overflow: visible;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(1, #AAA));
+	background-image:  -moz-linear-gradient(to bottom, #FFF, #AAA);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.027), inset 0px 1px 0px rgba(255, 255, 255, 0.69), inset 0px -1px 0px rgba(0, 0, 0, 0.0187), inset 0px 15px 14px rgba(255, 255, 255, 0.57);
+}
+
+.circular-button:active {
+    color: #696969;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.53);
+    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.58), inset 0px 1px 6px rgba(0, 0, 0, 0.07), inset 0px -15px 14px rgba(255, 255, 255, 0.20);
+}
+
+/* End Circle Buttons */
+
+span.topbar-static-text {
+    color: #000000;
+    padding: 0.4em;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.text-wrapper {
+    width: 5em;
+    height: 1em;
+    background: #E0E0E0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E9E9E9), to(#D7D7D7));
+    background: -moz-linear-gradient(top,  #E9E9E9,  #D7D7D7);
+    padding: 0.4em;
+    -webkit-box-shadow: inset 0px 2px 2px #B2B3B5, 0px 1px 0 #fff;
+    -moz-box-shadow: inset 0px 2px 2px #B2B3B5, 0px 1px 0 #fff;
+    -o-box-shadow: inset 0px 2px 2px #B2B3B5, 0px 1px 0 #fff;
+    -khtml-box-shadow: inset 0px 2px 2px #B2B3B5, 0px 1px 0 #fff;
+    box-shadow: inset 0px 2px 2px #B2B3B5, 0px 1px 0 #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+    margin-left: 0.4em;
+}
+
+#upperTopbar {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #FFF), color-stop(0.5, #ccc), color-stop(0.5, #999), color-stop(1, #bbb));
+    height: 35%;
+}
+
+#lowerTopbar {
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #532f64), color-stop(1, #330F44));
+    background-image:  -moz-linear-gradient(to bottom, #532f64, #330F44);
+    height: 65%;
+}
+
+#topbarDiv {
+    width: 100%;
+}
+
+#toggleTopbarButton {
+    border-bottom-right-radius: 0.8em;
+    border-bottom-left-radius: 0.8em;
+}
+
+#topbarTextfields {
+    position: absolute;
+    right: 1em;
+    top: 4.5em;
+}
+
+#mainTopbarContent {
+    background-color: #CCCCCC;
+    height: 10em;
+}
+
+#loadingDisplayDiv {
+    background-color: #CCCCCC;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#iconDiv {
+	position: absolute;
+	right: 1em;
+	top: 0.6em;
+}
+
+.optionIcon {
+	display: none;
+	opacity: 1;
+	background-size: 100%;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+#playForReal {
+	position: absolute;
+	right: 12em;
+	top: 1.1em;
+}
+
+#prefIcon {
+	background-image: url('../img/icons/pref.png');
+}
+
+#aboutIcon {
+	background-image: url('../img/icons/about-on.png');
+}
+
+#muteIconOn {
+	background-image: url('../img/mute/VolumeDisabled.png');
+}
+#muteIconOff {
+	background-image: url('../img/mute/VolumeNormal.png');
+}
+
+#turboIconOn {
+	background-image: url('../img/turbo/TurboOn.png');
+}
+#turboIconOff {
+	background-image: url('../img/turbo/TurboOff.png');
+}
+
+#paytableIcon {
+        background-image: url('../img/icons/paytable.png');
+}
+

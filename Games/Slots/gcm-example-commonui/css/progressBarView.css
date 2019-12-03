@@ -1,0 +1,105 @@
+
+#progressBar {
+    background-image: url('../img/progressBar/sparkly-progressBar-bg.png');
+
+    position: absolute;
+    top: 200px;
+    width: 960px;
+    height: 640px
+    z-index:1000;
+}
+
+#progressBar > div span {
+    z-index: 1000;
+}
+
+
+#progressBarGameLogo {
+    
+    width: 464px;
+    height: 50px;
+    top: 340px;
+    margin-top: 100px;
+    
+}
+
+#gameDisplay {
+    
+    width: 150px;
+    height: 100px;
+    
+}
+
+#progressBarLoadingMessage {
+    
+    width: 400px;
+    height: 25px;
+    top: 380px;
+    text-align: center;
+    font-size: 24px;
+    font-family: OpenSans;
+    color: black;
+}
+
+#progressBarPercentComplete {
+   
+    width: 210px;
+    height: 80px;
+    top: 450px;
+    text-align: center;
+    font-size: 19px;
+    font-family: OpenSans;
+    color: black;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#progressBarPercentComplete > .percent {
+    
+    font-size: 70%;
+    margin-left: 0px;
+}
+
+
+
+#progressBarLoadingBar > span {
+    position: absolute;
+    width: 218px;
+    margin-left: -109px;
+    left: 50%;
+    height: 25px;
+    
+}
+
+#progressBarLoadingBar > .loader-outer-glow {
+    background-image: url('../img/progressBar/sparkly-progressBar-outer-glow.png');
+}
+
+#progressBarLoadingBar > .loader-edge {
+    background-image: url('../img/progressBar/sparkly-progressBar-edge.png');
+}
+
+#progressBarLoadingBar > .loader-base {
+    background-image: url('../img/progressBar/sparkly-progressBar-base.png');
+}
+
+#progressBarLoadingBar > .loader-shadow {
+    background-image: url('../img/progressBar/sparkly-progressBar-shadow.png');
+}
+
+#progressBarLoadingBar > .loader-bar-start {
+    background-image: url('../img/progressBar/sparkly-progressBar-bar-start-trimmed.png');
+    margin-left: -105px;
+}
+
+#progressBarLoadingBar > .loader-bar-middle {
+    background-image: url('../img/progressBar/sparkly-progressBar-bar-middle-1px.png');
+  	width: 1px;
+}
+
+#progressBarLoadingBar >.loader-bar-end {
+    background-image: url('../img/progressBar/sparkly-progressBar-bar-end-trimmed.png');
+    width: 10px;
+    height: 25px;
+
+}
