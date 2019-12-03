@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='7984' ver='1' channel='I' />
+        <Customer>
+            <Account balance="969.00" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+        </Customer>
+    </Header>
+    <Play stake="1.00" win="0.00" id="0">
+        <DealNoDealState action='Deal' current_play='1' game_status='F' stage='1' stage_type='D' pick='1' deal='16.37' deal_acc='Y' stake='1.00' winnings='0.00' deal_factor='16.37'>
+            <DealNoDealView stage_idx='0' box_idx='1' payout_idx='3' />
+            <DealNoDealView stage_idx='1' box_idx='3' payout_idx='8' />
+            <DealNoDealView stage_idx='1' box_idx='10' payout_idx='4' />
+        </DealNoDealState>
+        <MasterState state='O' stakes='1.00' winnings='0.00' next_stake='0.00' cash_pot='0.00' start_game_state='P' chain_stake='1.00' current_winnings='0.00' chain_data_buffer='16'>
+            <ActiveStack></ActiveStack>
+            <OpenStack>
+                <ChainState cg_id='7984' class='GShow' name='FreeRogerMellieBonus3Sym' stack_order='0' start_stake='1.00' id='0' interaction='1' game_state='F' stake_type='F'>
+                    <ChainStateDetail trigger_chain_payout_id='9588' trigger_payout_id='1076' transfer_data='0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19' payout_table='tcgslotscatter' />
+                </ChainState>
+            </OpenStack>
+        </MasterState>
+    </Play>
+</GameResponse>

@@ -1,0 +1,651 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='8020' ver='1' channel='I' />
+        <Customer>
+            <Account balance="1000.00" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+        </Customer>
+    </Header>
+    <Init min_anim_time='10' max_anim_time='1000' min_stake='0.01' max_stake='500.00' dflt_stake='0.05' max_winnings='500000.00' stake_incr='0.01|0.02|0.05|0.10|0.20|0.30|0.40|0.50|1.00|2.00|3.00|4.00|5.00|10.00|25.00' new='Yes' stake='0.00' stake_per_line='0.00' win='0.00' id='0'>
+        <SlotDef num_reels="5" view_size="3" num_win_lines="20" delim="|" symbols="Nine|Ten|Jack|Queen|King|Ace|Symbol2|Symbol1|Viz|Wild|JonnyFartpantsFeature|RogerMellieFeature|FatS!@#sFeature" wild_cards="Wild" wild_factor="2.00" use_stake_only="N" base_to_total_stake_mult="">
+            <SlotWinLine index="0" line="1|1|1|1|1" />
+            <SlotWinLine index="1" line="0|0|0|0|0" />
+            <SlotWinLine index="2" line="2|2|2|2|2" />
+            <SlotWinLine index="3" line="0|1|2|1|0" />
+            <SlotWinLine index="4" line="2|1|0|1|2" />
+            <SlotWinLine index="5" line="1|0|1|0|1" />
+            <SlotWinLine index="6" line="1|2|1|2|1" />
+            <SlotWinLine index="7" line="0|1|0|1|0" />
+            <SlotWinLine index="8" line="2|1|2|1|2" />
+            <SlotWinLine index="9" line="0|2|0|2|0" />
+            <SlotWinLine index="10" line="2|0|2|0|2" />
+            <SlotWinLine index="11" line="0|1|1|1|2" />
+            <SlotWinLine index="12" line="2|1|1|1|0" />
+            <SlotWinLine index="13" line="0|0|1|2|2" />
+            <SlotWinLine index="14" line="2|2|1|0|0" />
+            <SlotWinLine index="15" line="0|0|2|0|0" />
+            <SlotWinLine index="16" line="2|2|0|2|2" />
+            <SlotWinLine index="17" line="0|1|1|1|1" />
+            <SlotWinLine index="18" line="2|1|1|1|1" />
+            <SlotWinLine index="19" line="1|2|1|0|1" />
+            <SlotReelSet type="S" index="0" num_reels="5" choosable="No" name="">
+                <SlotReel index="0" reel_def="2|1|0|6|1|8|2|1|3|2|1|7|2|3|6|5|8|11|7|4|2|5|10|7|1|8|4|9|2|6|1|12|0|2|4|3|0|1|5|0" />
+                <SlotReel index="1" reel_def="6|2|10|8|4|0|7|2|11|5|4|0|3|9|0|3|7|2|0|7|4|6|1|2|6|0|12|8|5|1|0|2|8|0|1|2|3|4|2|5" />
+                <SlotReel index="2" reel_def="4|3|11|5|0|3|6|4|5|7|3|0|6|8|4|2|1|7|2|1|9|6|12|1|4|10|4|1|5|8|2|1|4|7|3|1" />
+                <SlotReel index="3" reel_def="0|1|4|5|1|0|3|5|10|0|1|4|5|6|12|5|7|11|2|3|0|4|1|0|6|3|8|6|3|0|2|8|3|1|0|3|8|2|4|6|9|5|1|3|4|7|1|0|2" />
+                <SlotReel index="4" reel_def="5|1|4|2|8|5|2|1|9|3|1|2|3|0|11|2|8|0|7|2|10|7|0|5|11|3|0|5|12|3|4|1|10|4|2|0|5|3|6|7|1|12|0|1|7|3|1|6|4|9|6" />
+            </SlotReelSet>
+            <SlotReelSet type="S" index="1" num_reels="5" choosable="No" name="">
+                <SlotReel index="0" reel_def="2|0|1|6|0|8|2|0|3|2|0|7|2|3|6|5|8|11|7|4|2|5|10|7|0|8|4|9|2|6|0|12|1|2|4|3|1|0|5|1" />
+                <SlotReel index="1" reel_def="6|2|10|8|4|1|7|2|11|5|4|1|3|9|1|3|7|2|1|7|4|6|0|2|6|1|12|8|5|0|1|2|8|1|0|2|3|4|2|5" />
+                <SlotReel index="2" reel_def="4|3|11|5|1|3|6|4|5|7|3|1|6|8|4|2|0|7|2|0|9|6|12|0|4|10|4|0|5|8|2|0|4|7|3|0" />
+                <SlotReel index="3" reel_def="1|0|4|5|0|1|3|5|10|1|0|4|5|6|12|5|7|11|2|3|1|4|0|1|6|3|8|6|3|1|2|8|3|0|1|3|8|2|4|6|9|5|0|3|4|7|0|1|2" />
+                <SlotReel index="4" reel_def="5|0|4|2|8|5|2|0|9|3|0|2|3|1|11|2|8|1|7|2|10|7|1|5|11|3|1|5|12|3|4|0|10|4|2|1|5|3|6|7|0|12|1|0|7|3|0|6|4|9|6" />
+            </SlotReelSet>
+            <SlotReelSet type="S" index="2" num_reels="5" choosable="No" name="">
+                <SlotReel index="0" reel_def="2|1|0|6|1|8|2|1|3|2|1|7|2|3|6|5|8|11|7|4|2|5|10|7|1|8|4|9|2|6|1|12|0|2|4|3|0|1|5|0" />
+                <SlotReel index="1" reel_def="6|2|10|8|4|0|7|2|11|5|4|0|3|9|0|3|7|2|0|7|4|6|1|2|6|0|12|8|5|1|0|2|8|0|1|2|3|4|2|5" />
+                <SlotReel index="2" reel_def="4|3|11|5|0|3|6|4|5|7|3|0|6|8|4|2|1|7|2|1|9|6|12|1|4|10|4|1|5|8|2|1|4|7|3|1" />
+                <SlotReel index="3" reel_def="0|1|4|5|1|0|3|5|10|0|1|4|5|6|12|5|7|11|2|3|0|4|1|0|6|3|8|6|3|0|2|8|3|1|0|3|8|2|4|6|9" />
+                <SlotReel index="4" reel_def="5|1|4|2|8|5|2|1|9|3|1|2|3|0|11|2|8|0|7|2|10|7|0|5|11|3|0|5|12|3|4|1|10|4|2|12|5|3|6|7|1|12|0|1|7|3|1|6|4|9|6" />
+            </SlotReelSet>
+            <SlotReelSet type="B" index="3" num_reels="5" choosable="No" name="">
+                <SlotReel index="0" reel_def="2|1|0|6|1|8|2|1|3|12|1|7|2|3|6|5|8|11|7|4|2|5|10|7|1|8|4|9|9|2|1|6|2|12|0|2|4|5|3|12|0|1|5|6|0|3|6|4|5|8|7|3|10" />
+                <SlotReel index="1" reel_def="6|2|10|8|4|9|0|7|2|11|5|4|0|3|9|9|3|7|2|0|7|4|6|1|2|6|0|12|8|5|1|0|2|8|9|1|2|3|4|2|5|3|8|0|10|3|8|1|0|8|6|7|12" />
+                <SlotReel index="2" reel_def="4|3|11|5|0|3|6|4|5|12|7|3|0|6|8|12|2|10|7|2|1|9|6|12|1|4|10|4|1|5|8|2|1|4|7|3|1|6|8|4|2|0|10|7|2|1|9|0|3|6|4|5|7" />
+                <SlotReel index="3" reel_def="0|1|4|5|9|1|0|3|5|10|0|1|4|5|6|12|5|7|11|2|3|0|10|4|1|0|6|3|8|10|6|3|0|2|8|3|1|0|3|8|2|4|6|9|5|1|3|2|7|4|12|3|2" />
+                <SlotReel index="4" reel_def="5|1|4|2|8|5|2|1|4|8|3|1|2|3|0|10|2|8|0|7|2|10|7|0|5|11|3|0|5|12|3|4|1|10|4|2|12|5|3|6|7|1|12|0|1|7|3|1|6|4|9|6|9" />
+            </SlotReelSet>
+            <SlotBonus bonus_id="1837" name="Roger Mellie Free Spins Bonus 3Sym" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="3" />
+            <SlotBonus bonus_id="1838" name="Roger Mellie Free Spins Bonus 4Sym" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="3" />
+            <SlotBonus bonus_id='1839' name='Fat Sl@gs Bonus 5Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='500.00|200.00|150.00|100.00|75.00|70.00|65.00|60.00|60.00|55.00|55.00|50.00|50.00|50.00|45.00|45.00|40.00|40.00|35.00|35.00|30.00|30.00|25.00|25.00|20.00|20.00|15.00|15.00' num_spins='1' />
+            <SlotBonus bonus_id='1840' name='Fat Sl@gs Bonus 4Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='100.00|75.00|50.00|25.00|25.00|22.00|23.00|20.00|20.00|18.00|18.00|17.00|17.00|16.00|16.00|15.00|15.00|15.00|14.00|14.00|14.00|13.00|13.00|12.00|12.00|10.00|10.00' num_spins='1' />
+            <SlotBonus bonus_id='1841' name='Fat Sl@gs Bonus 3Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='20.00|16.00|15.00|14.00|12.00|11.00|10.00|10.00|9.00|9.00|9.00|8.00|8.00|8.00|8.00|7.00|7.00|7.00|6.00|6.00|6.00|6.00|5.00|5.00|5.00|4.00|4.00|4.00|3.00|3.00' num_spins='1' />
+            <SlotBonus bonus_id='1842' name='Wheel of Fartune Bonus 5Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='100.00|75.00|70.00|65.00|60.00|60.00|50.00|50.00|50.00|45.00|45.00|45.00|40.00|40.00|40.00|35.00|35.00|35.00|30.00|30.00|30.00|30.00|25.00|25.00|25.00|25.00|20.00|20.00|20.00|15.00|15.00|14.00|14.00|12.00|12.00|10.00' num_spins='5' />
+            <SlotBonus bonus_id='1843' name='Wheel of Fartune Bonus 4Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='100.00|50.00|25.00|20.00|18.00|16.00|15.00|14.00|12.00|12.00|12.00|10.00|10.00|10.00|9.00|9.00|9.00|8.00|8.00|8.00|8.00|7.00|7.00|7.00|7.00|6.00|6.00|6.00|6.00|5.00|5.00|5.00|5.00|4.00|4.00|4.00|4.00' num_spins='4' />
+            <SlotBonus bonus_id='1844' name='Wheel of Fartune Bonus 3Sym' bonus_type='WHEEL' multiplier_function='+' reel_def='100.00|50.00|25.00|20.00|18.00|15.00|15.00|12.00|12.00|10.00|10.00|10.00|9.00|9.00|9.00|8.00|8.00|8.00|8.00|7.00|7.00|7.00|7.00|6.00|6.00|6.00|6.00|5.00|5.00|5.00|5.00|4.00|4.00|4.00|4.00|3.00|3.00|3.00|2.00|2.00|2.00' num_spins='3' />
+            <SlotBonus bonus_id="1845" name="Roger Mellie Free Spins Bonus 5Sym" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="3" />
+            <SlotSymbolDef name='Nine' symbol_index='0' is_wild='No' />
+            <SlotSymbolDef name='Ten' symbol_index='1' is_wild='No' />
+            <SlotSymbolDef name='Jack' symbol_index='2' is_wild='No' />
+            <SlotSymbolDef name='Queen' symbol_index='3' is_wild='No' />
+            <SlotSymbolDef name='King' symbol_index='4' is_wild='No' />
+            <SlotSymbolDef name='Ace' symbol_index='5' is_wild='No' />
+            <SlotSymbolDef name='Symbol2' symbol_index='6' is_wild='No' />
+            <SlotSymbolDef name='Symbol1' symbol_index='7' is_wild='No' />
+            <SlotSymbolDef name='Viz' symbol_index='8' is_wild='No' />
+            <SlotSymbolDef name='Wild' symbol_index='9' is_wild='Yes'>
+                <WildSymbol num_factor='1' num_lifetime='0' type='N'>
+                    <Factor factor='2.0' weight='1' />
+                </WildSymbol>
+            </SlotSymbolDef>
+            <SlotSymbolDef name='JonnyFartpantsFeature' symbol_index='10' is_wild='No' />
+            <SlotSymbolDef name='RogerMellieFeature' symbol_index='11' is_wild='No' />
+            <SlotSymbolDef name='FatS!@#sFeature' symbol_index='12' is_wild='No' />
+        </SlotDef>
+        <SlotPayout>
+            <SlotLinePayout reel_set_index='0' index='34' payout_factor='10000.00' bitmask_line='512|512|512|512|512' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='24' payout_factor='2000.00' bitmask_line='512|512|512|512|7679' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='33' payout_factor='750.00' bitmask_line='768|768|768|768|768' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='32' payout_factor='750.00' bitmask_line='640|640|640|640|640' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='31' payout_factor='400.00' bitmask_line='576|576|576|576|576' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='30' payout_factor='250.00' bitmask_line='544|544|544|544|544' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='14' payout_factor='200.00' bitmask_line='512|512|512|7679|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='29' payout_factor='150.00' bitmask_line='528|528|528|528|528' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='28' payout_factor='100.00' bitmask_line='520|520|520|520|520' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='27' payout_factor='100.00' bitmask_line='516|516|516|516|516' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='26' payout_factor='100.00' bitmask_line='514|514|514|514|514' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='25' payout_factor='100.00' bitmask_line='513|513|513|513|513' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='23' payout_factor='100.00' bitmask_line='768|768|768|768|7423' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='22' payout_factor='100.00' bitmask_line='640|640|640|640|7551' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='21' payout_factor='100.00' bitmask_line='576|576|576|576|7615' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='20' payout_factor='75.00' bitmask_line='544|544|544|544|7647' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='19' payout_factor='50.00' bitmask_line='528|528|528|528|7663' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='18' payout_factor='50.00' bitmask_line='520|520|520|520|7671' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='17' payout_factor='25.00' bitmask_line='516|516|516|516|7675' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='16' payout_factor='25.00' bitmask_line='514|514|514|514|7677' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='15' payout_factor='25.00' bitmask_line='513|513|513|513|7678' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='13' payout_factor='25.00' bitmask_line='768|768|768|7423|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='12' payout_factor='25.00' bitmask_line='640|640|640|7551|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='11' payout_factor='15.00' bitmask_line='576|576|576|7615|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='10' payout_factor='10.00' bitmask_line='544|544|544|7647|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='9' payout_factor='10.00' bitmask_line='528|528|528|7663|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='4' payout_factor='10.00' bitmask_line='512|512|7679|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='8' payout_factor='5.00' bitmask_line='520|520|520|7671|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='7' payout_factor='5.00' bitmask_line='516|516|516|7675|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='6' payout_factor='5.00' bitmask_line='514|514|514|7677|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='5' payout_factor='5.00' bitmask_line='513|513|513|7678|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='3' payout_factor='2.00' bitmask_line='768|768|7423|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='2' payout_factor='2.00' bitmask_line='640|640|7551|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='1' payout_factor='2.00' bitmask_line='576|576|7615|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='68' payout_factor='10000.00' bitmask_line='512|512|512|512|512' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='58' payout_factor='2000.00' bitmask_line='512|512|512|512|7679' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='67' payout_factor='750.00' bitmask_line='768|768|768|768|768' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='66' payout_factor='750.00' bitmask_line='640|640|640|640|640' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='65' payout_factor='400.00' bitmask_line='576|576|576|576|576' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='64' payout_factor='250.00' bitmask_line='544|544|544|544|544' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='48' payout_factor='200.00' bitmask_line='512|512|512|7679|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='63' payout_factor='150.00' bitmask_line='528|528|528|528|528' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='62' payout_factor='100.00' bitmask_line='520|520|520|520|520' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='61' payout_factor='100.00' bitmask_line='516|516|516|516|516' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='60' payout_factor='100.00' bitmask_line='514|514|514|514|514' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='59' payout_factor='100.00' bitmask_line='513|513|513|513|513' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='57' payout_factor='100.00' bitmask_line='768|768|768|768|7423' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='56' payout_factor='100.00' bitmask_line='640|640|640|640|7551' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='55' payout_factor='100.00' bitmask_line='576|576|576|576|7615' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='54' payout_factor='75.00' bitmask_line='544|544|544|544|7647' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='53' payout_factor='50.00' bitmask_line='528|528|528|528|7663' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='52' payout_factor='50.00' bitmask_line='520|520|520|520|7671' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='51' payout_factor='25.00' bitmask_line='516|516|516|516|7675' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='50' payout_factor='25.00' bitmask_line='514|514|514|514|7677' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='49' payout_factor='25.00' bitmask_line='513|513|513|513|7678' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='47' payout_factor='25.00' bitmask_line='768|768|768|7423|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='46' payout_factor='25.00' bitmask_line='640|640|640|7551|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='45' payout_factor='15.00' bitmask_line='576|576|576|7615|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='44' payout_factor='10.00' bitmask_line='544|544|544|7647|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='43' payout_factor='10.00' bitmask_line='528|528|528|7663|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='38' payout_factor='10.00' bitmask_line='512|512|7679|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='42' payout_factor='5.00' bitmask_line='520|520|520|7671|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='41' payout_factor='5.00' bitmask_line='516|516|516|7675|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='40' payout_factor='5.00' bitmask_line='514|514|514|7677|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='39' payout_factor='5.00' bitmask_line='513|513|513|7678|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='37' payout_factor='2.00' bitmask_line='768|768|7423|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='36' payout_factor='2.00' bitmask_line='640|640|7551|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='35' payout_factor='2.00' bitmask_line='576|576|7615|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='102' payout_factor='10000.00' bitmask_line='512|512|512|512|512' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='92' payout_factor='2000.00' bitmask_line='512|512|512|512|7679' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='101' payout_factor='750.00' bitmask_line='768|768|768|768|768' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='100' payout_factor='750.00' bitmask_line='640|640|640|640|640' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='99' payout_factor='400.00' bitmask_line='576|576|576|576|576' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='98' payout_factor='250.00' bitmask_line='544|544|544|544|544' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='82' payout_factor='200.00' bitmask_line='512|512|512|7679|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='97' payout_factor='150.00' bitmask_line='528|528|528|528|528' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='96' payout_factor='100.00' bitmask_line='520|520|520|520|520' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='95' payout_factor='100.00' bitmask_line='516|516|516|516|516' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='94' payout_factor='100.00' bitmask_line='514|514|514|514|514' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='93' payout_factor='100.00' bitmask_line='513|513|513|513|513' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='91' payout_factor='100.00' bitmask_line='768|768|768|768|7423' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='90' payout_factor='100.00' bitmask_line='640|640|640|640|7551' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='89' payout_factor='100.00' bitmask_line='576|576|576|576|7615' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='88' payout_factor='75.00' bitmask_line='544|544|544|544|7647' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='87' payout_factor='50.00' bitmask_line='528|528|528|528|7663' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='86' payout_factor='50.00' bitmask_line='520|520|520|520|7671' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='85' payout_factor='25.00' bitmask_line='516|516|516|516|7675' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='84' payout_factor='25.00' bitmask_line='514|514|514|514|7677' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='83' payout_factor='25.00' bitmask_line='513|513|513|513|7678' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='81' payout_factor='25.00' bitmask_line='768|768|768|7423|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='80' payout_factor='25.00' bitmask_line='640|640|640|7551|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='79' payout_factor='15.00' bitmask_line='576|576|576|7615|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='78' payout_factor='10.00' bitmask_line='544|544|544|7647|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='77' payout_factor='10.00' bitmask_line='528|528|528|7663|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='72' payout_factor='10.00' bitmask_line='512|512|7679|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='76' payout_factor='5.00' bitmask_line='520|520|520|7671|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='75' payout_factor='5.00' bitmask_line='516|516|516|7675|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='74' payout_factor='5.00' bitmask_line='514|514|514|7677|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='73' payout_factor='5.00' bitmask_line='513|513|513|7678|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='71' payout_factor='2.00' bitmask_line='768|768|7423|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='70' payout_factor='2.00' bitmask_line='640|640|7551|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='2' index='69' payout_factor='2.00' bitmask_line='576|576|7615|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='136' payout_factor='10000.00' bitmask_line='512|512|512|512|512' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='126' payout_factor='2000.00' bitmask_line='512|512|512|512|7679' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='135' payout_factor='750.00' bitmask_line='768|768|768|768|768' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='134' payout_factor='750.00' bitmask_line='640|640|640|640|640' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='133' payout_factor='400.00' bitmask_line='576|576|576|576|576' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='132' payout_factor='250.00' bitmask_line='544|544|544|544|544' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='116' payout_factor='200.00' bitmask_line='512|512|512|7679|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='131' payout_factor='150.00' bitmask_line='528|528|528|528|528' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='130' payout_factor='100.00' bitmask_line='520|520|520|520|520' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='129' payout_factor='100.00' bitmask_line='516|516|516|516|516' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='128' payout_factor='100.00' bitmask_line='514|514|514|514|514' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='127' payout_factor='100.00' bitmask_line='513|513|513|513|513' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='125' payout_factor='100.00' bitmask_line='768|768|768|768|7423' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='124' payout_factor='100.00' bitmask_line='640|640|640|640|7551' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='123' payout_factor='100.00' bitmask_line='576|576|576|576|7615' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='122' payout_factor='75.00' bitmask_line='544|544|544|544|7647' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='121' payout_factor='50.00' bitmask_line='528|528|528|528|7663' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='120' payout_factor='50.00' bitmask_line='520|520|520|520|7671' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='119' payout_factor='25.00' bitmask_line='516|516|516|516|7675' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='118' payout_factor='25.00' bitmask_line='514|514|514|514|7677' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='117' payout_factor='25.00' bitmask_line='513|513|513|513|7678' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='115' payout_factor='25.00' bitmask_line='768|768|768|7423|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='114' payout_factor='25.00' bitmask_line='640|640|640|7551|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='113' payout_factor='15.00' bitmask_line='576|576|576|7615|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='112' payout_factor='10.00' bitmask_line='544|544|544|7647|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='111' payout_factor='10.00' bitmask_line='528|528|528|7663|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='106' payout_factor='10.00' bitmask_line='512|512|7679|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='110' payout_factor='5.00' bitmask_line='520|520|520|7671|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='109' payout_factor='5.00' bitmask_line='516|516|516|7675|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='108' payout_factor='5.00' bitmask_line='514|514|514|7677|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='107' payout_factor='5.00' bitmask_line='513|513|513|7678|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Nine" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='105' payout_factor='2.00' bitmask_line='768|768|7423|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Viz" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='104' payout_factor='2.00' bitmask_line='640|640|7551|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='3' index='103' payout_factor='2.00' bitmask_line='576|576|7615|8191|8191' chain_trigger='N'>
+                <SlotLinePattern symbol="Symbol2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="Wild" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotScatterPayout reel_set_index='0' index='29' payout_factor='0.00' symbol_bitmask='4096' frequency='5' bonus_id='1839' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='26' payout_factor='0.00' symbol_bitmask='2048' frequency='5' bonus_id='1845' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='0' index='22' payout_factor='0.00' symbol_bitmask='1024' frequency='5' bonus_id='1842' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='18' payout_factor='0.00' symbol_bitmask='4096' frequency='4' bonus_id='1840' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='15' payout_factor='0.00' symbol_bitmask='2048' frequency='4' bonus_id='1838' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='0' index='11' payout_factor='0.00' symbol_bitmask='1024' frequency='4' bonus_id='1843' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='7' payout_factor='0.00' symbol_bitmask='4096' frequency='3' bonus_id='1841' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='4' payout_factor='0.00' symbol_bitmask='2048' frequency='3' bonus_id='1837' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='0' index='0' payout_factor='0.00' symbol_bitmask='1024' frequency='3' bonus_id='1844' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='30' payout_factor='0.00' symbol_bitmask='4096' frequency='5' bonus_id='1839' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='27' payout_factor='0.00' symbol_bitmask='2048' frequency='5' bonus_id='1845' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='1' index='23' payout_factor='0.00' symbol_bitmask='1024' frequency='5' bonus_id='1842' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='19' payout_factor='0.00' symbol_bitmask='4096' frequency='4' bonus_id='1840' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='16' payout_factor='0.00' symbol_bitmask='2048' frequency='4' bonus_id='1838' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='1' index='12' payout_factor='0.00' symbol_bitmask='1024' frequency='4' bonus_id='1843' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='8' payout_factor='0.00' symbol_bitmask='4096' frequency='3' bonus_id='1841' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='5' payout_factor='0.00' symbol_bitmask='2048' frequency='3' bonus_id='1837' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='1' index='1' payout_factor='0.00' symbol_bitmask='1024' frequency='3' bonus_id='1844' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='31' payout_factor='0.00' symbol_bitmask='4096' frequency='5' bonus_id='1839' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='28' payout_factor='0.00' symbol_bitmask='2048' frequency='5' bonus_id='1845' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='2' index='24' payout_factor='0.00' symbol_bitmask='1024' frequency='5' bonus_id='1842' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='20' payout_factor='0.00' symbol_bitmask='4096' frequency='4' bonus_id='1840' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='17' payout_factor='0.00' symbol_bitmask='2048' frequency='4' bonus_id='1838' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='2' index='13' payout_factor='0.00' symbol_bitmask='1024' frequency='4' bonus_id='1843' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='9' payout_factor='0.00' symbol_bitmask='4096' frequency='3' bonus_id='1841' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='2' index='6' payout_factor='0.00' symbol_bitmask='2048' frequency='3' bonus_id='1837' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='2' index='2' payout_factor='0.00' symbol_bitmask='1024' frequency='3' bonus_id='1844' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='32' payout_factor='0.00' symbol_bitmask='4096' frequency='5' bonus_id='1839' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='25' payout_factor='0.00' symbol_bitmask='1024' frequency='5' bonus_id='1842' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='21' payout_factor='0.00' symbol_bitmask='4096' frequency='4' bonus_id='1840' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='14' payout_factor='0.00' symbol_bitmask='1024' frequency='4' bonus_id='1843' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='10' payout_factor='0.00' symbol_bitmask='4096' frequency='3' bonus_id='1841' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='3' index='3' payout_factor='0.00' symbol_bitmask='1024' frequency='3' bonus_id='1844' chain_trigger='N' />
+        </SlotPayout>
+    </Init>
+</GameResponse>

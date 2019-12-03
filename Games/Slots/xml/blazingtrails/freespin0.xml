@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+	<Header>
+		<GameId id='12938' ver='1' channel='a' />
+		<Customer>
+			<Account balance="995.37" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+		</Customer>
+	</Header>
+	<Play stake="0.20" stake_per_line="0.01" win="0.00" id="0" >
+		<SlotState sel_win_lines='0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19' reverse_payout='N' delim='|' stop='38|43|67|30|56' reel_set_index='2' action='spinReels' game_status='P' current_play='0' current_winnings='0.00' bonus_winnings='0.00' total_winnings='0.00' num_free_spins='5' stake='0.20' stake_per_line='0.01' fs_trig_stop='38|43|67|30|56' fs_trig_reel_set_index='2' free_spin_multiplier='1.00' persistent_bonus_id='0' free_spin_state=''   >
+			<SlotSymbolRow row_index='0' symbol_indexes='9|11|11|2|12' />
+			<SlotSymbolRow row_index='1' symbol_indexes='11|14|14|14|9' />
+			<SlotSymbolRow row_index='2' symbol_indexes='4|12|12|12|4' />
+			<SlotScatterWin index='25' payout_factor='0.00' winnings='0.00' match_positions='1:1;2:1;3:1;' ><SlotBonusWin bonus_id='11049' bonus_type='WHEEL'  winnings='0.00'  intermediate_multipliers='A_11047' total_multiplier='0.00'  >
+				<BonusElement advance_id='11047' repeat='6' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='null' /></SlotBonusWin>
+				<SlotBonusWin bonus_id='11047' bonus_type='MULTIRS_FREE_SPIN'  winnings='0.00'  num_free_spins="5"  choosable="No" reel_set_index="4" /></SlotScatterWin></SlotState>
+				<AccumulatorState total_contribution="0.00" > 
+					<AccumulatorGroup> 
+						<Accumulator type="CCFFishingReelAccumulator" status="O" balance="5" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="14.40" num_plays="72" state_name="" /> <Accumulator type="CCFFishBarAccumulator" status="O" balance="4" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="14.40" num_plays="72" state_name="" /> <Accumulator type="CCFShipsWheelAccumulator" status="O" balance="2" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="14.40" num_plays="72" state_name="" /> </AccumulatorGroup> </AccumulatorState> </Play></GameResponse>

@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='12514' ver='1' channel='I' />
+        <Customer>
+            <Account balance="1000.00" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+        </Customer>
+    </Header>
+    <Init min_anim_time='1000' max_anim_time='10000' min_stake='0.20' max_stake='100.00' dflt_stake='0.05' max_winnings='500000.00' stake_incr='0.01|0.02|0.03|0.04|0.05|0.10|0.15|0.20|0.25|0.50|1.00|1.50|2.00|2.50|3.00|3.50|4.00|4.50|5.00' new='Yes' stake='0.00' stake_per_line='0.00' win='0.00' id='0'>
+        <SlotDef num_reels="5" view_size="3" num_win_lines="20" delim="|" symbols="GoldVial|BlueVial|PinkVial|Coin|CharacterHead|Cauldron|Book|Ace|King|Queen|Jack|Ten|WildOrb1|WildOrb2|WildOrb3" wild_cards="WildOrb1|WildOrb2|WildOrb3" wild_factor="1.00|1.00|1.00" use_stake_only="N" base_to_total_stake_mult="">
+            <SlotWinLine index="0" line="1|1|1|1|1" />
+            <SlotWinLine index="1" line="0|0|0|0|0" />
+            <SlotWinLine index="2" line="2|2|2|2|2" />
+            <SlotWinLine index="3" line="0|1|2|1|0" />
+            <SlotWinLine index="4" line="2|1|0|1|2" />
+            <SlotWinLine index="5" line="0|0|1|2|2" />
+            <SlotWinLine index="6" line="2|2|1|0|0" />
+            <SlotWinLine index="7" line="1|0|0|0|1" />
+            <SlotWinLine index="8" line="1|2|2|2|1" />
+            <SlotWinLine index="9" line="0|1|1|1|0" />
+            <SlotWinLine index="10" line="2|1|1|1|2" />
+            <SlotWinLine index="11" line="1|0|1|2|1" />
+            <SlotWinLine index="12" line="1|2|1|0|1" />
+            <SlotWinLine index="13" line="0|2|0|2|0" />
+            <SlotWinLine index="14" line="2|0|2|0|2" />
+            <SlotWinLine index="15" line="0|1|0|1|0" />
+            <SlotWinLine index="16" line="2|1|2|1|2" />
+            <SlotWinLine index="17" line="1|0|1|0|1" />
+            <SlotWinLine index="18" line="1|2|1|2|1" />
+            <SlotWinLine index="19" line="0|1|1|1|2" />
+            <SlotReelSet type="C" index="0" num_reels="5" choosable="No" name="Base1RS">
+                <SlotReel index="0" reel_def="4|11|11|10|2|11|10|12|8|8|3|3|3|10|10|4|9|9|2|9|9|11|5|7|7|0|7|6|3|3|3|7|6|10|7|4|7|10|11|2|10|11|5|10|5|11|6|11|5|9|12|8|6|8|10|8|5|10|9|2|9|9|4|12|6|8|11|0|6|8|11|9|9|2|11|9|7|8|10|8|10|11|7" />
+                <SlotReel index="1" reel_def="5|10|5|8|12|9|8|9|5|8|7|1|8|8|6|3|3|3|9|6|4|8|1|8|7|10|9|9|11|10|11|6|11|4|11|12|7|10|10|9|10|12|7|6|7|3|3|3|7|10|6|11|8|11|6|11|11|10|9|10|4|5|4|8|1|7|5|9|11|9|10|11|10|9|11|9|11|7|10|9|11|10|9" />
+                <SlotReel index="2" reel_def="9|6|9|1|7|4|8|0|11|5|11|0|8|8|3|3|3|6|10|4|10|2|11|11|4|6|5|9|9|3|3|3|9|9|6|9|0|11|11|8|2|6|10|10|2|10|10|4|9|11|5|11|0|7|5|7|12|8|5|8|10|12|10|6|1|7|11|2|9|12|10|9|10|1|8|11|8|11|7|1|7|7|2" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|2|10|5|8|12|6|8|1|5|10|7|0|6|8|4|9|9|0|6|11|6|11|5|7|2|7|12|7|11|11|9|4|9|3|3|3|7|5|9|9|1|7|4|11|11|2|9|10|9|10|2|8|10|11|10|12|10|9|1|8|10|7|9|0|6|7|8|2|8|10|11|1|11" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|1|9|9|12|9|9|2|10|5|10|6|0|11|11|5|7|12|10|1|9|5|9|2|10|5|8|3|3|3|11|6|1|11|9|6|9|12|7|8|4|8|2|6|8|3|3|3|9|6|7|1|11|5|11|7|6|10|0|7|10|11|9|2|8|7|11|10|8|7|2|7|10|0|11" />
+            </SlotReelSet>
+            <SlotReelSet type="C" index="1" num_reels="5" choosable="No" name="Base2RS">
+                <SlotReel index="0" reel_def="4|11|11|10|1|10|10|12|8|8|3|3|3|7|7|4|9|9|1|9|9|11|5|11|10|1|5|6|3|3|3|7|6|10|7|4|7|6|10|11|6|10|7|10|5|11|6|11|5|9|12|8|11|8|4|8|9|6|9|1|5|9|8|12|11|10|11|9|10|8|11|9|8|10|9|9|7|11|10|8|10|11|7" />
+                <SlotReel index="1" reel_def="5|10|5|11|4|9|0|9|5|6|7|2|6|8|11|3|3|3|9|7|8|7|2|7|6|10|9|8|8|2|8|6|11|4|11|12|7|10|10|9|10|12|9|9|7|3|3|3|7|10|11|12|9|6|4|11|11|10|0|10|4|5|6|8|2|11|5|8|11|9|10|11|10|9|2|9|11|7|10|9|11|10|8" />
+                <SlotReel index="2" reel_def="9|6|9|1|7|4|8|0|11|5|11|0|8|8|3|3|3|6|10|4|10|2|11|11|4|6|5|9|9|3|3|3|9|9|6|9|0|11|11|8|2|6|10|10|2|10|10|4|9|11|5|11|0|7|5|7|12|8|5|8|10|12|10|6|1|7|11|2|9|12|10|9|10|1|8|11|8|11|7|1|7|7|2" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|2|10|5|8|12|6|8|1|5|10|7|0|6|8|4|9|9|0|6|11|6|11|5|7|2|7|12|7|11|11|9|4|9|3|3|3|7|5|9|9|1|7|4|11|11|2|9|10|9|10|2|8|10|11|10|12|10|9|1|8|10|7|9|0|6|7|8|2|8|10|11|1|11" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|1|9|9|12|9|9|2|10|5|10|6|0|11|11|5|7|12|10|1|9|5|9|2|10|5|8|3|3|3|11|6|1|11|9|6|9|12|7|8|4|8|2|6|8|3|3|3|9|6|7|1|11|5|11|7|6|10|0|7|10|11|9|2|8|7|11|10|8|7|2|7|10|0|11" />
+            </SlotReelSet>
+            <SlotReelSet type="C" index="2" num_reels="5" choosable="No" name="CharactersWildRS">
+                <SlotReel index="0" reel_def="4|11|11|10|7|7|11|8|8|3|3|3|10|10|4|9|9|12|9|9|11|5|11|10|7|6|11|10|9|7|6|10|7|4|7|6|10|6|10|5|10|5|11|6|11|5|9|9|8|11|8|4|8|9|8|9|5|9|6|7|11|10|11|10|8|11|9|8" />
+                <SlotReel index="1" reel_def="5|10|5|8|12|9|8|9|5|6|7|6|8|6|10|9|11|9|7|9|9|11|11|10|9|9|11|10|11|6|11|4|11|7|7|10|10|9|10|10|7|8|7|3|3|3|7|10|8|4|8|6|4|11|11|10|9|10|4|5|6|8|11|5|8|11|9|10" />
+                <SlotReel index="2" reel_def="9|6|9|7|4|8|11|5|11|8|8|11|9|10|6|10|4|10|11|11|4|6|5|9|9|3|3|3|9|9|6|9|11|11|8|6|10|10|12|10|10|4|9|11|5|11|7|5|7|7|8|5|8|10|7|10|6|7|11|9|7|10|9|10|8|11|8|11" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|10|5|8|8|6|8|5|10|7|6|8|4|9|9|6|11|6|11|5|7|8|7|12|7|11|11|9|4|9|11|10|9|7|5|9|9|7|4|11|11|9|10|9|10|10|8|10|11|10|11|10|9|8|10|7|9|6|7" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|9|9|12|9|9|6|10|5|10|6|11|11|5|7|10|10|9|5|9|10|5|8|10|11|9|11|6|11|9|6|9|7|7|8|4|8|6|8|3|3|3|9|6|7|11|5|11|7|6|10|7|10|11|9|8|7|11|10|8" />
+            </SlotReelSet>
+            <SlotReelSet type="C" index="3" num_reels="2" choosable="No" name="GoldRS">
+                <SlotReel index="0" reel_def="0|7|7|0|7|6|0|6|8|0|7|7|0|7|6|0|6|8" />
+                <SlotReel index="1" reel_def="0|4|9|0|9|5|0|10|4|0|4|9|0|9|5|0|10|4" />
+            </SlotReelSet>
+            <SlotReelSet type="C" index="4" num_reels="2" choosable="No" name="BlueRS">
+                <SlotReel index="0" reel_def="1|11|10|1|10|10|1|9|9|1|9|9|1|5|6|1|5|9" />
+                <SlotReel index="1" reel_def="1|8|7|1|8|8|1|4|8|1|4|8|1|8|7|1|8|8" />
+            </SlotReelSet>
+            <SlotReelSet type="C" index="5" num_reels="2" choosable="No" name="PinkRS">
+                <SlotReel index="0" reel_def="2|11|10|2|11|10|2|9|9|2|9|9|2|10|11|2|10|11|2|10|9|2|11|9" />
+                <SlotReel index="1" reel_def="2|6|7|2|6|8|2|8|7|2|7|6|2|8|8|2|8|6|2|6|8|2|8|6" />
+            </SlotReelSet>
+            <SlotReelSet type="B" index="6" num_reels="5" choosable="No" name="GoldFSRS">
+                <SlotReel index="0" reel_def="4|11|11|10|7|7|11|8|8|3|3|3|10|10|4|9|9|12|9|9|11|5|11|10|7|6|11|10|9|7|6|10|7|4|7|6|10|6|10|5|10|5|11|6|11|5|9|9|8|11|8|4|8|9|8|9|5|9|6|7|11|10|11|10|8|11|9|8" />
+                <SlotReel index="1" reel_def="5|10|5|8|12|9|8|9|5|6|7|6|8|6|10|9|11|9|7|9|9|11|11|10|9|9|11|10|11|6|11|4|11|7|7|10|10|9|10|10|7|8|7|3|3|3|7|10|8|4|8|6|4|11|11|10|9|10|4|5|6|8|11|5|8|11|9|10" />
+                <SlotReel index="2" reel_def="9|6|9|7|4|8|11|5|11|8|8|11|9|10|6|10|4|10|11|11|4|6|5|9|9|3|3|3|9|9|6|9|11|11|8|6|10|10|12|10|10|4|9|11|5|11|7|5|7|7|8|5|8|10|7|10|6|7|11|9|7|10|9|10|8|11|8|11" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|10|5|8|8|6|8|5|10|7|6|8|4|9|9|6|11|6|11|5|7|8|7|12|7|11|11|9|4|9|11|10|9|7|5|9|9|7|4|11|11|9|10|9|10|10|8|10|11|10|11|10|9|8|10|7|9|6|7" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|9|9|12|9|9|6|10|5|10|6|11|11|5|7|10|10|9|5|9|10|5|8|10|11|9|11|6|11|9|6|9|7|7|8|4|8|6|8|3|3|3|9|6|7|11|5|11|7|6|10|7|10|11|9|8|7|11|10|8" />
+            </SlotReelSet>
+            <SlotReelSet type="B" index="7" num_reels="5" choosable="No" name="BlueFSRS">
+                <SlotReel index="0" reel_def="4|11|11|10|7|7|11|8|8|3|3|3|10|10|4|9|9|12|9|9|11|5|11|10|7|6|3|3|3|7|6|10|7|4|7|6|10|6|10|5|10|5|11|6|11|5|9|12|8|11|8|4|8|9|8|9|5|9|6|7|11|10|11|10|8|11|9|8|9" />
+                <SlotReel index="1" reel_def="5|10|5|8|12|9|8|9|5|6|7|6|8|6|3|3|3|9|7|9|9|11|11|10|9|9|11|10|11|6|11|4|11|12|7|10|10|9|12|10|7|8|7|3|3|3|7|10|8|4|8|6|4|11|11|10|9|10|4|5|6|8|11|5|8|11|9|10|7" />
+                <SlotReel index="2" reel_def="9|6|9|7|4|8|11|5|11|8|8|3|3|3|6|10|4|10|12|11|4|6|5|9|9|3|3|3|9|9|6|9|11|11|8|6|10|10|12|10|10|4|9|11|5|11|7|5|7|12|8|5|8|10|7|10|6|7|11|9|7|10|9|10|8|11|8|11|7" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|10|5|8|12|6|8|5|10|7|6|8|4|9|9|6|11|6|11|5|7|8|7|12|7|11|11|9|4|9|3|3|3|12|5|9|9|7|4|11|11|9|10|9|10|10|8|10|11|10|11|10|9|8|10|7|9|6|7|8" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|9|9|12|9|9|6|10|5|10|6|11|11|5|7|10|10|9|5|9|10|5|8|3|3|3|11|6|11|9|6|9|12|7|8|4|8|6|8|3|3|3|9|6|7|11|5|11|7|12|10|7|10|11|9|8|7|11|10|8|7" />
+            </SlotReelSet>
+            <SlotReelSet type="B" index="8" num_reels="5" choosable="No" name="PinkFSRS">
+                <SlotReel index="0" reel_def="4|11|5|10|7|7|11|8|8|3|3|3|10|10|4|9|9|12|12|12|9|9|11|5|11|10|7|6|3|3|3|7|6|10|7|4|7|6|10|6|10|5|10|5|11|6|11|5|9|12|12|12|8|11|8|4|8|9|8|9|5|9|6|7|11|10|11|10|8|11|9|8|9|6|7" />
+                <SlotReel index="1" reel_def="5|10|5|8|12|12|12|9|8|9|5|6|7|6|8|6|3|3|3|9|7|9|9|11|11|10|9|9|11|10|11|6|11|4|11|12|12|12|7|10|10|9|12|12|12|10|7|8|7|3|3|3|7|10|8|4|8|6|4|11|11|10|9|10|4|5|6|8|11|5|8|11|9|10|7" />
+                <SlotReel index="2" reel_def="9|6|9|7|4|8|11|5|11|8|8|3|3|3|6|10|4|10|12|12|12|11|4|6|5|9|9|3|3|3|9|9|6|9|11|11|8|6|10|10|12|12|12|10|10|4|9|11|5|11|7|5|7|12|12|12|8|5|8|10|7|10|6|7|11|9|7|10|9|10|8|11|8|11|7" />
+                <SlotReel index="3" reel_def="5|8|6|3|3|3|11|11|4|10|10|5|8|12|12|12|6|8|5|10|7|6|8|4|9|9|6|11|6|11|5|7|8|7|12|12|12|7|11|11|9|4|9|3|3|3|12|12|12|5|9|9|7|4|11|11|9|10|9|10|10|8|10|11|10|11|10|9|8|10|7|9|6|7|8" />
+                <SlotReel index="4" reel_def="10|4|10|8|4|8|11|4|11|9|9|12|12|12|9|9|6|10|5|10|6|11|11|5|7|10|10|9|5|9|10|5|8|3|3|3|11|6|11|9|6|9|12|12|12|7|8|4|8|6|8|3|3|3|9|6|7|11|5|11|7|12|12|12|10|7|10|11|9|8|7|11|10|8|7" />
+            </SlotReelSet>
+            <SlotBonus bonus_id="10049" name="BalthazarsGoldFreeSpins" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="6" />
+            <SlotBonus bonus_id="10050" name="BalthazarsBlueFreeSpins" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="7" />
+            <SlotBonus bonus_id="10051" name="BalthazarsPinkFreeSpins" bonus_type="FREE_SPIN" num_spins="1" choosable="No" reel_set_index="8" />
+            <SlotBonus bonus_id='10052' name='BalthazarsTriggerPotion50Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10053' name='BalthazarsTriggerPotion40Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10054' name='BalthazarsTriggerPotion30Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10055' name='BalthazarsTriggerPotion20Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10056' name='BalthazarsTriggerPotion10Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10057' name='BalthazarsPotionReel1Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10058' name='BalthazarsPotionReel2Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10059' name='BalthazarsPotionReel3Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10060' name='BalthazarsPotionReel4Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10061' name='BalthazarsPotionReel5Wheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotBonus bonus_id='10062' name='BalthazarsGoldFSOverlaysWheel' bonus_type='WHEEL' multiplier_function='+' reel_def='0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00|0.00' num_spins='1' />
+            <SlotSymbolDef name='GoldVial' symbol_index='0' is_wild='No' />
+            <SlotSymbolDef name='BlueVial' symbol_index='1' is_wild='No' />
+            <SlotSymbolDef name='PinkVial' symbol_index='2' is_wild='No' />
+            <SlotSymbolDef name='Coin' symbol_index='3' is_wild='No' />
+            <SlotSymbolDef name='CharacterHead' symbol_index='4' is_wild='No' />
+            <SlotSymbolDef name='Cauldron' symbol_index='5' is_wild='No' />
+            <SlotSymbolDef name='Book' symbol_index='6' is_wild='No' />
+            <SlotSymbolDef name='Ace' symbol_index='7' is_wild='No' />
+            <SlotSymbolDef name='King' symbol_index='8' is_wild='No' />
+            <SlotSymbolDef name='Queen' symbol_index='9' is_wild='No' />
+            <SlotSymbolDef name='Jack' symbol_index='10' is_wild='No' />
+            <SlotSymbolDef name='Ten' symbol_index='11' is_wild='No' />
+            <SlotSymbolDef name='WildOrb1' symbol_index='12' is_wild='Yes'>
+                <WildSymbol num_factor='1' num_lifetime='0' type='N'>
+                    <Factor factor='1.0' weight='1' />
+                </WildSymbol>
+            </SlotSymbolDef>
+            <SlotSymbolDef name='WildOrb2' symbol_index='13' is_wild='Yes'>
+                <WildSymbol num_factor='1' num_lifetime='0' type='N'>
+                    <Factor factor='1.0' weight='1' />
+                </WildSymbol>
+            </SlotSymbolDef>
+            <SlotSymbolDef name='WildOrb3' symbol_index='14' is_wild='Yes'>
+                <WildSymbol num_factor='1' num_lifetime='0' type='N'>
+                    <Factor factor='1.0' weight='1' />
+                </WildSymbol>
+            </SlotSymbolDef>
+        </SlotDef>
+        <SlotPayout>
+            <SlotLinePayout reel_set_index='' index='0' payout_factor='500.00' bitmask_line='28672|28672|28672|28672|28672' chain_trigger='N'>
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='1' payout_factor='400.00' bitmask_line='28680|28680|28680|28680|28680' chain_trigger='N'>
+                <SlotLinePattern symbol="Coin" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='2' payout_factor='400.00' bitmask_line='28688|28688|28688|28688|28688' chain_trigger='N'>
+                <SlotLinePattern symbol="CharacterHead" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='3' payout_factor='300.00' bitmask_line='28704|28704|28704|28704|28704' chain_trigger='N'>
+                <SlotLinePattern symbol="Cauldron" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='4' payout_factor='300.00' bitmask_line='28736|28736|28736|28736|28736' chain_trigger='N'>
+                <SlotLinePattern symbol="Book" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='5' payout_factor='200.00' bitmask_line='28672|28672|28672|28672|4095' chain_trigger='N'>
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='6' payout_factor='200.00' bitmask_line='28800|28800|28800|28800|28800' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='7' payout_factor='200.00' bitmask_line='28928|28928|28928|28928|28928' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='8' payout_factor='100.00' bitmask_line='28680|28680|28680|28680|4087' chain_trigger='N'>
+                <SlotLinePattern symbol="Coin" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='9' payout_factor='100.00' bitmask_line='28688|28688|28688|28688|4079' chain_trigger='N'>
+                <SlotLinePattern symbol="CharacterHead" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='10' payout_factor='100.00' bitmask_line='29184|29184|29184|29184|29184' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='11' payout_factor='100.00' bitmask_line='29696|29696|29696|29696|29696' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='12' payout_factor='100.00' bitmask_line='30720|30720|30720|30720|30720' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='13' payout_factor='80.00' bitmask_line='28704|28704|28704|28704|4063' chain_trigger='N'>
+                <SlotLinePattern symbol="Cauldron" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='14' payout_factor='80.00' bitmask_line='28736|28736|28736|28736|4031' chain_trigger='N'>
+                <SlotLinePattern symbol="Book" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='15' payout_factor='50.00' bitmask_line='28672|28672|28672|4095|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='16' payout_factor='40.00' bitmask_line='28680|28680|28680|4087|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Coin" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='17' payout_factor='40.00' bitmask_line='28688|28688|28688|4079|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="CharacterHead" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='18' payout_factor='40.00' bitmask_line='28800|28800|28800|28800|3967' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='19' payout_factor='40.00' bitmask_line='28928|28928|28928|28928|3839' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='20' payout_factor='20.00' bitmask_line='28704|28704|28704|4063|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Cauldron" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='21' payout_factor='20.00' bitmask_line='28736|28736|28736|4031|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Book" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='22' payout_factor='10.00' bitmask_line='28800|28800|28800|3967|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Ace" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='23' payout_factor='10.00' bitmask_line='28928|28928|28928|3839|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="King" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='24' payout_factor='10.00' bitmask_line='29184|29184|29184|29184|3583' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='25' payout_factor='10.00' bitmask_line='29696|29696|29696|29696|3071' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='26' payout_factor='10.00' bitmask_line='30720|30720|30720|30720|2047' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='27' payout_factor='4.00' bitmask_line='29184|29184|29184|3583|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Queen" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='28' payout_factor='4.00' bitmask_line='29696|29696|29696|3071|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Jack" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='29' payout_factor='4.00' bitmask_line='30720|30720|30720|2047|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Ten" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='30' payout_factor='2.00' bitmask_line='28672|28672|4095|32767|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='' index='31' payout_factor='2.00' bitmask_line='28680|28680|4087|32767|32767' chain_trigger='N'>
+                <SlotLinePattern symbol="Coin" reel_indexes="0,1" />
+                <SlotLinePattern symbol="WildOrb1" reel_indexes="0,1" />
+                <SlotLinePattern symbol="WildOrb2" reel_indexes="0,1" />
+                <SlotLinePattern symbol="WildOrb3" reel_indexes="0,1" />
+            </SlotLinePayout>
+            <SlotScatterPayout reel_set_index='' index='2' payout_factor='0.00' symbol_bitmask='4' reel_indexes='0|1' frequency='2' bonus_id='10051' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='' index='1' payout_factor='0.00' symbol_bitmask='2' reel_indexes='0|1' frequency='2' bonus_id='10050' chain_trigger='Y' />
+            <SlotScatterPayout reel_set_index='' index='0' payout_factor='0.00' symbol_bitmask='1' reel_indexes='0|1' frequency='2' bonus_id='10049' chain_trigger='Y' />
+        </SlotPayout>
+    </Init>
+</GameResponse>

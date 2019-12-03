@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='7984' ver='1' channel='I' />
+        <Customer>
+            <Account balance="969.00" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+        </Customer>
+    </Header>
+    <Init min_anim_time='1000' max_anim_time='30000' min_stake='0.01' max_stake='500.00' dflt_stake='1.00' max_winnings='250000.00' stake_incr='0.20|0.40|0.60|0.80|1.00|2.00|4.00|6.00|8.00|10.00|25.00|50.00|100.00' new='Yes' stake='0.00' stake_per_line='0.00' win='0.00' id='0'>
+        <DealNoDealDef num_boxes="10">
+            <DealNoDealStage index="0" num_boxes="1" type="N" />
+            <DealNoDealStage index="1" num_boxes="2" type="D" />
+            <DealNoDealStage index="2" num_boxes="2" type="D" />
+            <DealNoDealStage index="3" num_boxes="2" type="D" />
+            <DealNoDealStage index="4" num_boxes="2" type="D" />
+            <DealNoDealStage index="5" num_boxes="1" type="N" />
+        </DealNoDealDef>
+        <DealNoDealPayout index="0" payout="4.00" />
+        <DealNoDealPayout index="1" payout="6.00" />
+        <DealNoDealPayout index="2" payout="8.00" />
+        <DealNoDealPayout index="3" payout="10.00" />
+        <DealNoDealPayout index="4" payout="12.00" />
+        <DealNoDealPayout index="5" payout="15.00" />
+        <DealNoDealPayout index="6" payout="18.00" />
+        <DealNoDealPayout index="7" payout="20.00" />
+        <DealNoDealPayout index="8" payout="25.00" />
+        <DealNoDealPayout index="9" payout="50.00" />
+    </Init>
+</GameResponse>

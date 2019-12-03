@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='12934' ver='1' channel='I' />
+        <Customer>
+            <Account balance="1000.00" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+        </Customer>
+    </Header>
+    <Init min_anim_time='10' max_anim_time='1000' min_stake='0.20' max_stake='100.00' dflt_stake='0.20' max_winnings='250000.00' stake_incr='0.02|0.04|0.06|0.08|0.10|0.12|0.14|0.16|0.18|0.20|0.40|1.00|2.00|4.00|6.00|8.00|10.00' new='Yes' stake='0.00' stake_per_line='0.00' win='0.00' id='0'>
+        <SlotDef num_reels="5" view_size="3" num_win_lines="10" delim="|" symbols="S0|Star|Bar|FreeSpins|GoldBar|BronzeCoin|SilverCoin|GoldCoin" wild_cards="GoldBar" wild_factor="1.00" use_stake_only="N" base_to_total_stake_mult="">
+            <SlotWinLine index="0" line="1|1|1|1|1" />
+            <SlotWinLine index="1" line="0|0|0|0|0" />
+            <SlotWinLine index="2" line="2|2|2|2|2" />
+            <SlotWinLine index="3" line="0|1|2|1|0" />
+            <SlotWinLine index="4" line="2|1|0|1|2" />
+            <SlotWinLine index="5" line="1|0|1|0|1" />
+            <SlotWinLine index="6" line="1|2|1|2|1" />
+            <SlotWinLine index="7" line="0|1|0|1|0" />
+            <SlotWinLine index="8" line="2|1|2|1|2" />
+            <SlotWinLine index="9" line="0|2|0|2|0" />
+            <SlotReelSet type="C" index="0" num_reels="5" choosable="No" name="base_rs">
+                <SlotReel index="0" reel_def="2|2|2|0|0|1|1|1|0|0|3|0|2|4|0|0|0|4|1|1|3|0|0|0|2|2|3|0|0|2|0|0|1|2|3|0|2|3|0|1|0|0|1|0|1|0|1" />
+                <SlotReel index="1" reel_def="2|2|2|0|0|1|1|1|0|1|1|0|1|4|0|0|0|2|1|0|0|0|0|1|2|2|0|0|0|0|0|1|1|0|1|0|0|0|0|1|0|1" />
+                <SlotReel index="2" reel_def="2|2|2|0|0|1|1|1|0|0|3|0|2|4|0|0|0|4|1|0|0|0|0|1|0|2|3|0|0|2|0|0|1|2|0|0|2|0|1|0|0|0|0|1|1|0|0|0" />
+                <SlotReel index="3" reel_def="2|2|2|0|0|1|1|1|0|1|1|0|1|4|0|0|0|2|1|0|0|0|0|1|2|2|0|0|0|0|0|1|1|0|1|0|1|0|0|1|0|1|0" />
+                <SlotReel index="4" reel_def="2|2|2|0|0|1|1|1|1|0|3|0|0|4|1|0|0|4|1|0|3|0|1|1|2|2|0|0|0|2|0|0|1|2|0|0|2|0|0|1|2|0|1|0|0|0|1|0" />
+            </SlotReelSet>
+            <SlotReelSet type="B" index="1" num_reels="5" choosable="No" name="freespin_rs">
+                <SlotReel index="0" reel_def="2|2|2|1|4|1|1|1|1|4|1|1|1|2|1|1|1|4|1|2|1|3|1" />
+                <SlotReel index="1" reel_def="2|2|2|1|4|1|1|1|1|2|1|1|1|1|4|1|1|2|1|1|1|1|1" />
+                <SlotReel index="2" reel_def="2|2|2|1|4|1|1|1|3|4|1|2|1|1|2|1|1|1|1|2|1|1|4" />
+                <SlotReel index="3" reel_def="2|2|2|1|4|2|1|1|1|2|1|1|1|1|2|1|1|2|1|1|1|1|1" />
+                <SlotReel index="4" reel_def="2|2|2|1|4|3|2|1|2|4|3|2|1|2|1|2|1|2|1|2|3|2|4" />
+            </SlotReelSet>
+            <SlotBonus bonus_id='10989' name='FSDelegateWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='10990' name='FSBaseRSWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement advance_id='10991' repeat='28' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='5FS' />
+                <BonusElement advance_id='10993' repeat='25' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='10FS' />
+                <BonusElement advance_id='10994' repeat='5' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='20FS' />
+                <BonusElement advance_id='10994' repeat='1' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='20FS' />
+            </SlotBonus>
+            <SlotBonus bonus_id="10991" name="5FreeSpinBonus" bonus_type="FREE_SPIN" num_spins="5" choosable="No" reel_set_index="1" />
+            <SlotBonus bonus_id="10993" name="10FreeSpinBonus" bonus_type="FREE_SPIN" num_spins="10" choosable="No" reel_set_index="1" />
+            <SlotBonus bonus_id="10994" name="20FreeSpinBonus" bonus_type="FREE_SPIN" num_spins="20" choosable="No" reel_set_index="1" />
+            <SlotBonus bonus_id='10995' name='3oakBaseProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='10996' name='4oakBaseProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='10997' name='5oakBaseProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='10998' name='3oakFreeSpinProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='10999' name='4oakFreeSpinProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotBonus bonus_id='11000' name='5oakFreeSpinProgWheel' bonus_type='WHEEL' multiplier_function='+' num_spins='1'>
+                <BonusElement factor='0.00' gameData='null' repeat='1' />
+            </SlotBonus>
+            <SlotSymbolDef name='S0' symbol_index='0' is_wild='No' />
+            <SlotSymbolDef name='Star' symbol_index='1' is_wild='No' />
+            <SlotSymbolDef name='Bar' symbol_index='2' is_wild='No' />
+            <SlotSymbolDef name='FreeSpins' symbol_index='3' is_wild='No' />
+            <SlotSymbolDef name='GoldBar' symbol_index='4' is_wild='Yes'>
+                <WildSymbol num_factor='1' num_lifetime='0' type='N'>
+                    <Factor factor='1.0' weight='1' />
+                </WildSymbol>
+            </SlotSymbolDef>
+        </SlotDef>
+        <SlotPayout>
+            <SlotLinePayout reel_set_index='0' index='0' payout_factor='100.00' bitmask_line='20|20|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='1' payout_factor='40.00' bitmask_line='2|2|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='2' payout_factor='40.00' bitmask_line='20|20|20|20|11' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='3' payout_factor='40.00' bitmask_line='11|20|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="1,2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='4' payout_factor='10.00' bitmask_line='2|2|2|2|29' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='5' payout_factor='10.00' bitmask_line='29|2|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='6' payout_factor='10.00' bitmask_line='20|20|20|11|31' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='7' payout_factor='10.00' bitmask_line='11|20|20|20|11' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="1,2,3" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='8' payout_factor='10.00' bitmask_line='31|11|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='9' payout_factor='4.00' bitmask_line='2|2|2|29|31' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='10' payout_factor='4.00' bitmask_line='29|2|2|2|29' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='0' index='11' payout_factor='4.00' bitmask_line='31|29|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='12' payout_factor='100.00' bitmask_line='20|20|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='13' payout_factor='40.00' bitmask_line='2|2|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='14' payout_factor='40.00' bitmask_line='20|20|20|20|11' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2,3" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='15' payout_factor='40.00' bitmask_line='11|20|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="1,2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='16' payout_factor='10.00' bitmask_line='2|2|2|2|29' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='17' payout_factor='10.00' bitmask_line='29|2|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="1,2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='18' payout_factor='10.00' bitmask_line='20|20|20|11|31' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="0,1,2" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='19' payout_factor='10.00' bitmask_line='11|20|20|20|11' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="1,2,3" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='20' payout_factor='10.00' bitmask_line='31|11|20|20|20' chain_trigger='N'>
+                <SlotLinePattern symbol="Bar" reel_indexes="2,3,4" />
+                <SlotLinePattern symbol="GoldBar" reel_indexes="2,3,4" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='21' payout_factor='4.00' bitmask_line='2|2|2|29|31' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="0,1,2" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='22' payout_factor='4.00' bitmask_line='29|2|2|2|29' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="1,2,3" />
+            </SlotLinePayout>
+            <SlotLinePayout reel_set_index='1' index='23' payout_factor='4.00' bitmask_line='31|29|2|2|2' chain_trigger='N'>
+                <SlotLinePattern symbol="Star" reel_indexes="2,3,4" />
+            </SlotLinePayout>
+            <SlotScatterPayout reel_set_index='0' index='6' payout_factor='100.00' symbol_bitmask='16' frequency='5' bonus_id='10997' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='4' payout_factor='20.00' symbol_bitmask='16' frequency='4' bonus_id='10996' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='2' payout_factor='5.00' symbol_bitmask='16' frequency='3' bonus_id='10995' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='0' index='0' payout_factor='0.00' symbol_bitmask='8' reel_indexes='0|2|4' frequency='3' bonus_id='10989' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='7' payout_factor='100.00' symbol_bitmask='16' frequency='5' bonus_id='11000' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='5' payout_factor='20.00' symbol_bitmask='16' frequency='4' bonus_id='10999' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='3' payout_factor='5.00' symbol_bitmask='16' frequency='3' bonus_id='10998' chain_trigger='N' />
+            <SlotScatterPayout reel_set_index='1' index='1' payout_factor='0.00' symbol_bitmask='8' reel_indexes='0|2|4' frequency='3' bonus_id='10989' chain_trigger='N' />
+        </SlotPayout>
+    </Init>
+</GameResponse>

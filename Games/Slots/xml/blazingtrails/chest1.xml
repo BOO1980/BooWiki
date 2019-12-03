@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd"><GameResponse>
+<Header><GameId id='12938' ver='1' channel='a' /><Customer>
+<Account balance="999.85" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," /></Customer></Header>
+<Play stake="0.20" stake_per_line="0.01" win="4.82" id="0" >
+	<SlotState sel_win_lines='0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19' reverse_payout='N' delim='|' stop='50|43|47|3|9' reel_set_index='0' action='spinReels' game_status='F' current_play='0' current_winnings='4.82' bonus_winnings='0.00' total_winnings='4.82' num_free_spins='0' stake='0.20' stake_per_line='0.01' fs_trig_stop='' fs_trig_reel_set_index='' free_spin_multiplier='1.00' persistent_bonus_id='0' free_spin_state=''   >
+		<SlotSymbolRow row_index='0' symbol_indexes='11|11|15|8|15' /><SlotSymbolRow row_index='1' symbol_indexes='2|14|12|12|8' />
+		<SlotSymbolRow row_index='2' symbol_indexes='15|12|11|9|10' />
+		<SlotLineWin index='30' payout_factor='2.00' winnings='0.02' win_line='15' stake='0.01' />
+		<SlotScatterWin index='4' payout_factor='0.00' winnings='0.00' match_positions='2:0;4:0;0:2;' ><SlotBonusWin bonus_id='11050' bonus_type='WHEEL'  winnings='0.00'  intermediate_multipliers='A_11052' total_multiplier='0.00'  >
+			<BonusElement advance_id='11052' repeat='999952280' factor='0.00' ProgressiveWin='false' ProgressiveID='-1' gameData='Cash' /></SlotBonusWin>
+			<SlotBonusWin bonus_id='11052' bonus_type='WHEEL'  winnings='0.00'  intermediate_multipliers='0.0' total_multiplier='0.00'  >
+				<BonusElement factor='0.00' gameData='1,1,1,2' repeat='8' /></SlotBonusWin>
+				<SlotBonusWin bonus_id='11056' bonus_type='WHEEL'  winnings='0.00'  intermediate_multipliers='0.00' total_multiplier='0.00'  >
+					<BonusElement factor='0.00' gameData='RedLobster' repeat='1000' /></SlotBonusWin><SlotBonusWin bonus_id='11058' bonus_type='WHEEL'  winnings='2.20'  intermediate_multipliers='11.00' total_multiplier='11.00'  >
+					<BonusElement factor='11.00' gameData='null' repeat='10' /></SlotBonusWin>
+					<SlotBonusWin bonus_id='11057' bonus_type='WHEEL'  winnings='1.60'  intermediate_multipliers='8.00' total_multiplier='8.00'  >
+						<BonusElement factor='8.00' gameData='null' repeat='25' /></SlotBonusWin><SlotBonusWin bonus_id='11059' bonus_type='WHEEL'  winnings='1.00'  intermediate_multipliers='3.00+2.00' total_multiplier='5.00'  ><BonusElement factor='3.00' gameData='null' repeat='1000' /><BonusElement factor='2.00' gameData='null' repeat='2000' /></SlotBonusWin></SlotScatterWin></SlotState>
+						<AccumulatorState total_contribution="0.00" > 
+							<AccumulatorGroup> 
+								<Accumulator type="CCFFishingReelAccumulator" status="O" balance="5" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="16.00" num_plays="80" state_name="" /> <Accumulator type="CCFFishBarAccumulator" status="O" balance="5" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="16.00" num_plays="80" state_name="" /> <Accumulator type="CCFShipsWheelAccumulator" status="O" balance="2" max_balance="16" stakes="1|" cr_date="0" seed_factor="0" played_for="N" was_won="N" data="" avg_stake="0.20" total_stakes="16.00" num_plays="80" state_name="" /> </AccumulatorGroup> </AccumulatorState> </Play></GameResponse>

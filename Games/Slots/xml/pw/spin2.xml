@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+    <Header>
+        <GameId id='12313' ver='1' channel='I'/>
+        <Customer>
+            <Account balance="998.50" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No"
+                     ccy_decimal_separator="." ccy_thousand_separator=","/>
+        </Customer>
+    </Header>
+    <Play stake="1.00" stake_per_line="0.05" win="0.50" id="0">
+        <SlotState sel_win_lines='0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19' reverse_payout='N' delim='|'
+                   stop='36|26|14|54|28' reel_set_index='3' action='spinReels' game_status='F' current_play='0'
+                   current_winnings='0.50' bonus_winnings='0.00' total_winnings='0.50' num_free_spins='0' stake='1.00'
+                   stake_per_line='0.05' fs_trig_stop='' fs_trig_reel_set_index='' free_spin_multiplier='1.00'
+                   persistent_bonus_id='0' free_spin_state=''>
+            <SlotSymbolRow row_index='0' symbol_indexes='2|6|0|3|5'/>
+            <SlotSymbolRow row_index='1' symbol_indexes='4|1|0|4|2'/>
+            <SlotSymbolRow row_index='2' symbol_indexes='6|4|6|6|4'/>
+            <SlotLineWin index='121' payout_factor='10.00' winnings='0.50' win_line='14' stake='0.05'/>
+        </SlotState>
+        <ChainPlay game_id='12311' class='DoubleUp' name='FreePharaohsWildDU' stake='0.50'/>
+        <MasterState state='O' stakes='1.00' winnings='0.50' next_stake='0.50' cash_pot='0.00' start_game_state='F'
+                     chain_stake='1.00' current_winnings='0.50'>
+            <!--ActiveStack>
+                <ChainState cg_id='12311' class='DoubleUp' name='FreePharaohsWildDU' stack_order='0' start_stake='0.50'
+                            id='' interaction='' game_state='X' stake_type='Q'>
+                    <ChainStateDetail trigger_chain_payout_id='15881' trigger_payout_id='0' transfer_data=''
+                                      trigger_value='wins'/>
+                </ChainState>
+            </ActiveStack>
+            <OpenStack></OpenStack-->
+        </MasterState>
+    </Play>
+</GameResponse>
