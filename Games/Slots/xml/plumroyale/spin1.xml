@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE GameResponse SYSTEM "http://www.orbisuk.com/igf/dtd/GameResponse.dtd">
+<GameResponse>
+	<Header>
+		<GameId id='6616' ver='1' channel='M' />
+		<Customer>
+			<Account balance="999.20" held_funds="0.00" ccy_code="GBP" adjusted_free_balance="No" ccy_decimal_separator="." ccy_thousand_separator="," />
+		</Customer>
+	</Header>
+	<Play stake="1.00" stake_per_line="0.05" win="0.20" id="0" >
+		<SlotState sel_win_lines='0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19' reverse_payout='N' delim='|' stop='22|13|72|55|16' reel_set_index='3' action='spinReels' game_status='F' current_play='0' current_winnings='0.20' bonus_winnings='0.00' total_winnings='0.20' num_free_spins='0' stake='1.00' stake_per_line='0.05' fs_trig_stop='' fs_trig_reel_set_index='' free_spin_multiplier='1.00' persistent_bonus_id='0' free_spin_state=''   >
+			<SlotSymbolRow row_index='0' symbol_indexes='0|5|1|3|3' />
+			<SlotSymbolRow row_index='1' symbol_indexes='2|0|1|1|8' />
+			<SlotSymbolRow row_index='2' symbol_indexes='7|2|2|0|7' />
+			<SlotLineWin index='6' payout_factor='4.00' winnings='0.20' win_line='8' stake='0.05' />
+		</SlotState>
+	</Play>
+</GameResponse>
