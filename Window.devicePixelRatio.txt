@@ -1,0 +1,4 @@
+-The window property devicePixelRatio returns the ratio of the resolution in physical pixels to the resoltion in CSS pixels for the current display device
+-This value could also be interpreted as the ratio of pixel sizes
+-The size of one CSS pixel to the size of physical pixel
+-In simpler terms, this tell the browser how many of the screen's actual pixels should be used to draw a single CSS Pixel
