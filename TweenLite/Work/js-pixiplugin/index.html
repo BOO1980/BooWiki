@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://localhost:8888/TweenLite/3rdParty/pixi.min.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/TweenLite/3rdParty/PixiPlugin.min.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/TweenLite/3rdParty/TweenLite.min.js"></script>
+	<script type="text/javascript" src="http://localhost:8888/TweenLite/3rdParty/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="style.css" type='text/css'>
+	<title></title>
+</head>
+<body>
+	<div id="demo">
+		<div id="logo">
+			<p>GreenSock</p>
+		</div> 
+	</div>
+	<script type="text/javascript">
+		const app = new PIXI.Application({
+			width: 256,
+			height:256,
+			antialias: true,
+			transparent: false,
+			resolution:1
+		});
+
+		document.body.appendChild(app.view) //add  canvas
+
+		const container = new PIXI.Container() //adds pixi container
+
+		app.stage.addChild(container) //add container to canvas
+
+		const texture = PIXI.Texture.from('bunny.png');
+		const bunny = new PIXI.Sprite(texture);
+
+		bunny.x = 50
+		bunny.y = 50
+
+		TweenMax.to(bunny.scale, 5,{x:2, y:1.5}); //grows bunny from orginal size to   (TweenMax.to(PixiObject.scale, speed,{x: scale to, y: scale to});
+		//Math.Pi property represents the ratio of the circumference of a circle to its diameter
+		TweenMax.to(bunny.skew, 1, {x:30 * Math.PI / 180 }); //Skews at an angle 
+
+		TweenMax.to(bunny, 1, {rotation:60 * Math.PI / 180});
+		container.addChild(bunny);
+
+
+
+	</script>
+</body>
+</html>
