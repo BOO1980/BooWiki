@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4eb7153a-9991-4a57-ac97-cb865c9ebba5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notes/pseudocode.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Notes/pseudocode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1fdVSuMhsUMXNCbmxEefm8canak" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4eb7153a-9991-4a57-ac97-cb865c9ebba5" name="Default Changelist" comment="" />
+      <created>1596547960249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596547960249</updated>
+      <workItem from="1596547961415" duration="1290000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
