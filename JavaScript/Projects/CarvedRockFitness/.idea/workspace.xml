@@ -20,68 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eb7153a-9991-4a57-ac97-cb865c9ebba5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Notes/pseudocode.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Notes/pseudocode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/1-Introduction and our first app/1-Learning JavaScript in Plunker/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/2-JavaScript - Beginnings/2-Storing Information in varibles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/1-Storing Multiple Values In Arrays/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/3-Types-and-Arrays/2-Array-Features/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/if/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/score/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/1-Conditionals using if/tax/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/score/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/2-Conditionals using if else/tax/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/3-Switch Statements/tax/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/1-For-Loop/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/4-Program flow/4-Loops/2-While-Loop/1-count/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/1-Setting up a web page/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/4-Handling a button click/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Work/Pluralsight/Beginner/2-JavaScript - Getting Started/7-Programing for web pages/5-Removing and Adding Elements/style.css" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Notes/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Notes/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Notes/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Notes/script.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Notes/javaScript_overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Notes/javaScript_overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Work/Books/HeadFirstJavaScript/Chapter2/1-battleship/battleship.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Work/Books/HeadFirstJavaScript/Chapter2/1-battleship/battleship.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -108,6 +61,32 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Notes" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hbill\Documents\HungryBearGames\Repo\BooWiki\JavaScript\Projects\CarvedRockFitness\style" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hbill\Documents\HungryBearGames\Repo\BooWiki\JavaScript\Projects\CarvedRockFitness" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CarvedRockFitness/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,7 +96,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596547960249</updated>
-      <workItem from="1596547961415" duration="1290000" />
+      <workItem from="1596547961415" duration="7833000" />
+      <workItem from="1596622179771" duration="9719000" />
     </task>
     <servers />
   </component>
@@ -134,5 +114,48 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="942" y="217" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596646716163">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="942" y="217" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1596646716163" />
+    <state x="1013" y="170" key="FileChooserDialogImpl" timestamp="1596634518847">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1013" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596634518847" />
+    <state width="979" height="143" key="GridCell.Tab.0.bottom" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.0.center" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.0.left" timestamp="1596559855167">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596559855167" />
+    <state width="979" height="143" key="GridCell.Tab.0.right" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.1.bottom" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.1.center" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.1.left" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
+    <state width="979" height="143" key="GridCell.Tab.1.right" timestamp="1596559855168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="979" height="143" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596559855168" />
   </component>
 </project>
