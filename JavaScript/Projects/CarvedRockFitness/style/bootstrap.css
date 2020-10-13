@@ -1,71 +1,85 @@
+/*6*/
+.jumbotron h1{
+    color: inherit;
+}
+/*10*/
 html{
     font-size: 10px;
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-tap-highlight-color: transparent;
 }
-body{
-    font-family: open sans, sans-serif;
-    font-size:14px;
-    line-height: 1.42857143;
-    color:#364147;
-    font-weight: 400;
-    text-align: left;
-    background-color: #ffffff;
-    margin: 0;
-}
-*:before, *:after{
-    box-sizing: border-box;
-}
-.navbar{
-    position: relative;
-    min-height: 100px;
-}
-@media (min-width: 768px) {
-    .navbar{
-        border-radius: 3px;
-    }
-}
-.navbar:before{
-    content:" ";
-    display: table;
-}
-.navbar:after{
-    clear:both;
-}
-.container:before{
-    content: " ";
-    display: table;
-}
-
-.container:after{
-    content: " ";
-    display: table;
-    clear:both;
-}
-
-
-
-
-
-.nav{
-    display: block;
-}
-a{
-    color:#faa541;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-img{
-    vertical-align: middle;
-}
+/*87*/
 img{
     max-width: 100%;
     height: auto;
     border:0;
 }
-.navbar-brand{
+/*1348*/
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+/*1354*/
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+/*1359*/
+body {
+    font-family: open sans,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #364147;
+    background-color: #fff;
+}
+/*1373*/
+a {
+    color:#faa541;
+    text-decoration: none;
+    background-color: transparent;
+}
+/*1392*/
+img {
+    vertical-align: middle;
+}
+/*1510*/
+p{
+    margin:0 0 10px;
+}
+/*1514*/
+.lead {
+    line-height: 1.4;
+}
+/*4517*/
+.navbar {
+    position: relative;
+    min-height: 100px;
+}
+
+/*4524*/
+@media (min-width: 768px) {
+    .navbar{
+        border-radius: 3px;
+    }
+}
+/*4632*/
+.navbar-brand {
     font-size: 18px;
     line-height: 20px;
 }
+/*5384*/
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+/*6946*/
+.container:before, .container:after, .navbar:before  {
+    content:" ";
+    display: table;
+}
+/*6951*/
+.container:after, .navbar:after {
+    clear:both;
+}
+
+

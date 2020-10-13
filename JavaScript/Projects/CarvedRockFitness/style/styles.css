@@ -1,0 +1,47 @@
+/**/
+.header-nav--nav{
+    border:0;
+    border-bottom: 1px solid #a0a0a0;
+    margin-bottom: 0;
+}
+
+.header-nav--nav .navbar-brand a {
+    display:block;
+    width: 170px;
+}
+/*48*/
+.crf-hero{
+    background-image:url(../assets/hero_bkgd_v1.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+/*49*/
+.crf-hero h1, .crf-hero h2{
+    font-size: 63px;
+    font-weight: 400;
+    margin: 0;
+    flex: inherit;
+    line-height: 0.9;
+}
+/*50*/
+.crf-hero h1{
+    left: -30px;
+}
+/*51*/
+.crf-hero h2{
+    color:#faa541;
+}
+/*52*/
+.crf-hero p.lead{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+/*55*/
+@media only screen and (min-width: 1200px) {
+    .crf-hero .container{
+        max-width: 1170px;
+    }
+}

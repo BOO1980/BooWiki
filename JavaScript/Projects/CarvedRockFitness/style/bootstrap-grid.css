@@ -1,7 +1,33 @@
+/*4*/
 *,*::before,*::after{
     box-sizing: inherit;
 }
+/*7*/
+*,::after,::before{
+    box-sizing: inherit;
+}
+/*74*/
+.col-sm-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*288*/
+@media(min-width: 576px){
+    /*370*/
+    .col-sm-12{
+        -ms-flex: 0 0 100%;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+}
 
+/*1164*/
+.d-flex{
+    display: flex!important;
+}
 @media (min-width: 768px) {
     .flex-md-row {
         flex-direction: row !important;
