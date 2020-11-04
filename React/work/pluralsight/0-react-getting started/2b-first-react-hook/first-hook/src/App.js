@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
@@ -23,14 +23,18 @@ function App() {
   );
 }
 
-function Hello(){
-  return React.createElement('div',null,'Hello React!!!') //the first prop is the kind of element , the second prop is the attribute of that element. the third prop is the child of that element
-  //return <div>Hello React</div>; //returning the div element, so when the function is called the contents is returned, Babel is converting this to JSX
+function logRandom(){
+  console.log(Math.random());
 }
 
 function Button(){
-  return React.createElement('button',null,"TEST")
+  const[counter,setCounter] = useState(0);
+  return <button onClick={()=>setCounter(counter+1)}>{counter}</button>;
 }
 
-export default Button;
-//export default App;
+function ButtonDouble(){
+  const [counter,setCounter] = useState(5);
+  return <button onClick={()=>setCounter(counter *2)}>{counter}</button>;
+}
+
+export default ButtonDouble;
