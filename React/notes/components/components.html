@@ -9,6 +9,9 @@
     <ul>
         <li>With react we describe the UI using components</li>
         <li>Components are like JavaScript functions</li>
+        <li>Components are like functions that return HTML elements</li>
+        <li>Components are independent and reusable bits of code.</li>
+        <li>Components work in isolation and returns HTML via render</li>
         <li>A component takes in parameters called props(short for properties) and returns a hierarchy of views to display via
         the render method</li>
         <li>The render method takes the description and displays the result</li>
@@ -42,7 +45,26 @@
         <li>React components can have a state by setting this.state om their constructors</li>
         <li>This state should be considered as private to a React component that it's defined in </li>
 
+
     </ul>
+<h1>Class components</h1>
+<ul><li>When writing a React component, the component's name must start with an upper case letter</li>
+<li>The component need to include the <code>extends React.Component statement which statement creates an inheritances to React.Component and give you the access to its functions</code></li>
+<li>The component requires a render() method that returns the HTML </li></ul>
+<h1>Function component</h1>
+<ul><li>A function component returns HTML, and behaves much the same way as a class component</li>
+<li>Class components has some additions </li></ul>
+<h1>Component Constructor</h1>
+<ul><li>If there is a constructor function in your component, this function will be called when the component get initiated </li>
+<li>The constructor function is where you initiate the components properties </li>
+<li>In React, component properties should be kept in an object called state</li>
+<li>The constructor function is also where you honor the inheritance of the parent component by including the super() statement, which executes the parent components constuctor function, and your component has access to all the functions of the parent component (React.Component)</li></ul>
+<h1>Components in Components</h1>
+<ul><li>We can refer to components inside other components</li></ul>
+<h1>Compoentns in files</h1>
+<ul><li>React is all about re-using code, and it can be smart to insert some of the components in seperate files</li>
+<li>The file must start by importing React(as before), and it has to end with the statement export default [variable to return]</li>
+<li>To be able to use the component from another file you will need to import it into the class</li></ul>
 
 </body>
 </html>
