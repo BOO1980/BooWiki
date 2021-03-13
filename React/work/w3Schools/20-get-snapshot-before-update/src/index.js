@@ -1,17 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Header extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {favouriteColour:"red"}
+    }
+    componentDidMount() {
+        setTimeout(() =>{
+            this.setState({favouriteColour:"yellow"})
+        },1000)
+    }
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        document.getElementById("div1").innerHTML = "Before the update, the favourite was "+ prevState.favouriteColour;
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        document.getElementById("div2").innerHTML = "The updated favourite is " + this.state.favouriteColour;
+    }
+    render(){
+        return(
+            <div>
+                <h1>My Favourite Colour is {this.state.favouriteColour}</h1>
+                <div id="div1"></div>
+                <div id="div2"></div>
+            </div>
+        );
+    }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<Header/>, document.getElementById('root'));
