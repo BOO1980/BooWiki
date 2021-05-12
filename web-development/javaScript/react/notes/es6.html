@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+</head>
+<body>
+<h1>ES6 Overview</h1>
+<ul>
+    <li>ES6 stands for ECMAScript6</li>
+    <li>ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in
+        2015
+    </li>
+    <li>React uses ES6, you should be familiar with some of the features like
+        <ul>
+            <li>Classes</li>
+            <li>Arrow Functions</li>
+            <li>Variables</li>
+        </ul>
+    </li>
+</ul>
+<h2>Classes</h2>
+<ul>
+    <li>A class is a type of function</li>
+    <li>The properties of the class are assigned inside a constructor method</li>
+    <li>The constructor function is called automatically when the object is initialised</li>
+</ul>
+<h2>Methods</h2>
+<ul>
+    <li>You can create your own methods within the classes</li>
+    <li>You call the method by referring to the object's method name followed by parentheses (parameters would go inside
+        the parentheses)
+    </li>
+</ul>
+<h2>Class Inheritance</h2>
+<ul>
+    <li>To create a class inheritance, use the extends keywords</li>
+    <li>A class created with class inheritance inherits all the methods from another class</li>
+    <li>The super method refers to the parent class</li>
+</ul>
+
+<h2>Arrow functions</h2>
+<ul>
+    <li>Arrow functions allow us to write shorter function syntax</li>
+</ul>
+
+<h2>this</h2>
+<ul>
+    <li>The handling of this is also different in arrow function compared to regular functions</li>
+    <li>The arrow functions have no binding to this</li>
+    <li>In regular functions the this keyword represented the object that called the function, which could be the window
+        , the document, a button or whatever
+    </li>
+    <li>with arrow functions, the this keyword always represents the object that defined the arrow function</li>
+</ul>
+<h2>Variables</h2>
+<ul>
+    <li>Before ES6 there were only way of defining your variables: with the var keyword. If you did not define them,
+        they would be assigned to the global object
+    </li>
+    <li>With ES6 there are 3 ways to define variables
+        <dl>
+            <dt>var</dt>
+            <dd>
+                <ul>
+                    <li>If you use var outside of a function it belongs in the global scope</li>
+                    <li>If you use var inside of a function, it belongs to that function</li>
+                    <li>If you use var inside of a block, i.e a for loop the variable is still available outside of that
+                        block
+                    </li>
+                    <li>var has a function scope, not a block scope</li>
+                </ul>
+            </dd>
+            <dt>let</dt>
+            <dd>
+                <ul>
+                    <li>let is the block scoped version of var and is limited to the block (or expression) where it is
+                        defined
+                    </li>
+                    <li>If you use let inside of a block (i.e. a loop) the variable is only available inside of that
+                        loop
+                    </li>
+                </ul>
+            </dd>
+            <dt>const</dt>
+            <dd>
+                <ul>
+                    <li>const is a variable that once it has been created the value can never change</li>
+                    <li>const has a block scope</li>
+                </ul>
+            </dd>
+
+        </dl>
+    </li>
+</ul>
+</body>
+</html>
