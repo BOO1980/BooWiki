@@ -1,89 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>BooWiki</title>
-        <meta charset = "utf-8">
-        <meta name="viewport" content="width-device-widtg initial-scale=1">
-        <meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How-to, PHP, Java, C++, jQuery, Bootstrap, C#, Colors, MySQL, NodeJS,React,Angular, Git, Data Science, Tutorials, Programming, Web Development">
-        <meta name="Description" content="My personal excyclopedia of projects notes of anything computer science">    
-        <link rel="stylesheet" href="style\w3style.css">
-        <style>
-            /*116*/.w3-bar {
-                position: relative;
-                z-index: 4;
-                font-size: 18px;
-                background-color: white;
-                color:#282A35;
-            }
-        </style>
-    </head>
-    <body style="position:relative;
-    min-height:100%;
-    font-family: 'Source Sans Pro', sans-serif;">
-        <div style="display: none;
-        position: absolute;
-        z-index: 6;
-        top: 75px;
-        right: 0;
-        height: 75px;
-        padding-top: 22px;
-        padding-right: 20px;
-        padding-left: 20px;
-        background-color: #04AA6D;" 
-        id="googleSearch">
-        <div class="gcse-search"></div>    
+
+<head>
+    <title>BooWiki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-widtg initial-scale=1">
+    <meta name="Keywords"
+        content="HTML, Python, CSS, SQL, JavaScript, How-to, PHP, Java, C++, jQuery, Bootstrap, C#, Colors, MySQL, NodeJS,React,Angular, Git, Data Science, Tutorials, Programming, Web Development">
+    <meta name="Description" content="My personal excyclopedia of projects notes of anything computer science">
+    <link rel="stylesheet" href="style\w3style.css">
+    <style>
+        /*116*/
+        .w3-bar {
+            position: relative;
+            z-index: 4;
+            font-size: 18px;
+            background-color: white;
+            color: #282A35;
+        }
+    </style>
+</head>
+
+<body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;">
+    <div style="display: none; position: absolute; z-index: 6; top: 75px; right: 0; height: 75px; padding-top: 22px; padding-right: 20px; padding-left: 20px; background-color: #04AA6D;" id="googleSearch">
+        <div class="gcse-search"></div>
     </div>
-    <div style="display:none;
-    position:absolute;
-    z-index:5;
-    top:75px;
-    right:0;
-    height:75px;
-    padding-right:15px;
-    background-color:#04AA6D;
-    text-align:right;padding-top:25px;" 
-    id="google_translate_element"></div>
-    </body>
-    <div class ="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:16p;">
-        <a href="index.html" class="w3-bar-item w3-button h3-hover-none w3-left w3-padding-16" title="Home" style="width:77px;">
+    <div style="display:none; position:absolute; z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#04AA6D;text-align:right;padding-top:25px;" id="google_translate_element"></div>
+    <div class="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:16px;">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home"
+            style="width:77px;">
             <i class="fa fa-logo" style="position: relative;color: #04AA6D;font-size: 42px!important;"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="" onclick="w3_open_nav(tutorials)" id="navbtn_tutorials" title="Tutorials" style="width:116px">
+        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href=""
+            onclick="w3_open_nav(tutorials)" id="navbtn_tutorials" title="Tutorials" style="width:116px">
             Tutorials
-            <i class ="fa fa-caret-down"></i>
-            <i class ="fa fa-caret-up" style="display:none"></i>
+            <i class="fa fa-caret-down"></i>
+            <i class="fa fa-caret-up" style="display:none"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="" onclick="w3_open_nav(references)" id="navbtn_references" title="References" style="width:132px">
+        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href=""
+            onclick="w3_open_nav(references)" id="navbtn_references" title="References" style="width:132px">
             References
             <i class="fa fa-caret-down"></i>
             <i class="fa fa-caret-up" style="display: none;"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-hide-small barex w3-hide-medium bar-item-hover w3-padding-24" href="" onclick="w3_open_nav(exercises)" id="navbtn_exercises" title="Exercises" style="width:118px">
+        <a class="w3-bar-item w3-button w3-hide-small barex w3-hide-medium bar-item-hover w3-padding-24" href=""
+            onclick="w3_open_nav(exercises)" id="navbtn_exercises" title="Exercises" style="width:118px">
             Exercises
             <i class="fa fa-caret-down"></i>
             <i class="fa fa-caret-up" style="display:none"></i>
         </a>
-        <a class = "w3-bar-item w3-button bar-item-hover w3-padding-24" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">
+        <a class="w3-bar-item w3-button bar-item-hover w3-padding-24" onclick="w3_open()" id="navbtn_menu" title="Menu"
+            style="width:93px">
             Menu
             <i class="fa fa-caret-down"></i>
             <i class="fa fa-caret-up" style="display:none"></i>
         </a>
         <div class="w3-right w3-padding-16">
-            <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex" style="width:140px;border-radius:25px;margin-right: 15px;" href="" target="_blank" id="certnavbtn" onclick="" title="Courses">Paid Courses</a>
+            <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex"
+                style="width:140px;border-radius:25px;margin-right: 15px;" href="" target="_blank" id="certnavbtn"
+                onclick="" title="Courses">Paid Courses</a>
         </div>
         <div class="w3-right w3-padding-16">
-            <a class="w3-bar-item w3-button bar-icon-hover w3-right" href="" onclick="gSearch(this)" title="Search W3Schools" id="nav_search_btn">
+            <a class="w3-bar-item w3-button bar-icon-hover w3-right" href="" onclick="gSearch(this)"
+                title="Search W3Schools" id="nav_search_btn">
                 <i class="fa"></i>
             </a>
-            <a class="w3-bar-item w3-button bar-icon-hover w3-right" href="" onclick="changecodetheme(this)" title="Toggle Dark Code">
+            <a class="w3-bar-item w3-button bar-icon-hover w3-right" href="" onclick="changecodetheme(this)"
+                title="Toggle Dark Code">
                 <i class="fa"></i>
             </a>
-            <div id="myAccordin" class="w3-card-2 w3-center w3-hide-large" style="display:none; cursor:default; background-color:#E7E9EB"></div>
+            <div id="myAccordin" class="w3-card-2 w3-center w3-hide-large"
+                style="display:none; cursor:default; background-color:#E7E9EB"></div>
             <a href="" onclick="w3_close()" class="w3-button w3-xxlarge w3-right">x</a>
             <br>
             <div class="w3-container w3-padding-32"></div>
         </div>
-
-
-
     </div>
+</body>
+
 </html>
