@@ -1,0 +1,26 @@
+.w3-codespan{
+	font-size:105%;
+	background-color:  rgba(222,222,222,0.3);
+	color: crimson;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-family: Consolas,"courier new";
+}
+
+.w3-black{
+	color: #fff !important;
+	background-color: #000 !important;
+}
+
+.w3-code{
+	font-size: 15px;
+	border-left: 4px solid #04AA6D;
+	margin-top: 16px!important;
+	margin-bottom:16px!important;
+	word-wrap:break-word;
+	font-family: Consolas,"courier new";
+	width: auto;
+	padding:8px 12px;
+
+}
+
