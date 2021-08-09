@@ -12,15 +12,19 @@
 	background-color: #000 !important;
 }
 
-.w3-code{
-	font-size: 15px;
-	border-left: 4px solid #04AA6D;
-	margin-top: 16px!important;
-	margin-bottom:16px!important;
-	word-wrap:break-word;
-	font-family: Consolas,"courier new";
-	width: auto;
-	padding:8px 12px;
+.w3-white{
+	color: #000 !important;
+}
 
+.w3-code{ 
+	font-family: Consolas,"courier new";/*111*/
+	width: auto; /*112*/
+	background-color: #fff;
+	padding:8px 12px;
+	word-wrap:break-word;
+	margin-top: 16px!important; /*138*/
+	margin-bottom:16px!important;
+	border-left: 4px solid #04AA6D;/*430*/
+	font-size: 15px; /*1000*/
 }
 
